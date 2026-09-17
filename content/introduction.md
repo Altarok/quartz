@@ -1,5 +1,5 @@
 ---
-title: Gantt-This Introduction
+title: Introduction
 ---
 
 ## Foreword (by CePeU)
@@ -8,7 +8,8 @@ title: Gantt-This Introduction
 
 There are other plugins available, such as the excellent Chronos Timeline plugin, which would be more than sufficient if it weren't for the special needs of TTRPG players.
 
-I had an idea for a plugin like this for over a year (and maybe longer) until Altarok and I met on Josh's Obsidian TTRPG Community Discord server. Altarok mentioned that he was looking for an interesting project to code.
+I had an idea for a plugin like this for over a year (and maybe longer) until Altarok and I met on Josh's Obsidian TTRPG Community Discord server.
+Altarok mentioned that he was looking for an interesting project to code.
 
 Well, I could hardly believe it, but here we are! :)
 
@@ -27,8 +28,8 @@ Ease of use and a variety of display options were top priorities, alongside the 
 ## Flexibility and Compatibility
 
 As Calendarium was one of the first TTRPG Calendars for Obsidian the Gantt-this plugin allows you to map your own frontmatter properties to the property events used by Gantt-this.
-This also allows you to use your allready present frontmatter or your own frontmatter logic or use that of other calendars.
-See: [[plugin-settings#Property Names & Key Mappings]]
+This also allows you to use your already present frontmatter or your own frontmatter logic or use that of other calendars.
+See: [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
 
 ## Next Steps
 
@@ -46,4 +47,4 @@ The plugin is brand new but quite stable. It has moved into wider testing and is
 
 ## Next: Setup and First Steps
 
-- [[getting-started]]
+- [[getting-started|Getting Started]]

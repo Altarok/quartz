@@ -2,7 +2,7 @@
 title: Roadmap
 ---
 
-See [[changelog]] for implemented features.
+See [[changelog|changelog]] for implemented features.
 
 > The following list is not exhaustive. It contains only features confirmed for implementation. See below for a shorthand list of unsorted ideas.
 

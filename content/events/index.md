@@ -10,16 +10,16 @@ In the chart, each element above the calendar axis represents an event defined i
 ## Features & Structure
 
 - **Events:** Each point or bar in the timeline corresponds to an event. Events are split into timestamps and timespans.
-    - **Bars:** Represent time spans.
-    - **Points / Symbols:** Represent specific points in time or milestones.
+  - **Bars:** Represent time spans.
+  - **Points / Symbols:** Represent specific points in time or milestones.
 - **Decentralized in Frontmatter:** Events are defined directly within the YAML properties of your Markdown files.
 - **Structuring:** Events can be organized, filtered, and sorted by groups and custom calendars.
 - **Flexible Visibility:** Groups, calendars, time spans, and individual points can be shown or hidden independently.
 - **Custom Styling:** Points in time can be customized with icons from Obsidian's cache and custom colors.
 - **Interactivity:**
-    - Mouseover displays relevant metadata in a tooltip (Desktop).
-    - Clicking an event directly opens the source note—optionally jumping to a specific heading.
-    - Full navigation via drag & zoom (mouse wheel on Desktop, touch gestures on mobile devices).
+  - Mouseover displays relevant metadata in a tooltip (Desktop).
+  - Clicking an event directly opens the source note—optionally jumping to a specific heading.
+  - Full navigation via drag & zoom (mouse wheel on Desktop, touch gestures on mobile devices).
 
 ## Populating Your Gantt Chart / Timeline
 

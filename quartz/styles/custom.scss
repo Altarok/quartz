@@ -2,40 +2,14 @@
 
 // put your custom CSS here!
 
-:root[saved-theme=dark] {
-  --graph-line: #ff0000 !important;
-  --graph-node: #ff0000 !important;
-  --graph-node-attachment: #ff0000 !important;
-  --graph-node-focused: #ff0000 !important;
-  --graph-node-tag: #ff0000 !important;
-  --graph-node-unresolved: #ff0000 !important;
-  --graph-text: #ff0000 !important;
+a.internal {
+  background-color: transparent !important;
 }
 
-:root:root:root {
-  &[saved-theme="dark"],
-  html[saved-theme="dark"],
-  [data-theme="dark"] {
-    --graph-line: #ff0000 !important;
-    --graph-node: #ff0000 !important;
-    --graph-node-attachment: #ff0000 !important;
-    --graph-node-focused: #ff0000 !important;
-    --graph-node-tag: #ff0000 !important;
-    --graph-node-unresolved: #ff0000 !important;
-    --graph-text: #ff0000 !important;
-    --background-modifier-active-hover: #ff0000 !important;
-  }
+[saved-theme="dark"] {
+  --graph-line: #ff0000 !important;
+}
 
-  &[saved-theme="light"],
-  html[saved-theme="light"],
-  [data-theme="light"] {
-    --graph-line: #ff0000 !important;
-    --graph-node: #ff0000 !important;
-    --graph-node-attachment: #ff0000 !important;
-    --graph-node-focused: #ff0000 !important;
-    --graph-node-tag: #ff0000 !important;
-    --graph-node-unresolved: #ff0000 !important;
-    --graph-text: #ff0000 !important;
-  }
-
+[saved-theme="light"] {
+  --graph-line: #ffff00 !important;
 }

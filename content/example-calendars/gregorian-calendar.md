@@ -47,5 +47,5 @@ adSuffix: 'AD'                                         # optional date suffix fo
 
 Other examples:
 
-- [[mayan-calendar]]
-- [[dsa-ttrpg-calendar]]
+- [[mayan-calendar|Mayan Calendar]]
+- [[dsa-ttrpg-calendar|DSA (TTRPG) Calendar]]

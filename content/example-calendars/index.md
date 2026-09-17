@@ -11,10 +11,10 @@ Comments are everything behind the `'#'` symbol.
 You may remove the comments starting from `'#'` completely.
 
 For this plugin all calendars are day-based, there is no time of day.
-This may change later, see [[roadmap]] for planned features.
+This may change later, see [[roadmap|Roadmap]] for planned features.
 
-- [[gregorian-calendar]] - the global standard calendar everybody knows
-- [[mayan-calendar]] - the one that ended in 2012
-- [[dsa-ttrpg-calendar]] - a classic fantasy world calendar
+- [[gregorian-calendar|Gregorian Calendar]] - the global standard calendar everybody knows
+- [[mayan-calendar|Mayan Calendar]] - the one that ended in 2012
+- [[dsa-ttrpg-calendar|DSA (TTRPG) Calendar]] - a classic fantasy world calendar
 
 ---

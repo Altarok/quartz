@@ -6,7 +6,7 @@ This guide walks you through setting up your first Gantt chart in Obsidian.
 
 ## Fundamentals and first steps
 
-The plugin renders timeline views directly inside Markdown notes using custom code blocks and Bases. At its simplest, a chart requires only a basic code block:
+The plugin renders timeline views directly inside Markdown notes using custom code blocks or Bases. At its simplest, a chart requires only a basic code block:
 
 ````markdown
 ```gantt-this
@@ -15,73 +15,20 @@ The plugin renders timeline views directly inside Markdown notes using custom co
 
 Alternatively, create a Base of type `'Gantt this'`.
 
-Without calendar and events, the chart will render nothing. Follow the steps below to populate your timeline.
+Without calendar and events, the chart will render nothing. Follow these steps below to populate your timeline.
 
 ### Define a calendar
 
-First, create a new folder in your vault for calendars, for example `calendardefinitions`. In the settings you can tell the plugin to only look for calendars in this folder.
-Then, create a new note inside *this* folder.
+First, choose any folder in your vault to dedicate to calendars, the following examples uses `calendardefinitions`. In the settings you can tell the plugin to only look for calendars in this folder. Then, create a new note inside the folder.
 
-Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[example-calendars/]] or this example of one of our favorite TTRPGs:
+Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[example-calendars/index]], we'd suggest [[gregorian-calendar|Gregorian Calendar]].
 
-````markdown
----
-gantt-calendar-definition: my-first-calendar
----
-
-```yaml
-id: my-first-calendar # unique id for each calendar
-name: Example Calendar # a calendar name as shown in the Gantt chart
-sharedOffset: 0
-startDay: 1
-type: rule-based
-delimiter: "-"
-ruleBasedDetails:
-  daysInStandardYear: 365
-  format: # optional. date input format, as read in event notes
-    - "year"
-    - "month"
-    - "day"
-  outputFormat: # optional. date output format, as seen in Gantt chart
-    - "day"
-    - "month"
-    - "year"
-  months: 
-    - name: Praios
-      days: 30
-    - name: Rondra
-      days: 30
-    - name: Efferd
-      days: 30
-    - name: Travia
-      days: 30
-    - name: Boron
-      days: 30
-    - name: Hesinde
-      days: 30
-    - name: Firun
-      days: 30
-    - name: Tsa
-      days: 30
-    - name: Phex
-      days: 30
-    - name: Peraine
-      days: 30
-    - name: Ingerim
-      days: 30
-    - name: Rahja
-      days: 30
-    - name: Namenloser
-      days: 5
-moons: # optional. define multiple moons
-   - {offset: 10, cycle: 28, color: "#928440"}
-```
-````
-
-There are more options to a calendar definition and many are optional but this should give you a quick calendar you can start from and adjust to your needs.
+There are many options to a calendar definition, most of which are optional, but this should give you a quick calendar you can start from and adjust to your needs.
 
 > [!warning] Property Matching
 > The frontmatter value (`gantt-calendar-definition`) and the `id` field inside the YAML code block must match **exactly** (case-sensitive).
+> 
+> The frontmatter property is used to quickly filter files, while the YAML property will be parsed for the plugin.
 
 Next, configure the plugin settings to locate your calendar and event files:
 
@@ -145,7 +92,7 @@ Congratulations! You got your first calendar and event running and displayed!
 
 You might like to take a look at:
 
-- [[calendars]]
-- [[events]]
-- [[plugin-settings]]
-- [[faq]]
+- [[calendars|Calendars]]
+- [[events/|Events]]
+- [[plugin-settings|Plugin Settings]]
+- [[faq|FAQ]]

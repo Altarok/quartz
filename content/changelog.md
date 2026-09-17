@@ -2,7 +2,7 @@
 title: Changelog
 ---
 
-See [[roadmap]] for upcoming features.
+See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys;
 > you may have renamed them in your vault.

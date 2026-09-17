@@ -8,19 +8,19 @@ order: 0
 Welcome to the documentation for **Gantt This**. Select a topic from the sidebar or click a section below to get
 started:
 
-- [[introduction]]
-- [[getting-started]]
-- [[calendars]]
-- [[events/index]]
-- [[plugin-settings]]
-- [[example-calendars/index]]
-    - [[gregorian-calendar]] - the global standard calendar everybody knows
-    - [[mayan-calendar]] - the one that ended in 2012
-    - [[dsa-ttrpg-calendar]] - a classic fantasy world calendar
-- [[bases]]
-- [[roadmap]]
-- [[changelog]]
-- [[faq]]
+- [[introduction|Introduction]]
+- [[getting-started|Getting Started]]
+- [[calendars|Calendars]]
+- [[events/index|Defining Events]]
+- [[plugin-settings|Plugin Settings]]
+- [[example-calendars/index|Example Calendars]]
+    - [[gregorian-calendar|Gregorian Calendar]] - the global standard calendar everybody knows
+    - [[mayan-calendar|Mayan Calendar]] - the one that ended in 2012
+    - [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]] - a classic fantasy world calendar
+- [[bases|Bases]]
+- [[roadmap|Roadmap]]
+- [[changelog|Changelog]]
+- [[faq|FAQ]]
 
 > [!tip] Click to find plugin in [Obsidian Community](https://community.obsidian.md/plugins/gantt-this).
 
