@@ -59,6 +59,5 @@ moons:                         # optional list of moons
 
 Other examples:
 
-- [[gregorian-calendar|Gregorian (ISO-8601)]]
-- [[mayan-calendar|]]
-- [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]]
+- [[Gregorian calendar]]
+- [[Mayan calendar]]

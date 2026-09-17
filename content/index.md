@@ -14,9 +14,9 @@ started:
 - [[04-events|Event Definitions]]
 - [[05-plugin-settings|Plugin Settings]]
 - [[example-calendars/|Example Calendars]]
-    - [[gregorian-calendar|Gregorian Calendar]]
-    - [[mayan-calendar|Mayan Calendar]]
-    - [[dsa-ttrpg-calendar|The Dark Eye (DSA) Calendar]]
+    - [[Gregorian Calendar]] - the global standard calendar everybody knows
+    - [[Mayan Calendar]] - the one that ended in 2012
+    - [[DSA TTRPG calendar]] - a classic fantasy world calendar
 - [[40-bases|Bases]]
 - [[90-roadmap|Roadmap]]
 - [[91-changelog|Changelog]]

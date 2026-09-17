@@ -34,12 +34,10 @@ positionalUnits:           # Mandatory when type equals "positional"
     days: 1                # Range: 0-19 (20 kins = 1 uinal)
 moons:                     # optional moon, totally irrelevant for the calendar
   - {offset: 18.2, cycle: 29.53059, color: "teal"}
-
 ```
 ````
 
 Other examples:
 
-- [[gregorian-calendar|Gregorian (ISO-8601)]]
-- [[mayan-calendar|]]
-- [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]]
+- [[Gregorian calendar]]
+- [[DSA TTRPG calendar]]
