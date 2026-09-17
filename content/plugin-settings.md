@@ -5,6 +5,44 @@ order: 5
 
 # Plugin Settings
 
+Global plugin settings allow you to configure default folders, set fallback colors, and manage custom calendar rules across your vault.
+
+## General Configuration
+
+- **Default Events Folder:** Specify the root folder where the plugin searches for event notes (e.g., `Events`). If left blank, the entire vault is scanned.
+- **Search Sub-folders for Events:** Enable this toggle to recursively search all nested subdirectories inside the designated events folder.
+- **Default Calendar Folder:** Define the folder path where custom calendar definitions are stored (e.g., `calendardefinitions`).
+- **Search Sub-folders for Calendars:** Toggle whether subdirectories inside the calendar folder are scanned for YAML definitions.
+
+## Calendar & Group Management
+
+Manage active calendars, assign colors, and control lane order:
+
+- **Active Calendars:** Add or remove calendars by their unique `id`. Toggle visibility to hide entire calendar systems without deleting definitions.
+- **Default Group Options:** Pre-define groups to set default colors, toggle default visibility, and adjust lane sorting order on your charts.
+- **Fallback Colors:** Set global default colors for timeline markers, bars, and icons when no specific event, group, or calendar color is defined.
+
+> [!tip] Override Priority
+> Settings act as vault-wide defaults. You can always override global colors, property names, or folder paths locally using specific code block parameters or Base view configurations.
+
+## Property Names & Key Mappings
+
+Customize the YAML frontmatter keys the plugin looks for in your Markdown notes:
+
+- **Item Marker:** Default is `gantt-item`. Marks a note as an event target.
+- **Start / End Dates:** Defaults are `gantt-start` and `gantt-end`.
+- **Name & Group:** Defaults are `gantt-name` and `gantt-group`.
+- **Calendar & Symbol:** Defaults are `gantt-calendar` and `gantt-symbol`.
+
+*Renaming these properties in settings allows you to align the plugin with existing Dataview or frontmatter conventions in your vault.*
+
+
+# Plugin Settings
+
+## Data paths
+
+![[Pasted image 20260905163026.png]]
+
 ### Source Paths
 
 - **`eventPath`**: Folder to search for Gantt event definitions. Can be set to the vault root or a subfolder.
@@ -18,12 +56,22 @@ order: 5
 - **`fallbackColor`**: Default color used for events when no color is provided. Default: `#1565C0`.
 - **`fallbackColorForIcons`**: Default icon color when an event has an icon but no icon color. Default: `#FF8800`.
 
-### Calendars & Groups
+## Calendars
+
+![[Pasted image 20260905163148.png]]
+
+## Groups
+
+![[Pasted image 20260905163326.png]]
 
 Two lists display the calendars and groups currently known to the plugin. Both lists function identically:
 
 - **Calendar list**: Defines which calendars the plugin recognizes and how they appear.
 - **Group list**: Defines which groups the plugin recognizes and how they appear.
+
+## Advanced
+
+![[Pasted image 20260905163410.png]]
 
 #### Entry Properties
 
@@ -51,7 +99,7 @@ Two lists display the calendars and groups currently known to the plugin. Both l
 - **Add plugin commands**: Add plugin commands (currently work-in-progress / disabled in UI).
 - **Show overlay box**: Show an overlay box around an event when hovered.
 - **Show overlay vertical line**: Show a vertical line on hover to compare dates.
-- **Group visibility toggles**: Add toolbarContainer buttons that allow hiding/showing groups individually.
+- **Group visibility toggles**: Add toolbar buttons that allow hiding/showing groups individually.
 - **Restrict minimum and maximum zoom**: Automatically constrain min/max zoom to reasonable bounds for the current data.
   - Minimum zoom would fit your complete dataset on the screen.
   - Maximum zoom would show adjacent days.
@@ -94,3 +142,25 @@ These settings let you adapt the plugin to use different frontmatter keys in you
 - The `Groups` mechanism is useful to build lanes and logical separations for events (for example, locations, factions,
   or categories).
 - Advanced UX settings are non-destructive and can be toggled while experimenting with chart behavior.
+
+## Display and Controls
+
+### Events
+![[Pasted image 20260905163504.png]]
+
+### Event overlay
+![[Pasted image 20260905163646.png]]
+
+### Zooming and Panning
+![[Pasted image 20260905163723.png]]
+
+### Gant chart
+![[Pasted image 20260905163747.png]]
+
+### Plugin
+![[Pasted image 20260905163810.png]]
+
+
+## Frontmatter Properties
+
+![[Pasted image 20260905163928.png]]

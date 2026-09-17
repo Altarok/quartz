@@ -19,7 +19,7 @@ type: "rule-based"          # mandatory. just keep this like that, see Mayan cal
 delimiter: "-"              # mandatory. symbol used to separate your days/months/years 
 ruleBasedDetails:
   daysInStandardYear: 365   
-  leapYearRule:                                        # optional leap year leapYearRule
+  leapYearRule:                                        # optional leap year rule
     ruleType: "gregorian"                              # Triggers the divisible by 4, but not 100 unless 400 math - alteratives are 'interval' | 'none'
     applyToMonthIndex: 1                               # February. first month has index 0 in this case
     extraDays: 1                                       # optional. defaults to 1 anyway
@@ -47,5 +47,5 @@ adSuffix: 'AD'                                         # optional date suffix fo
 
 Other examples:
 
-- [[Mayan calendar]]
-- [[DSA TTRPG calendar]]
+- [[mayan-calendar]]
+- [[dsa-ttrpg-calendar]]

@@ -1,9 +1,6 @@
 ---
-title: Introduction
-order: 1
+title: Gantt-This Introduction
 ---
-
-# Gantt-This
 
 ## Foreword (by CePeU)
 
@@ -27,6 +24,12 @@ Ease of use and a variety of display options were top priorities, alongside the 
 > **Data Safety & Privacy:**
 > The plugin reads your notes and can insert a code block into your active file upon request. It never deletes data from your vault and makes **no** network connections.
 
+## Flexibility and Compatibility
+
+As Calendarium was one of the first TTRPG Calendars for Obsidian the Gantt-this plugin allows you to map your own frontmatter properties to the property events used by Gantt-this.
+This also allows you to use your allready present frontmatter or your own frontmatter logic or use that of other calendars.
+See: [[plugin-settings#Property Names & Key Mappings]]
+
 ## Next Steps
 
 The plugin is brand new but quite stable. It has moved into wider testing and is already being used in several active campaigns. We are continuously adding ideas and suggestions from the community. The main features on our roadmap include:
@@ -43,4 +46,4 @@ The plugin is brand new but quite stable. It has moved into wider testing and is
 
 ## Next: Setup and First Steps
 
-- [[02-getting-started|Setup]]
+- [[getting-started]]

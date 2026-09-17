@@ -1,9 +1,6 @@
 ---
-title: Event Definitions
-order: 4
+title: Event
 ---
-
-# Event properties
 
 ![Showcase](images/showcase.png)
 
@@ -26,7 +23,7 @@ In the chart, each element above the calendar axis represents an event defined i
 
 ## Populating Your Gantt Chart / Timeline
 
-See below for more in-depth [[04-events#Understanding-Event-Properties|examples]].
+See below for more in-depth [[Events#Understanding-Event-Properties|examples]].
 
 To display one or more notes as events in your timeline, add the corresponding properties to the YAML frontmatter of your Markdown file:
 
@@ -37,6 +34,35 @@ gantt-end: 2026-01-05      # Optional: end date (fallback: gantt-start) - marks 
 gantt-name: "My Project"   # Optional: name (fallback: filename)
 gantt-group: "Development" # Optional: group (fallback: 'general')
 ```
+
+
+# Note property Overview
+
+The following table lists all available properties you can use in your notes:
+
+| Property                   | Type / Values                              | Optional? | Default / Fallback                                  | Description                                                               |
+| :------------------------- | :----------------------------------------- | :-------- | :-------------------------------------------------- | :------------------------------------------------------------------------ |
+| [[gantt-type-definition]]* | String                                     | No*       | _None_                                              | Marks the note as holding a calendar definition                           |
+| [[gantt-item]]**           | Boolean                                    | No*       | true                                                | Marks the note as an event target for the plugin.                         |
+| **[[gantt-calendar]]**     | String                                     | Yes       | Default calendar                                    | Determines the assigned calendar type.                                    |
+| [[gantt-type]]             | String                                     | Yes       | Calendar for this event                             | Determines the assigned calendar type.                                    |
+| [[gantt-name]]             | String                                     | Yes       | File name without extension (`file.basename`)       | Name of the event in the timeline and tooltip.                            |
+| [[gantt-start]]            | String                                     | No        | *None* (Note will be ignored without a start value) | Start date or start value of the event.                                   |
+| [[gantt-end]]              | String                                     | Yes       | Value of `gantt-start`                              | End date of the event. If identical to start value, a point is displayed. |
+| [[gantt-color]]            | Color (e.g. `#ff0000`or `red`)             | Yes       | Group color → Calendar color → Default              | Overrides the background color of the event individually.                 |
+| [[gantt-group]]            | String                                     | Yes       | `'general'`                                         | Group used for row layout and structuring.                                |
+| [[gantt-symbol]]           | `bar`, `point`, `icon`, `diamond`          | Yes       | `bar` (time span) or `point` (point in time)        | Sets the visual representation format of the event.                       |
+| [[gantt-displayIcon]]      | String ([Lucide Icon](https://lucide.dev)) | Yes       | *None*                                              | Displays an icon on the event.                                            |
+| [[gantt-displayIconColor]] | Color (e.g. `#ff0000` or `red`)            | Yes       | Default icon color                                  | Sets the color of the icon.                                               |
+| [[gantt-linkToHeader]]     | String                                     | Yes       | *None* (Jumps to top of file)                       | Links directly to a specific heading when clicked.                        |
+| [[gantt-predecessors]]     | list                                       | Yes       | *None*                                              | Predecessor events will be highlighted on the chart                       |
+| [[gantt-successors]]       | list                                       | Yes       | *None*                                              | Successor events will be highlighted on the chart                         |
+
+\*: Property `gantt-type-definition` marks and holds a calendar definition.
+See: [[Calendars]]
+\*\*: Property `gantt-item` may be set to optional in the settings.
+
+*All of these can be renamed to your liking*.
 
 # Understanding Event Properties
 
@@ -53,7 +79,7 @@ gantt-calendar: gregorian | (omit or leave empty for default calendar - configur
 > [!info] Default value
 > This frontmatter property is *optional*. Omit or leave empty to use default calendar, which is configurable in settings
 
-## Timespan Events
+## Timespan Events (bar)
 
 ![Timespans](images/showcase-highlighted-timespans.png)
 Any event with start- and end-date property is defined as a timespan.
@@ -69,7 +95,7 @@ gantt-end: 2026-08-30
 gantt-symbol: bar | era | (omit or leave empty to default to 'bar')
 ```
 
-## Timestamp Events
+## Timestamp Events (point)
 
 ![Timespans](images/showcase-highlighted-timestamps.png)
 Timestamp events are defined by adding a start-date to any event. Omit the end-date or leave it empty.
@@ -143,24 +169,3 @@ gantt-start: 2026-08-20
 gantt-end: today+5
 ```
 
-# Overview
-
-The following table lists all available properties you can use in your notes:
-
-| Property                 | Type / Values                              | Optional? | Default / Fallback                                  | Description                                                               |
-|:-------------------------|:-------------------------------------------|:----------|:----------------------------------------------------|:--------------------------------------------------------------------------|
-| `gantt-item`             | Boolean                                    | No*       | `true`                                              | Marks the note as an event target for the plugin.                         |
-| `gantt-start`            | String                                     | No        | *None* (Note will be ignored without a start value) | Start date or start value of the event.                                   |
-| `gantt-end`              | String                                     | Yes       | Value of `gantt-start`                              | End date of the event. If identical to start value, a point is displayed. |
-| `gantt-name`             | String                                     | Yes       | File name without extension (`file.basename`)       | Name of the event in the timeline and tooltip.                            |
-| `gantt-calendar`         | String                                     | Yes       | Default calendar                                    | Determines the assigned calendar type.                                    |
-| `gantt-group`            | String                                     | Yes       | `'general'`                                         | Group used for row layout and structuring.                                |
-| `gantt-color`            | Color (e.g. `#ff0000`, `red`)              | Yes       | Group color → Calendar color → Default              | Overrides the background color of the event individually.                 |
-| `gantt-displayIcon`      | String ([Lucide Icon](https://lucide.dev)) | Yes       | *None*                                              | Displays an icon on the event.                                            |
-| `gantt-displayIconColor` | Color (e.g. `#ff0000`, `red`)              | Yes       | Default icon color                                  | Sets the color of the icon.                                               |
-| `gantt-symbol`           | `bar`, `point`, `icon`, `diamond`          | Yes       | `bar` (time span) or `point` (point in time)        | Sets the visual representation format of the event.                       |
-| `gantt-linkToHeader`     | String                                     | Yes       | *None* (Jumps to top of file)                       | Links directly to a specific heading when clicked.                        |
-
-\*: Property `gantt-item` may be set to optional in the settings.
-
-*All of these can be renamed to your liking*.

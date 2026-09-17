@@ -1,9 +1,6 @@
 ---
-title: Getting Started
-order: 2
+title: Getting started
 ---
-
-# Setup
 
 This guide walks you through setting up your first Gantt chart in Obsidian.
 
@@ -25,7 +22,7 @@ Without calendar and events, the chart will render nothing. Follow the steps bel
 First, create a new folder in your vault for calendars, for example `calendardefinitions`. In the settings you can tell the plugin to only look for calendars in this folder.
 Then, create a new note inside *this* folder.
 
-Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[example-calendars/|Example Calendars]] or this example of one of our favorite TTRPGs:
+Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[example-calendars/]] or this example of one of our favorite TTRPGs:
 
 ````markdown
 ---
@@ -148,7 +145,7 @@ Congratulations! You got your first calendar and event running and displayed!
 
 You might like to take a look at:
 
-- [[03-calendars|Calendar Definitions]]
-- [[04-events|Event Definitions]]
-- [[05-plugin-settings|Plugin Settings]]
-- [[99-FAQ|FAQ]]
+- [[calendars]]
+- [[events]]
+- [[plugin-settings]]
+- [[faq]]

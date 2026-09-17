@@ -59,5 +59,5 @@ moons:                         # optional list of moons
 
 Other examples:
 
-- [[Gregorian calendar]]
-- [[Mayan calendar]]
+- [[gregorian-calendar]]
+- [[mayan-calendar]]

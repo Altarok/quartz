@@ -39,5 +39,5 @@ moons:                     # optional moon, totally irrelevant for the calendar
 
 Other examples:
 
-- [[Gregorian calendar]]
-- [[DSA TTRPG calendar]]
+- [[gregorian-calendar]]
+- [[dsa-ttrpg-calendar]]

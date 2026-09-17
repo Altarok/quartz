@@ -1,11 +1,8 @@
 ---
-title: Change log
-order: 91
+title: Changelog
 ---
 
-# Changelog
-
-See [[90-roadmap|Roadmap]] for upcoming features.
+See [[roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys;
 > you may have renamed them in your vault.
@@ -16,7 +13,7 @@ Added optional calendar property `without year zero`.
 This enables you to use the more natural Gregorian calendar used outside of astronomy and computers.
 
 - Add `noYearZero: true|false` to the `ruleBasedDetails` part of a calendar.
-  - Omitting the property will default to `false`.
+    - Omitting the property will default to `false`.
 
 ## [v1.2.4](https://github.com/Altarok/gantt-this/releases/tag/1.2.4), 2026-09-14
 
@@ -27,25 +24,25 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 **Features**
 
 - Toolbar improvements:
-  - Bar, Point and Group are now icon buttons by @CePeU in #6
-  - Added faster tooltips
-  - Toolbar can now be moved to below Gantt chart with new setting
+    - Bar, Point and Group are now icon buttons by @CePeU in #6
+    - Added faster tooltips
+    - Toolbar can now be moved to below Gantt chart with new setting
 - Use filename as fallback tooltip title if event's name-property is empty
 - CSS improvements
 
 **Bugfixes**
 
 - Removed default group 'general' from event creation
-  - -> Group can now contain vertical-line events and eras
+    - -> Group can now contain vertical-line events and eras
 - Zoom and Pan buttons no longer broken when upper and lower bound given
 - Edge case behaviour on maximum zoom no longer broken
-  - Maximum zoom now shows 4 dates
+    - Maximum zoom now shows 4 dates
 
 ## [v1.2.2](https://github.com/Altarok/gantt-this/releases/tag/1.2.2), 2026-08-28
 
 - Minor CSS fixes like:
-  - Increase readability of era text
-  - Fix color of arrowhead
+    - Increase readability of era text
+    - Fix color of arrowhead
 - Added documentation in https://altarok.github.io/gantt-this/
 
 ## [v1.2.1](https://github.com/Altarok/gantt-this/releases/tag/1.2.1), 2026-08-26
@@ -53,16 +50,16 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 - _Timestamp events now have text descriptions._
 - Added command which adds all missing Gantt properties to the current file (matching your renamed property keys)
 - Settings:
-  - Default calendar selection goes from `text` to `dropdown`
-  - Default group selection added, also `dropdown`
-  - You can no longer delete the default group/calendar
+    - Default calendar selection goes from `text` to `dropdown`
+    - Default group selection added, also `dropdown`
+    - You can no longer delete the default group/calendar
 - Add fallback implementation for Gregorian calendar
 
 ## [v1.2.0](https://github.com/Altarok/gantt-this/releases/tag/1.2.0), 2026-08-26
 
 - Added predecessors and successors to event properties. Optional list properties
-  - Added option to *highlight related events*
-  - Added option to *connect related events with directional arrows*
+    - Added option to *highlight related events*
+    - Added option to *connect related events with directional arrows*
 - Added cooldown to re-rendering of Gantt chart. Set it to anything from 0 to 30 seconds.
 - Bases: add new setting to the base itself to be able to use lower and upper bound date with fantasy calendar instead
   of `gregorian`.
@@ -84,24 +81,24 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 ## [v1.1.7](https://github.com/Altarok/gantt-this/releases/tag/1.1.7), 2026-08-21
 
 - Add optional suffix to descriptive date: "today +-X"
-  - X gets interpreted as days for now, more options to come
+    - X gets interpreted as days for now, more options to come
 - Sort and cleanup plugin settings
-  - New setting: hide moons
-  - New setting: choose color for hover effect
+    - New setting: hide moons
+    - New setting: choose color for hover effect
 - Random color for new groups and calendars
 
 ## [v1.1.6](https://github.com/Altarok/gantt-this/releases/tag/1.1.6), 2026-08-19
 
 - *Bases*: Improved layout of custom tooltip - define what you want to see
 - *Bases*: Show file preview when hovering while holding CTRL
-  - Key will be configurable in the next update
+    - Key will be configurable in the next update
 - Move vertical hover overlay of events to **behind** event symbols
 - Improve naming of frontmatter property names related to calendars
 
 ## [v1.1.5](https://github.com/Altarok/gantt-this/releases/tag/1.1.5), 2026-08-18
 
 - **Bases feature**: Improved tooltip layout in bases
-  - The tooltip title prefix `Day:xyz` prefix is gone
+    - The tooltip title prefix `Day:xyz` prefix is gone
 
 **Bugfix**
 
@@ -119,7 +116,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 ## [v1.1.3](https://github.com/Altarok/gantt-this/releases/tag/1.1.3), 2026-08-18
 
 - New plugin Settings lets you decide which button to use while scrolling to zoom / pan.
-  - With this you will be able to just scroll over a chart without breaking the scroll
+    - With this you will be able to just scroll over a chart without breaking the scroll
 - General grammar and description improvements
 
 ## [v1.1.2](https://github.com/Altarok/gantt-this/releases/tag/1.1.2), 2026-08-17
@@ -130,12 +127,12 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 - *__Includes Bases__* in the most basic version. You will be able to do the following:
 - Use bases to see your fantasy Gantt charts. This comes with
-  - Have all your charts in 1 file
-  - Manually select which folders to use for your events
-    - Filter `file` `in folder` `foo/bar` to see events in this folder __**including**__ sub-folders
-    - Filter `folder` `is` `foo/bar` to see events in this folder __**not including**__ sub-folders
-  - Set up a lower and upper date range for each chart individually (which will reference your default calendar)
-  - See the amount of found events in the top-left corner
+    - Have all your charts in 1 file
+    - Manually select which folders to use for your events
+        - Filter `file` `in folder` `foo/bar` to see events in this folder __**including**__ sub-folders
+        - Filter `folder` `is` `foo/bar` to see events in this folder __**not including**__ sub-folders
+    - Set up a lower and upper date range for each chart individually (which will reference your default calendar)
+    - See the amount of found events in the top-left corner
 - Stars and octagons are available
 - Release done because the last one failed due to GitHub hickup. This should have been 1.1.0
 
@@ -144,7 +141,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 - Add setting for default event symbol
 - Calendars now may contain an optional outputFormat (to display dates differently from input format in event notes)
 - A year-only date is now a valid option
-  - Points to January 1st for now, a setting will allow to interpret it as a 1-year timespan
+    - Points to January 1st for now, a setting will allow to interpret it as a 1-year timespan
 
 **Bugfixes**
 
@@ -154,7 +151,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 ## [v1.0.2](https://github.com/Altarok/gantt-this/releases/tag/1.0.2), 2026-08-14
 
 - Setting: Makes `gantt-item` checkbox optional.
-  - If active, this saves you 1 frontmatter property per event, but gives less control.
+    - If active, this saves you 1 frontmatter property per event, but gives less control.
 - Make descriptive date `"today"` work for non-Gregorian calendars, for code-blocks.
 
 **Bugfix**
@@ -165,9 +162,9 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 - Improved grammar in settings, removed typos.
 - "today" is now a valid date for events. This enables you to:
-  - Mark the current day. (e.g. with a `vertical-line` event)
-  - Define an event with an open end. (start: x, end: `today`)
-    - Gregorian only for now
+    - Mark the current day. (e.g. with a `vertical-line` event)
+    - Define an event with an open end. (start: x, end: `today`)
+        - Gregorian only for now
 
 **Bugfix**
 
@@ -178,14 +175,14 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 - Improved *mobile support* with touch events.
 - Added panning with CTRL key (Win + MacOS).
 - Added n-cornered shapes function and added triangle and hexagon as displayTypes by @CePeU
-  - Added n-shaped overlays
+    - Added n-shaped overlays
 - Added pentagon as symbol type and fixed hexagon and diamond classes by @CePeU
 - Added start- and end days for calendars. They can end now instead of going forever.
 - Added attribute 'displayName' to events and calendars. Use `""` to not show any name.
 - Added optional post-scriptum for calendar dates ("BC"/"AD").
 - Settings
-  - Make zoom and pan controls switchable
-  - Add ribbon icon
+    - Make zoom and pan controls switchable
+    - Add ribbon icon
 
 **Bugfixes**
 
@@ -196,8 +193,8 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 - Added intelligent minimum and maximum for zoom.
 - Added code block content parsing:
-  - Added lower and upper bound ranges for initial view via code block.
-  - Added center date for initial focus via code block.
+    - Added lower and upper bound ranges for initial view via code block.
+    - Added center date for initial focus via code block.
 - Shorten mouse overlay lines to only be visible above related calendar.
 - Added optional list of moons; including color, offset and cycle
 
@@ -219,7 +216,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 ## [v0.5.1](https://github.com/Altarok/gantt-this/releases/tag/0.5.1), 2026-08-04
 
 - New Contributor: `CePeU`
-  - Small fix of group icon and settings description by @CePeU
+    - Small fix of group icon and settings description by @CePeU
 - Added colored eras.
 - Fixed offset calculation for calendar definitions.
 - Added short name property of calendar months.
@@ -232,7 +229,7 @@ Adapt to new Obsidian settings (version 1.13+).
 ## [v0.4.1](https://github.com/Altarok/gantt-this/releases/tag/0.4.1), 2026-07-28
 
 - Changed width of code block creator modal to 90%.
-- Added setting: Show row of buttons at the end of toolbarContainer to toggle group visibility.
+- Added setting: Show row of buttons at the end of toolbar to toggle group visibility.
 - Overhaul German version of README.
 
 ## [v0.4.0](https://github.com/Altarok/gantt-this/releases/tag/0.4.0), 2026-07-28

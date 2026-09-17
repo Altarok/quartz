@@ -1,17 +1,20 @@
 ---
 title: Calendar Definitions
-order: 3
 ---
-
-# Calendar properties
 
 ## Calendar Frontmatter Properties
 
-If you use custom time systems or fictional calendars in your vault, you can define them using a separate note:
+If you use custom time systems or fictional calendars in your vault, you can define them using a separate note.
+For ease of understanding we will call it a calendar note. So there are 3 types of notes:
+1) a note (the normal Obsidian note)
+2) a calendar note (a note that holds calendar definitions)
+3) an event note (a note that is an event in one of your calendars)
+
+To mark a note as a calendar note you need to give it a special frontmatter property:
 
 | Property                    | Type / Values | Optional? | Default / Fallback | Description                                                                         |
 |:----------------------------|:--------------|:----------|:-------------------|:------------------------------------------------------------------------------------|
-| `gantt-calendar-definition` | String        | **No**    | *None*             | Unique identifier of the calendar for referencing via `gantt-calendar` in an event. |
+| `gantt-calendar-definition` | String        | **No**    | *None*             | Unique identifier of the calendar for referencing via `gantt-calendar` in an event note. |
 
 ## Calendar YAML Block Properties
 
@@ -24,8 +27,37 @@ If you use custom time systems or fictional calendars in your vault, you can def
   the epoch relative to the plugin's reference. The plugin converts this to an internal numeric offset to day zero.
   Irrelevant if you use only one calendar.
 - **`startDay`**: (epoch offset definition, optional) Start date for this calendar; converted to a numeric
-  offset for range checks.
-- **`endDay`**: (epoch offset definition, optional) End date for this calendar; converted to a numeric offset
+  offset for range checks. As this is a calender definition and the calender is a linear numeric timeline which goes into both direction (negative and positive) counting from zero you either need to input the number of DAYS OR the date as defined in your calendar as a positive or negative number.
+  *Example:*
+  *Imagine you want to do an offset of one year and one day for a calendar which has 345 days.*
+  *`startDay: +-x # x is days, not years!`*
+  *`startDay: -346 # x is days, as offset into the negative!`*
+  *`startDay: +346 # x is days, as offset into the positive!`*
+
+alternativly you can do:
+
+```
+startDay:   
+  year: +-x   
+  month: y   
+  day: z   
+```
+
+```
+startDay:   
+  year: 0   
+  month: 12   
+  day: 1   
+```
+OR if every line counts
+
+`startDay: {year: 0, month: 12, day: 1}`
+
+**Be aware that only year can be 0 or negative.
+Month and day in this notation can never be 0 or negative.**
+
+
+- **`endDay`**: (epoch offset definition, optional) End date for this calendar; converted to a numeric offset. See `startDay` the same applies here.
   for range checks.
 - **`offsetToDayZero`**: (number, calculated) Not usually set by users — the plugin writes/calculates this value when
   reading the calendar from YAML. It represents days offset to the plugin's internal day-zero.

@@ -1,9 +1,6 @@
 ---
-title: Bases
-order: 40
+title: Bases Integration
 ---
-
-# Bases Integration
 
 Bases offer an integrated way to visualize and manage your timeline data directly within Obsidian views alongside standard table layouts.
 
