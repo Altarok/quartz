@@ -38,4 +38,8 @@ moons:                     # optional moon, totally irrelevant for the calendar
 ```
 ````
 
-Back to [[example-calendars/|calendar examples]].
+Other examples:
+
+- [[gregorian-calendar|Gregorian (ISO-8601)]]
+- [[mayan-calendar|]]
+- [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]]

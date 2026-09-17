@@ -48,8 +48,6 @@ adSuffix: 'AD'                                         # optional date suffix fo
 
 Other examples:
 
-- [21-gregorian-calendar.md](21-gregorian-calendar.md)
-- [22-mayan-calendar.md](22-mayan-calendar.md)
-- [23-dsa-ttrpg-calendar.md](23-dsa-ttrpg-calendar.md)
-
-Back to [[example-calendars/|calendar examples]].
+- [[gregorian-calendar|Gregorian (ISO-8601)]]
+- [[mayan-calendar|]]
+- [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]]

@@ -56,3 +56,9 @@ moons:                         # optional list of moons
    - {offset: 10, cycle: 28, color: "#928440"}
 ```
 ````
+
+Other examples:
+
+- [[gregorian-calendar|Gregorian (ISO-8601)]]
+- [[mayan-calendar|]]
+- [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]]
