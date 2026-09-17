@@ -121,7 +121,7 @@ plugins:
     enabled: false
   - source: "@quartz-community/unlisted-pages"
     enabled: true
-    options: { }
+    options: {}
     order: 45
   - source: "@quartz-community/encrypted-pages"
     enabled: true
@@ -222,7 +222,7 @@ plugins:
     enabled: false
     options:
       provider: giscus
-      options: { }
+      options: {}
     layout:
       position: afterBody
       priority: 10
@@ -239,7 +239,7 @@ plugins:
     enabled: false
   - source: "@quartz-community/spacer"
     enabled: true
-    options: { }
+    options: {}
     order: 25
     layout:
       position: left
@@ -247,7 +247,7 @@ plugins:
       display: mobile-only
   - source: "@quartz-community/bases-page"
     enabled: true
-    options: { }
+    options: {}
     order: 50
   - source: "@quartz-community/note-properties"
     enabled: true
@@ -257,7 +257,7 @@ plugins:
         - description
         - tags
         - aliases
-      excludedProperties: [ ]
+      excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
       language: yaml
@@ -282,19 +282,19 @@ layout:
   byPageType:
     "404":
       positions:
-        beforeBody: [ ]
-        left: [ ]
-        right: [ ]
-    content: { }
+        beforeBody: []
+        left: []
+        right: []
+    content: {}
     folder:
       exclude:
         - reader-mode
       positions:
-        right: [ ]
+        right: []
     tag:
       exclude:
         - reader-mode
       positions:
-        right: [ ]
-    canvas: { }
-    bases: { }
+        right: []
+    canvas: {}
+    bases: {}

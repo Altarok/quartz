@@ -1,9 +1,6 @@
 ---
 title: DSA TTRPG Calendar
-order: 23
 ---
-
-# The Dark Eye (DSA) TTRPG Calendar
 
 ````markdown
 ---

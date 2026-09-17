@@ -13,7 +13,7 @@ started:
 - [[03-calendars|Calendar Definitions]]
 - [[04-events|Event Definitions]]
 - [[05-plugin-settings|Plugin Settings]]
-- [[20-example-calendars|Example Calendars]]
+- [[example-calendars/|Example Calendars]]
     - [[21-gregorian-calendar|Gregorian Calendar]]
     - [[22-mayan-calendar|Mayan Calendar]]
     - [[23-dsa-ttrpg-calendar|The Dark Eye (DSA) Calendar]]

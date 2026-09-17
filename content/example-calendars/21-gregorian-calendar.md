@@ -1,11 +1,9 @@
 ---
 title: Gregorian Calendar
-order: 21
 ---
 
-# Gregorian Calendar
-
-The global standard Earth time-tracking profile using true dynamic leap-year calculations.
+The globa
+l standard Earth time-tracking profile using true dynamic leap-year calculations.
 Includes 365 days, 366 in leap years, 1 moon, 12 months of different lengths, and more.
 
 ````markdown
@@ -48,4 +46,10 @@ adSuffix: 'AD'                                         # optional date suffix fo
 ```
 ````
 
-Back to [[20-example-calendars|calendar examples]].
+Other examples:
+
+- [21-gregorian-calendar.md](21-gregorian-calendar.md)
+- [22-mayan-calendar.md](22-mayan-calendar.md)
+- [23-dsa-ttrpg-calendar.md](23-dsa-ttrpg-calendar.md)
+
+Back to [[example-calendars/|calendar examples]].

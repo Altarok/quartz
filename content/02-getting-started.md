@@ -25,7 +25,7 @@ Without calendar and events, the chart will render nothing. Follow the steps bel
 First, create a new folder in your vault for calendars, for example `calendardefinitions`. In the settings you can tell the plugin to only look for calendars in this folder.
 Then, create a new note inside *this* folder.
 
-Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[20-example-calendars|Example Calendars]] or this example of one of our favorite TTRPGs:
+Calendar definitions are stored in YAML code blocks inside dedicated Markdown notes. Feel free to copy any example of our [[example-calendars/|Example Calendars]] or this example of one of our favorite TTRPGs:
 
 ````markdown
 ---

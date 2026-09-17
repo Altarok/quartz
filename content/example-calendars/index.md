@@ -1,6 +1,5 @@
 ---
 title: Example calendars
-order: 20
 ---
 
 # Example calendars
