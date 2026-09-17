@@ -2,8 +2,7 @@
 title: Gregorian Calendar
 ---
 
-The globa
-l standard Earth time-tracking profile using true dynamic leap-year calculations.
+The global standard Earth time-tracking profile using true dynamic leap-year calculations.
 Includes 365 days, 366 in leap years, 1 moon, 12 months of different lengths, and more.
 
 ````markdown
