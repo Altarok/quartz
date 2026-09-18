@@ -14,13 +14,13 @@ If given and set to the name of any header in the note, ...
 - Clicking the event will open the note and focus the header.
 - Obsidian's native hover preview will also show the header.
 
-> [!example]
+> [!example]+ Example
 > ```
 > ---
 > gantt-linkToHeader: [[WhatICanDoToday#EveningMeal]]
 > ---
 > ```
 
-> [!tip]
+> [!tip]+ Tips
 > Property type is `text`, its usage is optional.
 > You can rename it to you liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
