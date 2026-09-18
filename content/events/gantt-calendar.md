@@ -9,7 +9,7 @@ tags:
 ---
 
 Specifies which calendar system an event belongs to in multi-calendar setups.
-The property `'gantt-calendar'` assigns the event to a specific calendar ID defined in your plugin settings.
+The frontmatter property `'gantt-calendar'` assigns the event to a specific calendar ID defined in your plugin settings.
 
 If given and set to a valid calendar ID, ...
 
@@ -18,7 +18,7 @@ If given and set to a valid calendar ID, ...
 
 If omitted, the event defaults to your primary calendar.
 
-> [!example]- Example
+> [!example]+ Example
 > ```yaml
 > ---
 > gantt-start: 1420-05-12

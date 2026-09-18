@@ -9,7 +9,7 @@ tags:
 ---
 
 Events can be linked sequentially to show cause, effect, or task order.
-The properties `'gantt-predecessors'` & `'gantt-successors'` are meant to build these linear connections.
+The frontmatter properties `'gantt-predecessors'` & `'gantt-successors'` are meant to build these linear connections.
 
 Both properties accept a list of links to other event notes.
 
@@ -19,7 +19,7 @@ When activated in settings and hovering over an event:
 - **Successors**: Draws arrows from the current event to its sSuccessors.
 - Hovering an event also highlights its connected chain.
 
-> [!example]- Event example: "Aragorn's coronation"
+> [!example]+ Event example: "Aragorn's coronation"
 > ```yaml
 > ---
 > gantt-predecessors:
@@ -33,7 +33,7 @@ When activated in settings and hovering over an event:
 
 ---
 
-> [!abstract]- Property traits
+> [!info]- Property traits
 > Both property's type is `list`, their usage is optional.
 > You can rename them to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
 >

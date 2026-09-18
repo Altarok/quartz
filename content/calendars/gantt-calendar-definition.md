@@ -24,6 +24,6 @@ You can see multiple examples [[example-calendars/index|here]].
 
 ---
 
-> [!abstract]- Property traits
+> [!info]- Property traits
 > Property type is `text`, its usage is mandatory in calendar definition notes.
 > Unlike event properties, this root key is fixed and cannot be renamed in settings.

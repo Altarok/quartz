@@ -37,6 +37,9 @@ Customize the YAML frontmatter keys the plugin looks for in your Markdown notes:
 *Renaming these properties in settings allows you to align the plugin with existing Dataview or frontmatter conventions in your vault.*
 
 
+---
+---
+
 # Plugin Settings
 
 ## Data paths
