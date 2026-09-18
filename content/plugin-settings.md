@@ -1,67 +1,88 @@
 ---
 title: Plugin Settings
-order: 5
+last-upated-plugin-version: 1.3.0
 ---
 
-# Plugin Settings
+The plugin's settings are distributed among 4 setting groups, the latter one being split into and 2 sub-pages.
 
-Global plugin settings allow you to configure default folders, set fallback colors, and manage custom calendar rules across your vault.
+1. [[#Data paths]] - define which files to use for the chart
+2. [[#Calendars]] - manage your calendars
+3. [[#Groups]] - manage your groups
+4. [[#Advanced]]
+    - [[#Display and controls]]
+    - [[#Frontmatter properties]]
 
-## General Configuration
+# Data paths
 
-- **Default Events Folder:** Specify the root folder where the plugin searches for event notes (e.g., `Events`). If left blank, the entire vault is scanned.
-- **Search Sub-folders for Events:** Enable this toggle to recursively search all nested subdirectories inside the designated events folder.
-- **Default Calendar Folder:** Define the folder path where custom calendar definitions are stored (e.g., `calendardefinitions`).
-- **Search Sub-folders for Calendars:** Toggle whether subdirectories inside the calendar folder are scanned for YAML definitions.
+This section tells the plugin where to search for event and calendar notes.
 
-## Calendar & Group Management
+- `Event path`: Folder to search for Gantt event definitions. Can be any folder including vault root.
+    - Default: root
+- `Search recursively`: Toggle to search `Event path` recursively.
+    - Default: false
+- `Calendar path`: Folder to search for calendar definitions. Can be any folder including vault root.
+    - Default: root
+- `Search recursively`: Toggle to search `Calendar path` recursively.
+    - Default: false
 
-Manage active calendars, assign colors, and control lane order:
+# Calendars
 
-- **Active Calendars:** Add or remove calendars by their unique `id`. Toggle visibility to hide entire calendar systems without deleting definitions.
-- **Default Group Options:** Pre-define groups to set default colors, toggle default visibility, and adjust lane sorting order on your charts.
-- **Fallback Colors:** Set global default colors for timeline markers, bars, and icons when no specific event, group, or calendar color is defined.
+This section manages your calendars.
+Click the `'+'` button to create a new calendar.
 
-> [!tip] Override Priority
-> Settings act as vault-wide defaults. You can always override global colors, property names, or folder paths locally using specific code block parameters or Base view configurations.
+> [!tip] Calendar IDs must be unique and case-sensitive!
 
-## Property Names & Key Mappings
+- You can toggle the calendar visibility by clicking the `eye` button.
+- You can choose (or reset) the calendar's color, this applies to related events lacking a color.
+- You can sort the calendar priorities by dragging the vertical line button.
+- You can delete a calendar. This will not remove it from any charts, only delete color, visibility and priority.
 
-Customize the YAML frontmatter keys the plugin looks for in your Markdown notes:
+# Groups
 
-- **Item Marker:** Default is `gantt-item`. Marks a note as an event target.
-- **Start / End Dates:** Defaults are `gantt-start` and `gantt-end`.
-- **Name & Group:** Defaults are `gantt-name` and `gantt-group`.
-- **Calendar & Symbol:** Defaults are `gantt-calendar` and `gantt-symbol`.
+See [[#Calendars]], it's 100% the same logic.
 
-*Renaming these properties in settings allows you to align the plugin with existing Dataview or frontmatter conventions in your vault.*
+# Advanced
 
+The following settings are hidden in sub-pages.
 
----
----
+## Display and controls
 
-# Plugin Settings
+## Frontmatter Properties
 
-## Data paths
+This section lets you rename the frontmatter properties used by the plugin. Note that you can't change the property types (yet). ***Doing so enables you to use the same properties for multiple plugins***.
 
-![[Pasted image 20260905163026.png]]
+#### Calendar Frontmatter Properties
 
-### Source Paths
+- **Calendar definition**: Frontmatter key used to identify a calendar definition file.
+    - Default: `gantt-calendar-definition`. See [[gantt-calendar-definition]]
 
-- **`eventPath`**: Folder to search for Gantt event definitions. Can be set to the vault root or a subfolder.
-- **`eventPathSearchRecursive`**: Toggle to search `eventPath` recursively (include subfolders).
-- **`calendarPath`**: Folder to search for calendar (calendar definition) Markdown files.
-- **`calendarPathSearchRecursive`**: Toggle to search `calendarPath` recursively.
+#### Event Frontmatter Properties
+
+- **Event marker**: Primary boolean frontmatter key that marks a file as containing Gantt events.
+    - Default: `gantt-item`.
+- **Marker may be optional**: If enabled, the primary marker becomes optional. This saves one property per file but reduces explicit control.
+    - Default: true (meaning it *is* optional)
+- **Event calendar**: Frontmatter key that defines which calendar an event belongs to. Default:
+  `gantt-calendar`.
+- **Event name**: Frontmatter key for the event name. Default: `gantt-name`.
+- **Event start date**: Frontmatter key for the event start date (mandatory). Default:
+  `gantt-start`.
+- **Event end date**: Frontmatter key for the event end date (optional). Default: `gantt-end`.
+- **Event color**: Frontmatter key for event color (hex or name). Default: `gantt-color`.
+- **Event group**: Frontmatter key for the event's group (used to sort and color events). Default: `gantt-group`.
+- **Event symbol**: Frontmatter key to override the event symbol per-event. Default: `gantt-symbol`.
+- **Event icon**: Frontmatter key for an icon name (Lucide icons). Default: `gantt-displayIcon`.
+- **Event icon color**: Frontmatter key for the icon color. Default: `gantt-displayIconColor`.
+- **Target header**: Frontmatter key for a note-internal header; when set clicking the event will
+  navigate to that header instead of top-of-note. Default: `gantt-linkToHeader`.
+
+------------
 
 ### Default Values
 
 - **`defaultCalendar`**: Fallback calendar used when an event does not specify a calendar. Default: `gregorian`.
 - **`fallbackColor`**: Default color used for events when no color is provided. Default: `#1565C0`.
 - **`fallbackColorForIcons`**: Default icon color when an event has an icon but no icon color. Default: `#FF8800`.
-
-## Calendars
-
-![[Pasted image 20260905163148.png]]
 
 ## Groups
 
@@ -79,9 +100,9 @@ Two lists display the calendars and groups currently known to the plugin. Both l
 #### Entry Properties
 
 - **ID**: A unique identifier
-  - Used by frontmatter `gantt-calendar`/`gantt-calendar-definition` for calendars.
-  - Used by frontmatter `gantt-group` for groups.
-  - *Note: These are __NOT CASE-SENSITIVE__!*
+    - Used by frontmatter `gantt-calendar`/`gantt-calendar-definition` for calendars.
+    - Used by frontmatter `gantt-group` for groups.
+    - *Note: These are __NOT CASE-SENSITIVE__!*
 - **Visibility**: Toggles whether related events are shown on the chart.
 - **Color**: Optional color applied to color related events and axis.
 - **Priority**: Order of appearance in the list determines sorting in the chart.
@@ -96,45 +117,21 @@ Two lists display the calendars and groups currently known to the plugin. Both l
 ### Advanced UX Settings
 
 - **Event symbol**: Default symbol for timestamp events.
-  - Options: `point`, `triangle`, `box`, `diamond`, `pentagon`, `hexagon`, `octagon`, `star` and
-    `vertical-line`.
+    - Options: `point`, `triangle`, `box`, `diamond`, `pentagon`, `hexagon`, `octagon`, `star` and
+      `vertical-line`.
 - **Add ribbon icon**: Show a ribbon icon in the Obsidian UI to quickly open a live chart preview.
 - **Add plugin commands**: Add plugin commands (currently work-in-progress / disabled in UI).
 - **Show overlay box**: Show an overlay box around an event when hovered.
 - **Show overlay vertical line**: Show a vertical line on hover to compare dates.
 - **Group visibility toggles**: Add toolbar buttons that allow hiding/showing groups individually.
 - **Restrict minimum and maximum zoom**: Automatically constrain min/max zoom to reasonable bounds for the current data.
-  - Minimum zoom would fit your complete dataset on the screen.
-  - Maximum zoom would show adjacent days.
+    - Minimum zoom would fit your complete dataset on the screen.
+    - Maximum zoom would show adjacent days.
 - **Zoom key**: Key to hold while scrolling to zoom in or out.
 - **Pan key**: Key to hold while scrolling to pan horizontally.
-  - Both options offer Ctrl, Alt, and Shift. (Ctrl, Option, Shift on MacOS)
+    - Both options offer Ctrl, Alt, and Shift. (Ctrl, Option, Shift on MacOS)
 - **Color-code calendar axis**: Apply calendar color to its axis (may be visually noisy; optional).
 - **Vertical line event width**: Numeric width, in pixels, for events drawn as vertical lines (slider 1–10).
-
-### Frontmatter Properties
-
-These settings let you adapt the plugin to use different frontmatter keys in your notes.
-
-- **Gantt event marker**: Primary boolean frontmatter key that marks a file as containing Gantt events.
-  Default: `gantt-item`.
-- **Marker may be optional**: If enabled, the primary marker becomes optional (saves one property per
-  file but reduces explicit control).
-- **Calendar definition**: Frontmatter key used to identify a calendar definition file. Default:
-  `gantt-calendar-definition`.
-- **Event calendar**: Frontmatter key that defines which calendar an event belongs to. Default:
-  `gantt-calendar`.
-- **Event name**: Frontmatter key for the event name. Default: `gantt-name`.
-- **Event start date**: Frontmatter key for the event start date (mandatory). Default:
-  `gantt-start`.
-- **Event end date**: Frontmatter key for the event end date (optional). Default: `gantt-end`.
-- **Event color**: Frontmatter key for event color (hex or name). Default: `gantt-color`.
-- **Event group**: Frontmatter key for the event's group (used to sort and color events). Default: `gantt-group`.
-- **Event symbol**: Frontmatter key to override the event symbol per-event. Default: `gantt-symbol`.
-- **Event icon**: Frontmatter key for an icon name (Lucide icons). Default: `gantt-displayIcon`.
-- **Event icon color**: Frontmatter key for the icon color. Default: `gantt-displayIconColor`.
-- **Target header**: Frontmatter key for a note-internal header; when set clicking the event will
-  navigate to that header instead of top-of-note. Default: `gantt-linkToHeader`.
 
 ### Notes & Usage Tips
 
@@ -149,20 +146,24 @@ These settings let you adapt the plugin to use different frontmatter keys in you
 ## Display and Controls
 
 ### Events
+
 ![[Pasted image 20260905163504.png]]
 
 ### Event overlay
+
 ![[Pasted image 20260905163646.png]]
 
 ### Zooming and Panning
+
 ![[Pasted image 20260905163723.png]]
 
 ### Gant chart
+
 ![[Pasted image 20260905163747.png]]
 
 ### Plugin
-![[Pasted image 20260905163810.png]]
 
+![[Pasted image 20260905163810.png]]
 
 ## Frontmatter Properties
 

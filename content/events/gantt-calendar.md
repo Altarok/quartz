@@ -1,5 +1,5 @@
 ---
-title: Event property 'gantt-calendar'
+title: Property 'gantt-calendar'
 tags:
   - event-properties/optional
 ---
@@ -37,7 +37,7 @@ If omitted, the event defaults to your primary calendar.
 
 ---
 
-> [!abstract]- Property traits
+> [!info]- Property traits
 > Property type is text, its usage is optional.
 > You can rename it to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]].
 

@@ -2,6 +2,10 @@
 title: Mayan Calendar
 ---
 
+[< Back to example calendars](example-calendars/index)
+
+---
+
 While the world didn't end in 2012, this calendar did. The Maya did not count years, but phases of different length.
 One of these was 360 days long—close to a solar year. They did not use leap days.
 

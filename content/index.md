@@ -1,6 +1,5 @@
 ---
-title: Documentation
-order: 0
+title: Index
 ---
 
 # Gantt This Documentation

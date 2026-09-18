@@ -10,21 +10,22 @@ tags:
 
 ![Showcase](images/showcase.png)
 
-All events can be placed into groups which are visible at the left of the Gantt chart.
-The frontmatter property `'gantt-group'` is meant to do that.
-The events in the showcase are sorted into the groups `'symbols'`, `'icons'`, and `'general'` (see left side of screenshot).
+Events can be organized into vertical groups displayed on the left side of the Gantt chart.
+The frontmatter property `'gantt-group'` assigns an event to a designated row.
+
+In the example above, events are categorized into the `'symbols'`, `'icons'`, and `'general'` groups.
 
 > [!tip] Tips
-> - An event without a group will be given the fallback group `'general'`.
 > - Events of type `era` or `vertical-line` not given a group will span the entire height of the chart. As seen on the right side of the showcase.
+> - Other events lacking a group will be placed into the group `'general'`.
 
-# Managing groups
+### Managing groups
 
-Groups can be managed in the Plugin settings. This is optional, but doing so allows you to:
+Groups can be managed in the [[plugin-settings#Groups|Plugin Settings > Groups]]. This is optional, but doing so allows you to:
 
-- Sort groups by priority.
-- Define a default color for events of that group.
-- Toggle visibility for events of that group.
+- Reorder groups by priority.
+- Set a default color for all events in a specific group.
+- Toggle visibility for an entire group.
 
 ---
 

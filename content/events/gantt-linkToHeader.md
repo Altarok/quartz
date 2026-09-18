@@ -17,7 +17,7 @@ If given and set to the name of any header in the note, ...
 - Obsidian's native hover preview will also show the header.
 
 > [!example]+ Example
-> At this to a note named "Daily tasks".
+> Add this to a note named "Daily tasks".
 > When the event is clicked, the note "Daily tasks" will be opened and focused at the header "Take out the trash".
 >
 > ```yaml
