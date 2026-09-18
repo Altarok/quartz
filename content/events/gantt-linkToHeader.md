@@ -1,8 +1,10 @@
 ---
 title: Event property 'gantt-linkToHeader'
 tags:
-  - event-properties/optional
+  - frontmatter/optional
 ---
+
+[< Back to event overview](events/index)
 
 ---
 
@@ -14,13 +16,19 @@ If given and set to the name of any header in the note, ...
 - Clicking the event will open the note and focus the header.
 - Obsidian's native hover preview will also show the header.
 
-> [!example]+ Example
+> [!example]- Example
+> At this to a note named "Daily tasks".
+> When the event is clicked, the note "Daily tasks" will be opened and focused at the header "Take out the trash".
+>
 > ```yaml
 > ---
-> gantt-linkToHeader: [[WhatICanDoToday#EveningMeal]]
+> gantt-linkToHeader: [[Take out the trash]]
 > ---
 > ```
 
-> [!tip]+ Tips
+
+---
+
+> [!info]- Property traits
 > Property type is `text`, its usage is optional.
-> You can rename it to you liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
+> You can rename it to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]

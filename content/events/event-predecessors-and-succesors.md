@@ -1,8 +1,10 @@
 ---
 title: Event predecessors & successors
 tags:
-  - event-properties/optional
+  - frontmatter/optional
 ---
+
+[< Back to event overview](events/index)
 
 ---
 
@@ -17,7 +19,7 @@ When activated in settings and hovering over an event:
 - **Successors**: Draws arrows from the current event to its sSuccessors.
 - Hovering an event also highlights its connected chain.
 
-> [!example]+ Event example: "Aragorn's coronation"
+> [!example]- Event example: "Aragorn's coronation"
 > ```yaml
 > ---
 > gantt-predecessors:
@@ -29,7 +31,9 @@ When activated in settings and hovering over an event:
 > ```
 > ![Aragorn's coronation](../images/predecessors-successors-example.png)
 
-> [!tip]+ Tips
+---
+
+> [!abstract]- Property traits
 > Both property's type is `list`, their usage is optional.
 > You can rename them to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
 >
