@@ -2,9 +2,9 @@
 title: Roadmap
 ---
 
-See [[changelog|changelog]] for implemented features.
+See [[changelog|Changelog]] for implemented features.
 
-> The following list is not exhaustive. It contains only features confirmed for implementation. See below for a shorthand list of unsorted ideas.
+> The following list is not exhaustive. It contains only features confirmed for implementation. See [[#Unsorted ideas|below]] for a shorthand list of unsorted ideas.
 
 ## Features to come, by priority
 
@@ -30,6 +30,8 @@ See [[changelog|changelog]] for implemented features.
 - Manage rerender cooldown depending on the content of the changed file. - CePeU
 - Add a setting for the time difference between calendar axis ticks. - Charatzu
 - Make data exportable for use in other plugins. - CePeU
+
+---
 
 ## Unsorted ideas
 

@@ -1,5 +1,5 @@
 ---
-title: Gregorian Calendar
+title: Gregorian without Year Zero
 ---
 
 [< Back to example calendars](example-calendars/index)
@@ -7,9 +7,8 @@ title: Gregorian Calendar
 ---
 
 The Gregorian calendar is the current global standard Earth time-tracking profile using true dynamic leap-year calculations.
-This version used by computers and astronomy calendars does use a year zero between year -1 BC and year +1 AD.
-
-Includes 365 days, 366 in leap years, 1 moon, 12 months of different lengths, and more.
+This official version used by human calendars *==does not use a year zero==*.
+It goes straight from year -1 BC to year +1 AD.
 
 ````markdown
 ---
@@ -24,6 +23,7 @@ sharedOffset: 0             # used to define offset between calendars
 type: "rule-based"          # mandatory. just keep this like that, see Mayan calendar for alternative
 delimiter: "-"              # mandatory. symbol used to separate your days/months/years 
 ruleBasedDetails:
+  noYearZero: true          # MAGIC HERE
   daysInStandardYear: 365   
   leapYearRule:                                        # optional leap year rule
     ruleType: "gregorian"                              # Triggers the divisible by 4, but not 100 unless 400 math - alteratives are 'interval' | 'none'
@@ -51,8 +51,10 @@ adSuffix: 'AD'                                         # optional date suffix fo
 ```
 ````
 
+Includes 365 days, 366 in leap years, 1 moon, 12 months of different lengths, and more.
+
 Other examples:
 
-- [[gregorian-cal-no-year-zero|Gregorian Calendar without Year Zero]]
+- [[gregorian-calendar|Gregorian Calendar (with year zero)]]
 - [[mayan-calendar|Mayan Calendar]]
 - [[dsa-ttrpg-calendar|DSA (TTRPG) Calendar]]

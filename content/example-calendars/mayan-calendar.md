@@ -44,4 +44,5 @@ moons:                     # optional moon, totally irrelevant for the calendar
 Other examples:
 
 - [[gregorian-calendar|Gregorian Calendar]]
+- [gregorian-cal-no-year-zero|Gregorian Calendar without Year Zero]]
 - [[dsa-ttrpg-calendar|DSA (TTRPG) Calendar]]
