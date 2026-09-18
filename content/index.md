@@ -11,7 +11,7 @@ started:
 - [[introduction|Introduction]]
 - [[getting-started|Getting Started]]
 - [[calendars|Calendars]]
-- [[events/index|Defining Events]]
+- [[events/index|Event Properties]]
 - [[plugin-settings|Plugin Settings]]
 - [[example-calendars/index|Example Calendars]]
     - [[gregorian-calendar|Gregorian Calendar]] - the global standard calendar everybody knows

@@ -27,7 +27,7 @@ There are many options to a calendar definition, most of which are optional, but
 
 > [!warning] Property Matching
 > The frontmatter value (`gantt-calendar-definition`) and the `id` field inside the YAML code block must match **exactly** (case-sensitive).
-> 
+>
 > The frontmatter property is used to quickly filter files, while the YAML property will be parsed for the plugin.
 
 Next, configure the plugin settings to locate your calendar and event files:
@@ -93,6 +93,6 @@ Congratulations! You got your first calendar and event running and displayed!
 You might like to take a look at:
 
 - [[calendars|Calendars]]
-- [[events/|Events]]
+- [[events/index|Event Properties]]
 - [[plugin-settings|Plugin Settings]]
 - [[faq|FAQ]]
