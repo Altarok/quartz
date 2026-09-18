@@ -4,8 +4,9 @@ title: Changelog
 
 See [[roadmap|Roadmap]] for upcoming features.
 
-> Disclaimer: Mentioned frontmatter properties represent their default keys;
-> you may have renamed them in your vault.
+---
+
+> Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
 ## [v1.3.0.](https://github.com/Altarok/gantt-this/releases/tag/1.3.0), 2026-09-17
 
