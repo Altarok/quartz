@@ -5,3 +5,14 @@
 a.internal {
   background-color: transparent !important;
 }
+
+/* Force canvas container to render link strokes at visible opacity */
+.graph-container canvas {
+  opacity: 1 !important;
+}
+
+/* Ensure CSS variable resolves properly for canvas JS */
+:root {
+  --gray: #888888 !important; /* Forces a solid mid-gray for unhovered links */
+  --lightgray: #888888 !important;
+}
