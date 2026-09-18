@@ -6,19 +6,19 @@ tags:
 
 ---
 
-Events on Gantt charts or any other type of calendar may have predecessors and successors.
-The event properties 'gantt-predecessors' & 'gantt-successors' are meant to connect events on a linear basis.
+Events can be linked sequentially to show cause, effect, or task order.
+The properties `'gantt-predecessors'` & `'gantt-successors'` are meant to build these linear connections.
 
-The plugin highlights incoming links from the specified events. Hovering over or selecting the event visually traces its upstream dependencies.
+Both properties accept a list of links to other event notes.
 
-Both properties are lists containing links to other notes.
-If given and activated in settings, ...
+When activated in settings and hovering over an event:
 
-- Hovering an event with predecessors with your mouse will show arrows from the predecessors to the left edge of event
-- Hovering an event with successors with your mouse will show arrows from the event to the left edges of its successors
+- **Predecessors**: Draws arrows from its predecessors to the **left edge** of the current event.
+- **Successors**: Draws arrows from the current event to its sSuccessors.
+- Hovering an event also highlights its connected chain.
 
 > [!example]+ Event example: "Aragorn's coronation"
-> ```
+> ```yaml
 > ---
 > gantt-predecessors:
 >   - "[[Destruction of the One Ring & Fall of Sauron]]"
@@ -30,10 +30,10 @@ If given and activated in settings, ...
 > ![Aragorn's coronation](../images/predecessors-successors-example.png)
 
 > [!tip]+ Tips
-> Property type is `list`, its usage is optional.
-> You can rename it to you liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
+> Both property's type is `list`, their usage is optional.
+> You can rename them to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
 >
-> Troubleshooting:
-> If you don't see the arrows or highlighting of related events, check [[plugin-settings#Event overlay|Plugin Settings > Event overlay]]. 
+> **Troubleshooting**: If arrows or highlights do not appear, verify that the feature is enabled in [[plugin-settings#Event overlay|Plugin Settings > Event overlay]].
+
 
 

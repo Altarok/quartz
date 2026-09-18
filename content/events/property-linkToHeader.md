@@ -15,7 +15,7 @@ If given and set to the name of any header in the note, ...
 - Obsidian's native hover preview will also show the header.
 
 > [!example]+ Example
-> ```
+> ```yaml
 > ---
 > gantt-linkToHeader: [[WhatICanDoToday#EveningMeal]]
 > ---
