@@ -1,10 +1,11 @@
 ---
-title: Calendar property 'gantt-calendar-definition'
+title: Calendar Definition
 tags:
-  - frontmatter/calendar/mandatory
+  - frontmatter/mandatory
+  - yaml/mandatory
 ---
 
-[< Back to calendar overview](calendars/index.md)
+[< Back to calendar overview](calendars/)
 
 ---
 
