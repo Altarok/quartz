@@ -1,7 +1,7 @@
 ---
-title: Event property 'gantt-linkToHeader'
+title: Property 'gantt-linkToHeader'
 tags:
-  - frontmatter/optional
+  - event-properties/optional
 ---
 
 [< Back to event overview](events/index)

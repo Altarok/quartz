@@ -1,5 +1,7 @@
 ---
 title: Event Properties
+tags:
+  - event-properties
 ---
 
 ![Showcase](images/showcase.png)
@@ -147,15 +149,6 @@ gantt-color: yellow | '#FFFF00' | (omit for default color - configurable in sett
 > - default color for group in property `gantt-group`
 > - default color for calendar in property `gantt-calendar`
 > - global fallback color (always exists)
-
-## Icons
-
-Each event except `vertical-line` can be decorated with an SVG icon. The icons are pulled from Obsidian's cache. To add and color an icon use the following properties. Remember to rename the properties to your liking.
-
-```yaml
-gantt-displayIcon: heart
-gantt-displayIconColor: red | (omit or leave empty for default color - configurable in settings)
-```
 
 ## Special dates
 

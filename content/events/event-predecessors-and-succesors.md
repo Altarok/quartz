@@ -1,7 +1,7 @@
 ---
 title: Event predecessors & successors
 tags:
-  - frontmatter/optional
+  - event-properties/optional
 ---
 
 [< Back to event overview](events/index)

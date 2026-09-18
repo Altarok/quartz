@@ -1,7 +1,7 @@
 ---
 title: Event icons
 tags:
-  - frontmatter/optional
+  - event-properties/optional
 ---
 
 [< Back to event overview](events/index)
@@ -10,9 +10,9 @@ tags:
 
 ![Showcase](images/showcase.png)
 
-All events except `vertical-line` can be decorated with an icon as shown above.
+All events except `vertical-line` can be decorated with an SVG icon as shown above.
 Icons can be colored.
-The frontmatter properties `'gantt-displayIcon'` & `'gantt-displayIconColor'` are meant to define the icon of your choice.
+The frontmatter properties `'gantt-displayIcon'` & `'gantt-displayIconColor'` are meant to add and color the icons of your choice.
 
 **Tips**:
 
