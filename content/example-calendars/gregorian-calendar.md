@@ -7,9 +7,9 @@ title: Gregorian Calendar
 ---
 
 The Gregorian calendar is the current global standard Earth time-tracking profile using true dynamic leap-year calculations.
-This version used by computers and astronomy calendars does use a year zero between year -1 BC and year +1 AD.
+This version (used in astronomy and computing) includes a year zero between 1 BC (-1) and 1 AD (+1).
 
-Includes 365 days, 366 in leap years, 1 moon, 12 months of different lengths, and more.
+Features 365 days (366 in leap years), 1 moon, 12 months of different lengths, and more.
 
 ````markdown
 ---
@@ -26,7 +26,7 @@ delimiter: "-"              # mandatory. symbol used to separate your days/month
 ruleBasedDetails:
   daysInStandardYear: 365   
   leapYearRule:                                        # optional leap year rule
-    ruleType: "gregorian"                              # Triggers the divisible by 4, but not 100 unless 400 math - alteratives are 'interval' | 'none'
+    ruleType: "gregorian"                              # Triggers the divisible by 4, but not 100 unless 400 math - alternatives are 'interval' | 'none'
     applyToMonthIndex: 1                               # February. first month has index 0 in this case
     extraDays: 1                                       # optional. defaults to 1 anyway
   format: ["year", "month", "day"]                     # optional. order of elements in date input (and possibly output)

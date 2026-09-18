@@ -87,6 +87,7 @@ This section handles what happens when hovering events with your mouse.
 - **Show vertical line**: If true, will show a vertical line over the hovered event to compare to others in the same time range.
     - Toggle. Default: `false`
 - **Color**: Color for both highlights: surrounding box and vertical line.
+    - Default: `red`
 - **Tooltip**: If true, will add the event's absolute day to its tooltip. Useful for testing and comparison.
     - Toggle. Default: `false`
 
@@ -102,7 +103,7 @@ This section handles how and when the plugin zooms and pans around the chart.
 
 #### Gantt chart
 
-This section handles additional things related to the chart itself.
+This section handles additional settings related to the chart itself.
 
 - **Moons**: If true, each calendar's moons will appear over the calendar axis.
     - Toggle. Default: `true`
@@ -110,7 +111,7 @@ This section handles additional things related to the chart itself.
     - Toggle. Default: `false`
 - **Color-code calendar axis**: If true, each calendar's color will apply to its axis. This may strain the eyes if using a large number of calendars.
     - Toggle. Default: `false`
-- **Move toolbar down**: If true, moves the toolbar to below the chart. Use this if you barely use the toolbar.
+- **Move toolbar down**: If true, moves the toolbar below the chart. Use this if you barely use the toolbar.
     - Toggle. Default: `false`
 - **Rerender cooldown (seconds)**: Slows down the rerender listener after file modifications.
     - Number between 0 and 30. Default: `5`
@@ -119,10 +120,10 @@ This section handles additional things related to the chart itself.
 
 This section lets you add additional utilities to Obsidian.
 
-- **Add ribbon icon**: If true, adds a ribbon icon with a fully functioning chart live preview for testing. You *can* copy the thereby created code block or save it directly to the currently open Markdown file. This may be useful to define multiple charts in one note. Reload app after change.
+- **Add ribbon icon**: If true, adds a ribbon icon to the workspace. Clicking it opens a modal with a fully functioning chart live preview for testing. You *can* copy the generated code block or save it directly to the currently open Markdown file. This is useful for defining multiple charts in a single note.
     - Default (desktop): `true`
     - Default (mobile): `false`
-- **Add plugin commands**: If true, adds commands to Obsidian. Reload app after change. See [[commands]].
+- **Add plugin commands**: If true, adds commands to Obsidian. Reload app after changing this setting. See [[commands]].
     - Default: `true`
 
 ### Frontmatter Properties

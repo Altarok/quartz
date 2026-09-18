@@ -4,23 +4,20 @@ title: Index
 
 # Gantt This Documentation
 
-Welcome to the documentation for **Gantt This**. Select a topic from the sidebar or click a section below to get
-started:
+Welcome to the documentation for **Gantt This**. Select a topic from the sidebar or click a section below to get started:
 
 - [[introduction|Introduction]]
 - [[getting-started|Getting Started]]
-- [[calendars|Calendars]]
-- [[events/index|Event Properties]]
+- [[calendars/|Calendar Properties]]
+- [[events/|Event Properties]]
 - [[plugin-settings|Plugin Settings]]
 - [[example-calendars/index|Example Calendars]]
-    - [[gregorian-calendar|Gregorian Calendar]] - the global standard calendar everybody knows
-    - [[mayan-calendar|Mayan Calendar]] - the one that ended in 2012
-    - [[dsa-ttrpg-calendar|DSA (TTRPG) calendar]] - a classic fantasy world calendar
 - [[bases|Bases]]
 - [[roadmap|Roadmap]]
 - [[changelog|Changelog]]
 - [[faq|FAQ]]
 
-> [!tip] The fastest way to get support is to join our [Discord community](https://community.obsidian.md/plugins/gantt-this).
-
-Click to find [GitHub repository](https://github.com/Altarok/gantt-this).
+> [!info] Other URLs
+> - Join our [Discord community](https://discord.com/channels/925322340995313686/1537348136954105946) for support.
+> - Visit the [Obsidian Community Plugin Page](https://community.obsidian.md/plugins/gantt-this).
+> - View the source code on [GitHub](https://github.com/Altarok/gantt-this).
