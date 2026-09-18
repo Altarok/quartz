@@ -22,6 +22,6 @@ started:
 - [[changelog|Changelog]]
 - [[faq|FAQ]]
 
-> [!tip] Click to find plugin in [Obsidian Community](https://community.obsidian.md/plugins/gantt-this).
+> [!tip] The fastest way to get support is to join our [Discord community](https://community.obsidian.md/plugins/gantt-this).
 
 Click to find [GitHub repository](https://github.com/Altarok/gantt-this).
