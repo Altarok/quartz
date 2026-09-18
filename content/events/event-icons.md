@@ -1,18 +1,17 @@
 ---
-title: Event icons
+title: Event Icons
 tags:
   - event-properties/optional
 ---
 
-[< Back to event overview](events/index)
+[< Back to event overview](events/)
 
 ---
 
 ![Showcase](images/showcase.png)
 
-All events except `vertical-line` can be decorated with an SVG icon as shown above.
-Icons can be colored.
-The frontmatter properties `'gantt-displayIcon'` & `'gantt-displayIconColor'` are meant to add and color the icons of your choice.
+All events except `vertical-line` can be decorated with a colored SVG icon as shown above.
+The frontmatter properties `gantt-displayIcon` and `gantt-displayIconColor` define and color the icon of your choice.
 
 **Tips**:
 
@@ -40,5 +39,5 @@ The frontmatter properties `'gantt-displayIcon'` & `'gantt-displayIconColor'` ar
 ---
 
 > [!info]- Property traits
-> - Both property's type is `text`, their usage is optional.
-> - You can rename them to your liking, see [[plugin-settings#Property Names & Key Mappings|Plugin Settings > Property Names & Key Mappings]]
+> - Both properties are of type `text`; their usage is optional.
+> - You can rename them to your liking, see [[plugin-settings#Event Frontmatter Properties|Plugin Settings > Event Frontmatter Properties]].

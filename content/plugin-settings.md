@@ -60,15 +60,15 @@ The following settings are hidden in sub-pages.
 
 #### Events
 
-- **Symbol**: Choose a shape for timestamp events. See [[gantt-symbol]].
+- **Symbol**: Choose a shape for timestamp events. See [[event-shape]].
     - Default: `point`
-- **Calendar**: Default event calendar. See [[gantt-calendar]].
+- **Calendar**: Default event calendar. See [[event-calendar]].
     - Default: `gregorian`
-- **Group**: Default event group. See [[gantt-group]].
+- **Group**: Default event group. See [[event-group]].
     - Default: `general`
-- **Color**: Default event color. See [[gantt-color]].
+- **Color**: Default event color. See [[event-color]].
     - Default: `#1565C0`
-- **Icon color**: Default icon color. See [[gantt-displayIconColor]].
+- **Icon color**: Default icon color. See [[event-icons]].
     - Default: `#FF8800`
 - **Vertical line width**: Width of vertical line events. Increase to make clicking the event easier.
     - Default: `3`
@@ -132,32 +132,32 @@ This section lets you rename the frontmatter properties used by the plugin. Note
 
 #### Calendar Frontmatter Properties
 
-- **[[gantt-calendar-definition|Calendar definition]]**: Frontmatter key used to identify a calendar definition file.
+- **[[calendar-definition|Calendar definition]]**: Frontmatter key used to identify a calendar definition file.
     - Default: `gantt-calendar-definition`
 
 #### Event Frontmatter Properties
 
-- **[[gantt-item|Event marker]]**: Primary boolean frontmatter key that marks a file as containing Gantt events.
+- **[[event-marker|Event marker]]**: Primary boolean frontmatter key that marks a file as containing Gantt events.
     - Default: `gantt-item`
 - **Marker may be optional**: If enabled, the primary marker becomes optional. This saves one property per file but reduces explicit control.
     - Default: `true` (meaning it *is* optional)
-- **[[gantt-calendar|Event calendar]]**: Frontmatter key that defines which calendar an event belongs to.
+- **[[event-calendar|Event calendar]]**: Frontmatter key that defines which calendar an event belongs to.
     - Default: `gantt-calendar`
-- **[[gantt-name|Event name]]**: Frontmatter key for the event name.
+- **[[event-name|Event name]]**: Frontmatter key for the event name.
     - Default: `gantt-name`
 - **[[event-dates|Event start date]]**: Frontmatter key for the event start date (mandatory).
     - Default: `gantt-start`
 - **[[event-dates|Event end date]]**: Frontmatter key for the event end date (optional).
     - Default: `gantt-end`
-- **[[gantt-color|Event color]]**: Frontmatter key for event color (hex or name).
+- **[[event-color|Event color]]**: Frontmatter key for event color (hex or name).
     - Default: `gantt-color`
-- **[[gantt-group|Event group]]**: Frontmatter key for the event's group (used to sort and color events).
+- **[[event-group|Event group]]**: Frontmatter key for the event's group (used to sort and color events).
     - Default: `gantt-group`
-- **[[gantt-symbol|Event symbol]]**: Frontmatter key to override the event symbol per-event.
+- **[[event-shape|Event symbol]]**: Frontmatter key to override the event symbol per-event.
     - Default: `gantt-symbol`
 - **[[event-icons|Event icon]]**: Frontmatter key for an icon name.
     - Default: `gantt-displayIcon`
 - **[[event-icons|Event icon color]]**: Frontmatter key for the icon color.
     - Default: `gantt-displayIconColor`
-- **[[gantt-linkToHeader|Target header]]**: Frontmatter key for a note-internal header; when set, clicking the event will navigate to that header instead of top-of-note.
+- **[[event-heading|Target header]]**: Frontmatter key for a note-internal header; when set, clicking the event will navigate to that header instead of top-of-note.
     - Default: `gantt-linkToHeader`
