@@ -8,7 +8,7 @@ tags:
 
 ---
 
-Each event belongs to one calendar.
+Each event can be related to one calendar only. Dates defined in the event note will be interpreted according to this calendar. Assigning an event to more than one makes no sense since they could appear at different timestamps.
 The frontmatter property `gantt-calendar` assigns the event to a specific calendar ID defined in your plugin settings.
 
 When configured with a valid calendar ID:
@@ -17,6 +17,8 @@ When configured with a valid calendar ID:
 - The chart colors and displays the event according to the designated calendar configuration.
 
 If omitted, the event defaults to your primary calendar.
+
+## Examples
 
 ```yaml
 ---

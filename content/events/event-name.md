@@ -14,19 +14,20 @@ Each event displays a name on the Gantt chart.
 The frontmatter property `gantt-name` sets a custom name for an individual event. If lacking the property, the note's filename will be shown on the chart.
 To hide the name on the chart completely, set the property to an empty string (`gantt-name: ""`).
 
-> [!example]+ Example
-> ```yaml
-> --- # No name given, defaults to filename 
-> ---
-> 
-> ---
-> gantt-name: "" # Empty name given, hides the name on the chart
-> ---
-> 
-> ---
-> gantt-name: "Aragorn's coronation"
-> ---
-> ```
+## Examples
+
+```yaml
+--- # No name given, defaults to filename 
+---
+
+---
+gantt-name: "" # Empty name given, hides the name on the chart
+---
+
+---
+gantt-name: "Aragorn's coronation"
+---
+```
 
 ---
 

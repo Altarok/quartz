@@ -19,17 +19,19 @@ When activated in settings and hovering over an event:
 - **Successors**: Draws arrows from the current event to the **left edge** of its successors.
 - Hovering over an event also highlights its connected dependency chain.
 
-> [!example]+ Event example: "Aragorn's coronation"
-> ```yaml
-> ---
-> gantt-predecessors:
->   - "[[Destruction of the One Ring & Fall of Sauron]]"
->   - "[[Battle of the Morannon (Black Gate)]]"
-> gantt-successors:
->   - "[[Wedding of Aragorn & Arwen]]"
-> ---
-> ```
-> ![Aragorn's coronation](../images/predecessors-successors-example.png)
+## Example: "Aragorn's coronation"
+
+```yaml
+---
+gantt-predecessors:
+  - "[[Destruction of the One Ring & Fall of Sauron]]"
+  - "[[Battle of the Morannon (Black Gate)]]"
+gantt-successors:
+  - "[[Wedding of Aragorn & Arwen]]"
+---
+```
+
+![Aragorn's coronation](../images/predecessors-successors-example.png)
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Event Header Link
+title: Event Heading
 tags:
   - event-properties/optional
 ---
@@ -16,15 +16,15 @@ If set to the name of a heading in the note:
 - Clicking the event will open the note and focus the heading.
 - Obsidian's native hover preview will also show the heading.
 
-> [!example]+ Example
-> Add this to a note named "Daily tasks".
-> Clicking the event opens "Daily tasks" directly at the "Take out the trash" heading.
->
-> ```yaml
-> ---
-> gantt-linkToHeader: "[[Take out the trash]]"
-> ---
-> ```
+## Examples
+
+Add this to a note named "Daily tasks". Clicking the event opens "Daily tasks" directly at the "Take out the trash" heading.
+
+```yaml
+---
+gantt-linkToHeader: "[[Take out the trash]]"
+---
+```
 
 ---
 

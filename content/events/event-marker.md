@@ -20,16 +20,17 @@ This property was primarily introduced during testing to allow quick toggling of
 - **Disabled by default**: To keep your note frontmatter minimal, this feature is disabled by default. Skipping it entirely saves you from managing an extra property in every note.
 - **Opt-in workflow**: If you prefer explicit control over which notes appear on the chart, activate this feature in [[plugin-settings#Event Frontmatter Properties|Plugin Settings > Event Frontmatter Properties]].
 
-> [!example]+ Example
-> ```yaml
-> ---
-> gantt-item: true # Event will be shown on chart
-> ---
-> 
-> ---
-> gantt-item: false # Event will not be shown on chart
-> ---
-> ```
+## Examples
+
+```yaml
+---
+gantt-item: true # Event will be shown on chart
+---
+
+---
+gantt-item: false # Event will not be shown on chart
+---
+```
 
 ---
 

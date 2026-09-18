@@ -68,7 +68,7 @@ The following settings are hidden in sub-pages.
     - Default: `general`
 - **Color**: Default event color. See [[event-color]].
     - Default: `#1565C0`
-- **Icon color**: Default icon color. See [[event-icons]].
+- **Icon color**: Default icon color. See [[event-icon]].
     - Default: `#FF8800`
 - **Vertical line width**: Width of vertical line events. Increase to make clicking the event easier.
     - Default: `3`
@@ -155,9 +155,9 @@ This section lets you rename the frontmatter properties used by the plugin. Note
     - Default: `gantt-group`
 - **[[event-shape|Event symbol]]**: Frontmatter key to override the event symbol per-event.
     - Default: `gantt-symbol`
-- **[[event-icons|Event icon]]**: Frontmatter key for an icon name.
+- **[[event-icon|Event icon]]**: Frontmatter key for an icon name.
     - Default: `gantt-displayIcon`
-- **[[event-icons|Event icon color]]**: Frontmatter key for the icon color.
+- **[[event-icon|Event icon color]]**: Frontmatter key for the icon color.
     - Default: `gantt-displayIconColor`
 - **[[event-heading|Target header]]**: Frontmatter key for a note-internal header; when set, clicking the event will navigate to that header instead of top-of-note.
     - Default: `gantt-linkToHeader`

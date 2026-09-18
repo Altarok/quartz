@@ -51,8 +51,8 @@ The following table lists all available properties you can use in your notes:
 | [[event-symbol\|gantt-symbol]]                           | String  | No        | Sets the visual representation format of the event.                       | `bar` (timespan) or `point` (timestamp) |
 | [[event-color\|gantt-color]]                             | String  | No        | Overrides the background color of the event individually.                 | Group color → Calendar color → Default  |
 | [[event-group\|gantt-group]]                             | String  | No        | Group used for row layout and structuring.                                | `'general'`                             |
-| [[event-icons\|gantt-displayIcon]]                       | String  | No        | Displays an icon on the event.                                            | *None*                                  |
-| [[event-icons\|gantt-displayIconColor]]                  | String  | No        | Sets the color of the icon.                                               | Default icon color                      |
+| [[event-icon\|gantt-displayIcon]]                        | String  | No        | Displays an icon on the event.                                            | *None*                                  |
+| [[event-icon\|gantt-displayIconColor]]                   | String  | No        | Sets the color of the icon.                                               | Default icon color                      |
 | [[event-heading\|gantt-linkToHeader]]                    | String  | No        | Links directly to a specific heading when clicked.                        | *None* (Jumps to top of file)           |
 | [[event-predecessors-and-succesors\|gantt-predecessors]] | list    | No        | Predecessor events will be highlighted on the chart                       | *None*                                  |
 | [[event-predecessors-and-succesors\|gantt-succesors]]    | list    | No        | Successor events will be highlighted on the chart                         | *None*                                  |
@@ -64,19 +64,6 @@ See: [[Calendars]]
 *All of these can be renamed to your liking*.
 
 # Understanding Event Properties
-
-## Calendar
-
-Each event can be related to one calendar only. Assigning an event to more than one makes no sense since they could appear at different timestamps. Dates defined in the event note will be interpreted according to this calendar.
-
-To add a calendar to an event use the following property:
-
-```yaml
-gantt-calendar: gregorian | (omit or leave empty for default calendar - configurable in settings)
-```
-
-> [!info] Default value
-> This frontmatter property is *optional*. Omit or leave empty to use default calendar, which is configurable in settings
 
 ## Timespan Events (bar)
 
@@ -112,41 +99,6 @@ gantt-start: 2026-08-27
 gantt-symbol: point | triangle | box | diamond | pentagon
   | hexagon | octagon | star | (omit for default symbol - configurable in settings)
 ```
-
-## Groups
-
-All events can be grouped. Whether the group is defined in settings does not matter at this point. The events in the showcase screenshot are sorted into the groups `symbols`, `icons`, and `general` (see left side of screenshot).
-
-To group an event use the following property. Omit or leave empty for default group 'general' - configurable in settings)
-
-```yaml
-gantt-group: any group
-```
-
-> [!info] Additional options
->
-> Defining groups in the plugin settings gives you multiple extra options.
-> - groups can have a default color for events
-> - group visibility can be toggled
-> - groups can be sorted to influence order of appearance on charts
-
-## Color
-
-Each event can be colored. `era` events will add transparency to the chosen color. The color value can be a human-readable CSS color like for example `red`, `forestgreen`, `teal` - or a 6-digit hex value starting with `'#'`.
-
-To color an event use the following property:
-
-```yaml
-gantt-color: yellow | '#FFFF00' | (omit for default color - configurable in settings)
-```
-
-> [!info] Color priority
->
-> There are multiple sources for event color. Starting with the highest priority, the plugin uses the first it finds.
-> - event property `gantt-color`
-> - default color for group in property `gantt-group`
-> - default color for calendar in property `gantt-calendar`
-> - global fallback color (always exists)
 
 ## Special dates
 

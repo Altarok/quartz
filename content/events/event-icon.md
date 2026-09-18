@@ -19,22 +19,23 @@ The frontmatter properties `gantt-displayIcon` and `gantt-displayIconColor` defi
 - Icon names are case-sensitive.
 - Set a default icon color in [[plugin-settings#Events|Plugin Settings > Events]].
 
-> [!example]+ Example icon definitions
-> ```yaml
-> ---
-> gantt-displayIcon: heart
-> gantt-displayIconColor: pink # CSS knows a lot of human-readable colors
-> ---
-> 
-> ---
-> gantt-displayIcon: plus
-> gantt-displayIconColor: "#0f172a" # You can use hex-colors
-> ---
-> 
-> ---
-> gantt-displayIcon: settings # No icon color is fine
-> ---
-> ```
+## Example icon definitions
+
+```yaml
+---
+gantt-displayIcon: heart
+gantt-displayIconColor: pink # CSS knows a lot of human-readable colors
+---
+
+---
+gantt-displayIcon: plus
+gantt-displayIconColor: "#0f172a" # You can use hex-colors
+---
+
+---
+gantt-displayIcon: settings # No icon color is fine
+---
+```
 
 ---
 

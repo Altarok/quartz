@@ -10,7 +10,7 @@ tags:
 
 ![Showcase](images/showcase.png)
 
-Events can be organized into vertical groups displayed on the left side of the Gantt chart.
+Events can be organized into groups. Groups are displayed on the left side of the Gantt chart.
 The frontmatter property `gantt-group` assigns an event to a designated row.
 
 In the example above, events are categorized into the `symbols`, `icons`, and `general` groups.
@@ -26,6 +26,18 @@ Groups can be managed in the [[plugin-settings#Groups|Plugin Settings > Groups]]
 - Reorder groups by priority.
 - Set a default color for all events in a specific group.
 - Toggle visibility for an entire group.
+
+## Examples
+
+```yaml
+---
+gantt-group: "Frodo and Sam's path"
+---
+
+---
+gantt-color: "Weekly tasks"
+---
+```
 
 ---
 
