@@ -8,10 +8,15 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
-## [v1.4.0.](https://github.com/Altarok/gantt-this/releases/tag/1.4.0), 2026-09-22
+## [v1.4.1](https://github.com/Altarok/gantt-this/releases/tag/1.4.1), 2026-09-23
 
-**Feature**
+- Improve performance of repeating events by drawing a more sensible amount of duplicates.
 
+## [v1.4.0](https://github.com/Altarok/gantt-this/releases/tag/1.4.0), 2026-09-22
+
+**Features**
+
+- Added option for repeating events.
 - Added settings to manually change size of _event shapes_, _event icons_ and _event rows_.
 
 **Other**
@@ -21,7 +26,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 - Removed unused setting
 - Major refactoring of SVG drawing class
 
-## [v1.3.0.](https://github.com/Altarok/gantt-this/releases/tag/1.3.0), 2026-09-17
+## [v1.3.0](https://github.com/Altarok/gantt-this/releases/tag/1.3.0), 2026-09-17
 
 Added optional calendar property `without year zero`.
 This enables you to use the more natural Gregorian calendar used outside of astronomy and computers.
