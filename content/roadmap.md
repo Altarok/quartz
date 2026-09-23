@@ -13,7 +13,7 @@ See [[changelog|Changelog]] for implemented features.
 ## Features to come, by priority
 
 - [x] Recurring events. - _CePeU and others_
-- [*] Keep calendar axis visible while scrolling over the chart.
+- Keep calendar axis visible while scrolling over the chart.
 - Keep toolbar visible while scrolling over the chart.
 - Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - Place events into multiple groups. - _CePeU and others_
