@@ -8,6 +8,19 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.4.0.](https://github.com/Altarok/gantt-this/releases/tag/1.4.0), 2026-09-22
+
+**Feature**
+
+- Added settings to manually change size of _event shapes_, _event icons_ and _event rows_.
+
+**Other**
+
+- Minor CSS improvements
+- Moved documentation from kiln to quartz
+- Removed unused setting
+- Major refactoring of SVG drawing class
+
 ## [v1.3.0.](https://github.com/Altarok/gantt-this/releases/tag/1.3.0), 2026-09-17
 
 Added optional calendar property `without year zero`.
