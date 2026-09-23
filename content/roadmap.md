@@ -13,13 +13,13 @@ See [[changelog|Changelog]] for implemented features.
 ## Features to come, by priority
 
 - [x] Recurring events. - _CePeU and others_
-- Keep calendar axis visible while scrolling over the chart.
+- [*] Keep calendar axis visible while scrolling over the chart.
 - Keep toolbar visible while scrolling over the chart.
 - Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - Place events into multiple groups. - _CePeU and others_
     - Change the frontmatter property `gantt-group` from `text` to `list`.
 - Zoom:
-    - Hide smallest date format elements consecutively while zooming out.
+    - Hide the smallest date format elements consecutively while zooming out.
     - Focus shown dates on more natural periods.
     - Set a safe default zoom and restore it when re-opening files.
 - Calendars:
@@ -54,3 +54,4 @@ See [[changelog|Changelog]] for implemented features.
 - Allow events to open a canvas or base when clicked. - _CePeU_
 - Allow events to open other Gantt charts when clicked. - _CePeU_
 - Allow differing day lengths across calendars.
+
