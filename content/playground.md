@@ -5,6 +5,9 @@ draft: false
 
 - [x] ´[x]´ test
 - [+] ´[+]´ test
+- [!] ´[!]´ test
+- [-] ´[-]´ test
+- [/] ´[/]´ test
 - [?] ´[?]´ test
 - [b] ´[b]´ test
 - [I] ´[I]´ test
