@@ -3,44 +3,48 @@ title: Playground
 draft: false
 ---
 
-|||
+- [x] ´[x]´ Done
+- [+] ´[+]´ Done without strikthrough
+- [!] ´[!]´ Exclamation Mark
+- [-] ´[-]´ Cancelled
+- [/] ´[/]´ In Progress
+- [?] ´[?]´ Question
+- [b] ´[b]´ Bookmark
+- [I] ´[I]´ Idea
+- [p] ´[p]´ Yes
+- [c] ´[c]´ No
+- [i] ´[i]´ Info
+- [l] ´[l]´ Location
+- [*] ´[\*]´ Star
+- [n] ´[n]´ Pin
+- [<] ´[<]´ Calendar
+- [>] ´[>]´ Redirected
+- ["] ´["]´ Quote
+- [w] ´[w]´ Walking
+- [a] ´[a]´ Appointment
+- [F] ´[F]´ Conversation
+- [h] ´[h]´ House
+- [P] ´[P]´ Pause
+- [A] ´[A]´ Appearance
+- [t] ´[t]´ Clock
+- [T] ´[T]´ Stopwatch
 
-- [x] ´[x]´ test
-- [+] ´[+]´ test
-- [!] ´[!]´ test
-- [-] ´[-]´ test
-- [/] ´[/]´ test
-- [?] ´[?]´ test
-- [b] ´[b]´ test
-- [I] ´[I]´ test
-- [p] ´[p]´ test
-- [c] ´[c]´ test
-- [i] ´[i]´ test
-- [l] ´[l]´ test
-- [*] ´[\*]´ test
-- [n] ´[n]´ test
-- [<] ´[<]´ test
-- [>] ´[>]´ test
-- ["] ´["]´ test
-- [w] ´[w]´ test
-- [a] ´[a]´ test
-- [F] ´[F]´ test
-- [h] ´[h]´ test
-- [S] ´[S]´ test
-- [r] ´[r]´ test
-- [R] ´[R]´ test
-- [f] ´[f]´ test
-- [P] ´[P]´ test
-- [A] ´[A]´ test
-- [d] ´[d]´ test
-- [t] ´[t]´ test
-- [T] ´[T]´ test
-- [u] ´[u]´ test
-- [U] ´[U]´ test
-- [6] ´[6]´ test
-- [5] ´[5]´ test
-- [4] ´[4]´ test
-- [3] ´[3]´ test
-- [2] ´[2]´ test
-- [1] ´[1]´ test
-- [0] ´[0]´ test
+Task priorities
+
+- [6] ´[6]´ Blocker
+- [5] ´[5]´ Highest
+- [4] ´[4]´ High
+- [3] ´[3]´ Medium
+- [2] ´[2]´ Low
+- [1] ´[1]´ Lowest
+- [0] ´[0]´ Undefined
+
+RPG stuff
+
+- [d] ´[d]´ d20
+- [S] ´[S]´ Loot
+- [f] ´[f]´ Fight
+- [r] ´[r]´ Short Rest
+- [R] ´[R]´ Long Rest
+- [u] ´[u]´ XP
+- [U] ´[U]´ Level Up
