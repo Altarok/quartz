@@ -11,7 +11,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 ## [v1.4.2](https://github.com/Altarok/gantt-this/releases/tag/1.4.2), 2026-09-25
 
 **Features**
-- Keep text on bars and eras visible when moving partially off-screen
+- [*] Keep text on bars and eras visible when moving partially off-screen
 - Critical performance improvements for repeating events
   - Excluded off-screen calculations
   - Optimized lane assignment logic
@@ -33,7 +33,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 **Features**
 
-- Added option for repeating events.
+- [*] Added option for repeating events.
 - Added settings to manually change size of _event shapes_, _event icons_ and _event rows_.
 
 **Other**
@@ -83,7 +83,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 ## [v1.2.1](https://github.com/Altarok/gantt-this/releases/tag/1.2.1), 2026-08-26
 
-- _Timestamp events now have text descriptions._
+- [*] _Timestamp events now have text descriptions._
 - Added command which adds all missing Gantt properties to the current file (matching your renamed property keys)
 - Settings:
     - Default calendar selection goes from `text` to `dropdown`
@@ -93,7 +93,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 ## [v1.2.0](https://github.com/Altarok/gantt-this/releases/tag/1.2.0), 2026-08-26
 
-- Added predecessors and successors to event properties. Optional list properties
+- [*] Added predecessors and successors to event properties. Optional list properties
     - Added option to *highlight related events*
     - Added option to *connect related events with directional arrows*
 - Added cooldown to re-rendering of Gantt chart. Set it to anything from 0 to 30 seconds.
@@ -161,7 +161,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 
 ## [v1.1.1](https://github.com/Altarok/gantt-this/releases/tag/1.1.1), 2026-08-17
 
-- *__Includes Bases__* in the most basic version. You will be able to do the following:
+- [*] *__Includes Bases__* in the most basic version. You will be able to do the following:
 - Use bases to see your fantasy Gantt charts. This comes with
     - Have all your charts in 1 file
     - Manually select which folders to use for your events
@@ -197,7 +197,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 ## [v1.0.1](https://github.com/Altarok/gantt-this/releases/tag/1.0.1), 2026-08-14
 
 - Improved grammar in settings, removed typos.
-- "today" is now a valid date for events. This enables you to:
+- [*] "today" is now a valid date for events. This enables you to:
     - Mark the current day. (e.g. with a `vertical-line` event)
     - Define an event with an open end. (start: x, end: `today`)
         - Gregorian only for now
