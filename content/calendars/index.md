@@ -4,10 +4,6 @@ tags:
   - calendar-properties/advanced
 ---
 
-[< Back to event overview](events/)
-
----
-
 Calendars are the core of the plugin.
 Custom calendars are defined using YAML frontmatter inside dedicated calendar notes. The plugin supports multiple different types of calendars.
 

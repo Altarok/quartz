@@ -5,7 +5,7 @@ tags:
   - calendar-properties/advanced
 ---
 
-[< Back to event overview](events/)
+[< Back to calendar overview](calendars/)
 
 ---
 
