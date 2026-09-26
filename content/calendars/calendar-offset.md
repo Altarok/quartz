@@ -8,28 +8,23 @@ tags:
 
 ---
 
+This page discusses how calendars work together. 3 YAML properties are used for this kind of calculation:
 
+- ´sharedOffset´ -> aligns where the calendar sits in time, _controls time ==math==_.
+- ´startDay´ (optional) -> control when and if the calendar starts, _controls ==visual rendering== bounds_.
+- ´endDay´ (optional) -> control when and if the calendar ends, _controls ==visual rendering== bounds_.
 
-This page discusses how calendars work together.
-3 YAML properties get used for this kind of calculation:
-1. ´sharedOffset´
-2. ´startDay´ (optional)
-3. ´endDay´ (optional
 
 > [!tip]
-> If you do not plan to use more than one calendar, just set `sharedOffset` to zero.
+> If you do not plan to use more than one calendar, just keep `sharedOffset` at `0` (zero) and omit the other two.
 
-In short:
-
-- `sharedOffset` aligns where the calendar sits in time, _controls time ==math==_.
-- `startDay` and `endDay` control how much of the timeline is drawn, _controls ==visual rendering== bounds_.
-
-Examples:
+## Visual Example:
+Scroll down for more in-depth explanation.
 
 - Gregorian: Has no `startDay` or `endDay` set, so its timeline extends infinitely in both directions.
-- Mayan Long Count: Has both `startDay` (-3114) and `endDay` (+2012), drawing the calendar axis strictly within that window.
-- French Republican: Has a `startDay` (1792) when the calendar was created, but no `endDay`, so it continues drawing forward into the future.
-- Your dnd campaign might use The Dalereckoning (DR) calendar, which anchors its global math epoch to Year 0 DR (`sharedOffset`). However, your campaign only takes place during a specific 5-year arc (1370 DR – 1375 DR). Setting `startDay` to 1370 and `endDay` to 1375 crops the rendered axis strictly to those active adventure years.
+- Mayan Long Count: Has both `startDay` ({year: -3114, month: 8, day: 11}) and `endDay` (in the year 2012), drawing the calendar axis strictly within that window.
+- French Republican: Has a `startDay` (in the year 1792) when the calendar was created, but no `endDay`, so it continues drawing forward into the future.
+- Your dnd campaign might use The Dale Reckoning (DR) calendar, which anchors its global math epoch to Year 0 DR (`sharedOffset`). However, your campaign only takes place during a specific 5-year arc (1370 DR – 1375 DR). Setting `startDay` to 1370 and `endDay` to 1375 crops the rendered axis strictly to those active adventure years.
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 610" width="100%" style="background-color: #1e1e2e; font-family: -apple-system, BlinkMacSystemFont, sans-serif; border-radius: 8px; padding: 10px;">
   <defs>
@@ -105,3 +100,45 @@ Examples:
     </g>
   </g>
 </svg>
+
+## Format
+
+All 3 of these properties share the same format:
+
+```Typescript
+number | { year: number, month: number, day: number }
+```
+
+When using only a `number`, it defines days - not years!
+The alternative would be a combination of `year`, `month`, and `day`. These values represent Gregorian dates.
+
+## Properties 'startDay' and 'endDay'
+
+These properties define if and when a calendar starts and ends in time. Both are optional. They define a single day in time, not a year.
+
+- Omitting both creates a calendar which extends infinitely in both directions.
+- Adding `startDay` creates a lower bound for the calendar.
+- Adding `endDay` creates an upper bound for the calendar.
+
+## Property `sharedOffset`
+
+This property defines which day in time is the absolute day zero. This is necessary for calculations behind the screen.
+Day Zero for Gregorian would be the day before January 1st, 1 AD.
+For Gregorian, `sharedOffset` should always equal `0` (zero).
+- Giving a second calendar the same `sharedOffset` would mean their respective starting days are the same.
+- Shifting a second calendar's `sharedOffset` by +-X would shift its respective starting day by the same amount.
+
+### Calculation Example
+
+The Mayan calendar started August 9th, 3114 BC. All of the following 3 examples would accomplish this result.
+
+```YAML
+sharedOffset: {year: -3114, month: 8, day: 11}
+
+sharedOffset: -1137507
+
+sharedOffset:
+  year: -3114
+  month: 8
+  day: 11
+```
