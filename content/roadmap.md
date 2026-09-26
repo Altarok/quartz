@@ -16,16 +16,16 @@ See [[changelog|Changelog]] for implemented features.
 - [5] Keep calendar axis visible while scrolling over the chart.
 - [4] Keep toolbar visible while scrolling over the chart.
 - [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
-- [3] Place events into multiple groups. - _CePeU and others_
-    - Change the frontmatter property `gantt-group` from `text` to `list`.
+- [4] Place events into multiple groups. - _CePeU and others_
 - Zoom:
     - [4] Hide the smallest date elements consecutively while zooming out.
     - [3] Focus shown dates on more natural periods.
     - [2] Store default zoom and restore it when re-opening files.
+    - [2] Chart-wide general zoom
 - Calendars:
     - [4] Add a manually configurable leap year rule. - _CePeU_
     - [2] Add `YyWwDd` format. - _CePeU_
-    - Remove duplicate calendar ID definition in calendar notes.
+    - [2] Remove duplicate calendar ID definition in calendar notes.
     - [1] Rename `rule-based` to `year-based`.
 - [1] Highlight weekends. Gregorian only.
 - [1] Manage rerender cooldown depending on the content of the changed file. - _CePeU_
