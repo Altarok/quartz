@@ -17,6 +17,7 @@ See [[changelog|Changelog]] for implemented features.
 - [4] Keep toolbar visible while scrolling over the chart.
 - [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [4] Place events into multiple groups. - _CePeU and others_
+- [4] Pull Bases formulas into the tooltip. - _HanaGrace_
 - Zoom:
     - [4] Hide the smallest date elements consecutively while zooming out.
     - [3] Focus shown dates on more natural periods.
