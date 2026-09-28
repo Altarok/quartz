@@ -1,5 +1,5 @@
 ---
-title: Event Definition
+title: Event Configuration
 tags:
   - event-properties
 ---
