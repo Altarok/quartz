@@ -13,20 +13,14 @@ tags:
 All events except `vertical-line` can be decorated with a colored SVG icon as shown above.
 The frontmatter properties `gantt-displayIcon` and `gantt-displayIconColor` define and color the icon of your choice.
 
-**Tips**:
+## Icon
 
-- [lucide.dev](https://lucide.dev/) is a good source for icon names.
-- Icon names are case-sensitive.
-- Set a default icon color in [[plugin-settings#Events|Plugin Settings > Events]].
+The frontmatter property `gantt-displayIcon` sets a custom icon to an event. _Icon names are case-sensitive_.
 
 ## Icon color
 
-The frontmatter property `gantt-displayIconColor` sets a custom color for an individual icon.
-
-> [!tip]+ Color priority
-> There are two sources for an icon's color. In descending priority, these are:
-> 1. Value of the event's property `gantt-displayIconColor` (Optional)
-> 2. Global fallback color, see [[plugin-settings#Events|Plugin Settings > Events]].
+The frontmatter property `gantt-displayIconColor` add color to the icon.
+If not set, a global fallback color will be used. Change this default color in [[plugin-settings#Events|Plugin Settings > Events]].
 
 ## Example icon definitions
 
@@ -45,6 +39,9 @@ gantt-displayIconColor: "#0f172a" # You can use hex-colors
 gantt-displayIcon: settings # No icon color is fine
 ---
 ```
+
+> [!tip]
+> https://lucide.dev/ is a good source for icon names.
 
 ---
 
