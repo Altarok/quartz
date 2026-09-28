@@ -9,7 +9,7 @@ last-upated-plugin-version: 1.4.3
 
 ---
 
-![Showcase with 5 moons in a single calendar](images/many-moons-example.png)
+![Showcase with 5 moons in a single calendar](images/many-moons-showcase.png)
 
 The `moons` property inside a [[calendars/|Calendar Configuration]] defines celestial bodies orbiting your world. You can configure multiple moons per calendar, each with its own cycle length, phase alignment offset, and custom rendering color.
 Moons get rendered at 4 different phases:
