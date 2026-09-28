@@ -19,6 +19,15 @@ The frontmatter properties `gantt-displayIcon` and `gantt-displayIconColor` defi
 - Icon names are case-sensitive.
 - Set a default icon color in [[plugin-settings#Events|Plugin Settings > Events]].
 
+## Icon color
+
+The frontmatter property `gantt-displayIconColor` sets a custom color for an individual icon.
+
+> [!tip]+ Color priority
+> There are two sources for an icon's color. In descending priority, these are:
+> 1. Value of the event's property `gantt-displayIconColor` (Optional)
+> 2. Global fallback color.
+
 ## Example icon definitions
 
 ```yaml
@@ -39,6 +48,6 @@ gantt-displayIcon: settings # No icon color is fine
 
 ---
 
-> [!info]- Property traits
+> [!info]+ Property traits
 > - Both properties are of type `text`; their usage is optional.
 > - You can rename them to your liking, see [[plugin-settings#Event Frontmatter Properties|Plugin Settings > Event Frontmatter Properties]].
