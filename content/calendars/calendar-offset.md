@@ -104,21 +104,17 @@ Scroll down for more in-depth explanation.
 
 ## Property `sharedOffset`
 
-Imagine having two calendars, each starting their respective timeline on the first day of their first month of their first year. How would the plug-in know how to place them next to each other?
+Imagine two calendars that each count time starting from their Year 1, Month 1, Day 1 (or other format). How does the plugin know how to position them relative to one another on a single unified timeline?
 
-This property is used to answer this question. it defines which day on an infinite timeline is the absolute day zero of each calendar.
+This property bridges that gap. It defines where a calendar's Day One sits relative to an absolute, global Day Zero.
 
-### Real World Example
+### How It Works
 
-For this example, let's use Gregorian as anchor. This means the calendar has no offset.
-Day One for Gregorian would be January 1st, 1 AD. Day Zero would be the day before.
+Anchor Calendar (sharedOffset: 0): Setting an offset of 0 treats that calendar as the baseline anchor. For example, in a Gregorian setup, Day 1 corresponds to January 1, 1 AD, and Day 0 is December 31, 1 BC.
 
-Giving a second calendar, however defined, the same offset would mean that both Day One instances meet each other on the timeline.
+Shared Epoch (sharedOffset: A): Giving two calendars the same sharedOffset aligns their respective Day 1 instances on the exact same point on the timeline.
 
-Giving a third calendar the offset -15000 means that its Day One is 15000 days _before_ Gregorian's Day One.
-
-- Giving a second calendar the same `sharedOffset` would mean their respective starting days are the same.
-- Shifting a second calendar's `sharedOffset` by +-X would shift its respective starting day by the same amount.
+Offset Shifts (sharedOffset: ±X): Adjusting sharedOffset by ±X days shifts that calendar's start date forward or backward along the global timeline by X days. For example, a calendar with sharedOffset: -15000 starts 15,000 days before the anchor calendar's Day 1.
 
 ## Properties 'startDay' and 'endDay'
 
