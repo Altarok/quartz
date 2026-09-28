@@ -6,6 +6,10 @@ a.internal {
   background-color: transparent;
 }
 
+a.internal.internal-link.alias {
+  background: none;
+}
+
 /* Force canvas container to render link strokes at visible opacity */
 .graph-container canvas {
   opacity: 1;
@@ -21,6 +25,7 @@ a.internal {
 blockquote {
   padding-left: 1rem;
 }
+
 
 /* CUSTOM CHECKLIST CSS */
 
