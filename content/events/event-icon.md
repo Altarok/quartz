@@ -2,6 +2,7 @@
 title: Event Icons
 tags:
   - event-properties/optional
+last-upated-plugin-version: 1.4.3
 ---
 
 [< Back to event overview](events/)

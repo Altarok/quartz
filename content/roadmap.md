@@ -1,5 +1,6 @@
 ---
 title: Roadmap
+last-upated-plugin-version: 1.4.3
 ---
 
 See [[changelog|Changelog]] for implemented features.
