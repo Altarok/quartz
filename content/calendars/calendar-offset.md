@@ -102,6 +102,32 @@ Scroll down for more in-depth explanation.
   </g>
 </svg>
 
+## Property `sharedOffset`
+
+Imagine having two calendars, each starting their respective timeline on the first day of their first month of their first year. How would the plug-in know how to place them next to each other?
+
+This property is used to answer this question. it defines which day on an infinite timeline is the absolute day zero of each calendar.
+
+### Real World Example
+
+For this example, let's use Gregorian as anchor. This means the calendar has no offset.
+Day One for Gregorian would be January 1st, 1 AD. Day Zero would be the day before.
+
+Giving a second calendar, however defined, the same offset would mean that both Day One instances meet each other on the timeline.
+
+Giving a third calendar the offset -15000 means that its Day One is 15000 days _before_ Gregorian's Day One.
+
+- Giving a second calendar the same `sharedOffset` would mean their respective starting days are the same.
+- Shifting a second calendar's `sharedOffset` by +-X would shift its respective starting day by the same amount.
+
+## Properties 'startDay' and 'endDay'
+
+These properties define if and when a calendar starts and ends in time. Both are optional. They define a single day in time, not a year.
+
+- Omitting both creates a calendar which extends infinitely in both directions.
+- Adding `startDay` creates a lower bound for the calendar.
+- Adding `endDay` creates an upper bound for the calendar.
+
 ## Format
 
 All 3 of these properties share the same format:
@@ -113,24 +139,7 @@ number | {year: number, month: number, day: number}
 When using only a `number`, it defines days - not years!
 The alternative would be a combination of `year`, `month`, and `day`. These values represent Gregorian dates.
 
-## Properties 'startDay' and 'endDay'
-
-These properties define if and when a calendar starts and ends in time. Both are optional. They define a single day in time, not a year.
-
-- Omitting both creates a calendar which extends infinitely in both directions.
-- Adding `startDay` creates a lower bound for the calendar.
-- Adding `endDay` creates an upper bound for the calendar.
-
-## Property `sharedOffset`
-
-This property defines which day in time is the absolute day zero. This is necessary for calculations behind the screen.
-Day Zero for Gregorian would be the day before January 1st, 1 AD.
-For Gregorian, `sharedOffset` should always equal `0` (zero).
-
-- Giving a second calendar the same `sharedOffset` would mean their respective starting days are the same.
-- Shifting a second calendar's `sharedOffset` by +-X would shift its respective starting day by the same amount.
-
-### Calculation Example
+### Real Calculation Example
 
 The Mayan calendar started August 9th, 3114 BC. All of the following 3 examples would accomplish this result.
 
