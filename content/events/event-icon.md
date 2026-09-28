@@ -26,7 +26,7 @@ The frontmatter property `gantt-displayIconColor` sets a custom color for an ind
 > [!tip]+ Color priority
 > There are two sources for an icon's color. In descending priority, these are:
 > 1. Value of the event's property `gantt-displayIconColor` (Optional)
-> 2. Global fallback color.
+> 2. Global fallback color, see [[plugin-settings#Events|Plugin Settings > Events]].
 
 ## Example icon definitions
 
