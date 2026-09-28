@@ -8,21 +8,31 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.4.3](https://github.com/Altarok/gantt-this/releases/tag/1.4.3), 2026-09-28
+
+**Bases Feature**
+
+- Add all selected properties to event tooltip.
+    - (was only `note`, now includes `file` and `formula` properties)
+
 ## [v1.4.2](https://github.com/Altarok/gantt-this/releases/tag/1.4.2), 2026-09-25
 
 **Features**
+
 - [*] Keep text on bars and eras visible when moving partially off-screen
 - Critical performance improvements for repeating events
-  - Excluded off-screen calculations
-  - Optimized lane assignment logic
-  - Moved all repeating instances one layer back in rendering order
-  - Added opacity to visually distinguish repeating instances
+    - Excluded off-screen calculations
+    - Optimized lane assignment logic
+    - Moved all repeating instances one layer back in rendering order
+    - Added opacity to visually distinguish repeating instances
 
 **Other**
+
 - Minor CSS improvements
 - Partial merge of desktop and mobile event management
 
 **Bugfixes**
+
 - Zoom no longer stuck on mobile after reaching maximum zoom limit
 
 ## [v1.4.1](https://github.com/Altarok/gantt-this/releases/tag/1.4.1), 2026-09-23
