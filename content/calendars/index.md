@@ -1,7 +1,8 @@
 ---
-title: Calendar Definition
+title: Calendar Configuration
 tags:
   - calendar-properties/advanced
+last-upated-plugin-version: 1.4.3
 ---
 
 Calendars are the core of the plugin.
@@ -11,16 +12,17 @@ Have a look at [[gregorian-calendar|this example]] before reading any further.
 
 ## Basic Properties
 
-| Property       | Type                 | Description                                                                 | 
-|----------------|----------------------|-----------------------------------------------------------------------------|
-| `id`           | `text`               | **Mandatory.** Unique identifier for the calendar (e.g., `shire-calendar`). |
-| `name`         | `text`               | Full name of the calendar.                                                  |
-| `displayName`  | `text`               | Short name displayed at the chart axis.                                     |
-| `type`         | `text`               | Calendar algorithm type: `gregorian`, `rule-based`, or `positional`.        |
-| `delimiter`    | `text`               | Character separating date parts (e.g. `-`, `/`, or `.`).                    |
-| `sharedOffset` | `number` \| `object` | Offset in days to Day Zero of your default/base calendar.                   |
-| `bcSuffix`     | `text`               | Suffix for years prior to epoch (e.g., `BCE`).                              |
-| `adSuffix`     | `text`               | Suffix for post-epoch years (e.g., `CE`).                                   |
+| Property       | Type                                                | Description                                                                 | 
+|----------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
+| `id`           | `text`                                              | **Mandatory.** Unique identifier for the calendar (e.g., `shire-calendar`). |
+| `name`         | `text`                                              | Full name of the calendar.                                                  |
+| `displayName`  | `text`                                              | Short name displayed at the chart axis.                                     |
+| `type`         | `text`                                              | Calendar algorithm type: `gregorian`, `rule-based`, or `positional`.        |
+| `delimiter`    | `text`                                              | Character separating date parts (e.g. `-`, `/`, or `.`).                    |
+| `sharedOffset` | `number` \| `object`                                | Offset in days to Day Zero of your default/base calendar.                   |
+| `bcSuffix`     | `text`                                              | Suffix for years prior to epoch (e.g., `BCE`).                              |
+| `adSuffix`     | `text`                                              | Suffix for post-epoch years (e.g., `CE`).                                   |
+| `moons`        | `{offset: number, cycle: number, color?: string}[]` | List of moons. See [[calendar-moons\|dedicated docu page]].                 |
 
 ## Calendar Types
 

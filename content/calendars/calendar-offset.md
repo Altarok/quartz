@@ -2,6 +2,7 @@
 title: Calendar Offset
 tags:
   - yaml
+last-upated-plugin-version: 1.4.3
 ---
 
 [< Back to calendar overview](calendars/)
@@ -14,11 +15,11 @@ This page discusses how calendars work together. 3 YAML properties are used for 
 - ´startDay´ (optional) -> control when and if the calendar starts, _controls ==visual rendering== bounds_.
 - ´endDay´ (optional) -> control when and if the calendar ends, _controls ==visual rendering== bounds_.
 
-
 > [!tip]
 > If you do not plan to use more than one calendar, just keep `sharedOffset` at `0` (zero) and omit the other two.
 
 ## Visual Example:
+
 Scroll down for more in-depth explanation.
 
 - Gregorian: Has no `startDay` or `endDay` set, so its timeline extends infinitely in both directions.
@@ -106,7 +107,7 @@ Scroll down for more in-depth explanation.
 All 3 of these properties share the same format:
 
 ```Typescript
-number | { year: number, month: number, day: number }
+number | {year: number, month: number, day: number}
 ```
 
 When using only a `number`, it defines days - not years!
@@ -125,6 +126,7 @@ These properties define if and when a calendar starts and ends in time. Both are
 This property defines which day in time is the absolute day zero. This is necessary for calculations behind the screen.
 Day Zero for Gregorian would be the day before January 1st, 1 AD.
 For Gregorian, `sharedOffset` should always equal `0` (zero).
+
 - Giving a second calendar the same `sharedOffset` would mean their respective starting days are the same.
 - Shifting a second calendar's `sharedOffset` by +-X would shift its respective starting day by the same amount.
 
