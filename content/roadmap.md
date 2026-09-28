@@ -8,16 +8,16 @@ See [[changelog|Changelog]] for implemented features.
 
 > Disclaimer: The mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
-> The following list is not exhaustive. It contains only features confirmed for implementation. See [[#Unsorted ideas|below]] for a shorthand list of unsorted ideas.
+> The following list is not exhaustive. It contains only features confirmed for implementation. See [[#Unsorted ideas|below]] for a list of unsorted ideas.
 
 ## Features to come, by priority
 
-- [+] Recurring events. - _CePeU and others_
+- [+] Recurring events. - _CePeU and others_ ([[changelog|v1.4.0]])
+- [+] Show Bases formulas in tooltip. - _HanaGrace_ ([[changelog|v1.4.3]])
+- [5] Place events into multiple groups. - _CePeU and others_
 - [5] Keep calendar axis visible while scrolling over the chart.
 - [4] Keep toolbar visible while scrolling over the chart.
 - [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
-- [4] Place events into multiple groups. - _CePeU and others_
-- [4] Pull Bases formulas into the tooltip. - _HanaGrace_
 - Zoom:
     - [4] Hide the smallest date elements consecutively while zooming out.
     - [3] Focus shown dates on more natural periods.
@@ -32,7 +32,6 @@ See [[changelog|Changelog]] for implemented features.
 - [1] Manage rerender cooldown depending on the content of the changed file. - _CePeU_
 - [3] Add a setting for the time difference between calendar axis ticks. - _Charatzu_
 
-
 ---
 
 ## Unsorted ideas
@@ -45,7 +44,7 @@ See [[changelog|Changelog]] for implemented features.
     - [0] Add quarters.
     - [0] Add format without years.
 - [1] Select groups and calendars on a per-chart basis in _code-block_ charts. - _CePeU_
-  - Bases can already do that.
+    - Bases can already do that.
 - [?] Moon-only calendar. - _CePeU_
 - Settings:
     - [1] Join tooltip-related settings.
@@ -57,4 +56,9 @@ See [[changelog|Changelog]] for implemented features.
 - [0] Allow events to open a canvas or base when clicked. - _CePeU_
 - [0] Allow events to open other Gantt charts when clicked. - _CePeU_
 - Allow differing day lengths across calendars.
+
+## Long-term tasks planned for version 2.0.0
+
+- [5] Rename Bases-ID of plugin
+- [1] Rename frontmatter properties
 
