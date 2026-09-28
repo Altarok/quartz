@@ -8,8 +8,8 @@ Welcome to the documentation for **Gantt This**. Select a topic from the sidebar
 
 - [[introduction|Introduction]]
 - [[getting-started|Getting Started]]
-- [[calendars/|Calendar Properties]]
-- [[events/|Event Properties]]
+- [[calendars/|Calendar Configuration]]
+- [[events/|Event Configuration]]
 - [[plugin-settings|Plugin Settings]]
 - [[example-calendars/index|Example Calendars]]
 - [[bases|Bases]]
