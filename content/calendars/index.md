@@ -24,6 +24,9 @@ Have a look at [[gregorian-calendar|this example]] before reading any further.
 | `adSuffix`     | `text`                                              | Suffix for post-epoch years (e.g., `CE`).                                   |
 | `moons`        | `{offset: number, cycle: number, color?: string}[]` | List of moons. See [[calendar-moons\|dedicated docu page]].                 |
 
+> [!tip]
+> You can click a calendar badge to open the calendar defining note in a new tab.
+
 ## Calendar Types
 
 ### Gregorian
