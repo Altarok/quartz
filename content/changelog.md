@@ -1,6 +1,6 @@
 ---
 title: Changelog
-last-upated-plugin-version: 1.4.3
+last-upated-plugin-version: 1.4.5
 ---
 
 See [[roadmap|Roadmap]] for upcoming features.
@@ -8,6 +8,12 @@ See [[roadmap|Roadmap]] for upcoming features.
 ---
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
+
+## [v1.4.5](https://github.com/Altarok/gantt-this/releases/tag/1.4.5), 2026-09-29
+
+**Features**
+- Enable date suffix `" repeat yearly"` for events of year-based calendars
+- Add current date and original date to footnote of tool-tip of repeating events
 
 ## [v1.4.4](https://github.com/Altarok/gantt-this/releases/tag/1.4.4), 2026-09-29
 
