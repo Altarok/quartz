@@ -2,6 +2,7 @@
 title: Event Dates
 tags:
   - event-properties/mandatory
+last-upated-plugin-version: 1.4.4
 ---
 
 [< Back to event overview](events/)
@@ -10,10 +11,15 @@ tags:
 
 ![Showcase](images/showcase.png)
 
-All events have a start and end point in time. Since the plugin does not support time of day (yet), an event whose start date equals its end date will be called timestamp event.
+All events have a start and end point in time. Since the plugin does not support time of day (yet), all days point to a single point on an infinite timeline.
 
-For this to work, the frontmatter property `gantt-start`, defining a start date, is the ==only mandatory property== for an event.
-Omitting `gantt-end` will set any event's end date to its start date.
+## Naming
+
+- **Timestamps**: Events without an end date will be called _timestamp_ in this documentation, since they point to a single point on the timeline.
+- **Timespan**: Events with an end date will be called _timespan_, since they point to a range of points on the timeline.
+
+For this to work, the frontmatter property `gantt-start`, defining a start date, is the ==only mandatory property== for any event.
+Omitting `gantt-end` will make the event a _timestamp_.
 
 ## Dates
 
@@ -25,6 +31,10 @@ The [[gregorian-calendar|Gregorian Calendar]] will be used for the following exa
 Right now, there is one special keyword: `today`. This will be interpreted as your local current day. Using it for an event will obviously show it at different timestamps each day.
 
 You can add a fixed amount of days to it. To achieve this you can write: `today` + (`+` or `-`) + (`a positive integer`)
+
+## Repeating Events
+
+There's a [[repeating-events|special page]] for it.
 
 ## Examples
 

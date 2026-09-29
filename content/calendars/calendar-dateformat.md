@@ -2,6 +2,7 @@
 title: Calendar Date Format
 tags:
   - yaml/optional
+last-upated-plugin-version: 1.4.4
 ---
 
 [< Back to calendar overview](calendars/)
@@ -40,9 +41,13 @@ positionalUnits:
 
 ---
 
-## Rule-Based Calendars (`type: 'rule-based'`)
+## Rule-Based Calendars
 
 Rule-based calendars define structured years made up of months, custom date formatting, and optional leap years (e.g., Shire/Hobbit, Elven, or custom fantasy calendars).
+
+```yaml
+type: "rule-based"
+```
 
 ### Configuration Properties
 
