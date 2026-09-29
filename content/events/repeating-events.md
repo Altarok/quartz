@@ -9,10 +9,7 @@ last-upated-plugin-version: 1.4.5
 
 ---
 
-> [!tip] TODO
-> Create showcase image for repeating events
-
-You can make your events repeat however you want.
+Repeating events are the core of modern organization. You can make your events repeat.
 
 ## How It Works
 
