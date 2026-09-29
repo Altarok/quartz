@@ -137,7 +137,7 @@ The alternative would be a combination of `year`, `month`, and `day`. These valu
 
 ### Real Calculation Example
 
-The Mayan calendar started August 9th, 3114 BC. All of the following 3 examples would accomplish this result.
+The Mayan calendar started August 9th, 3114 BC. The following 3 examples would accomplish this result.
 
 ```YAML
 sharedOffset: {year: -3114, month: 8, day: 11}

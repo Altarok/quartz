@@ -14,8 +14,8 @@ Positional calendars count time using fixed, hierarchical units of days rather t
 
 ### Configuration Properties
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
+| Property          | Type    | Description                                                                                      |
+|:------------------|:--------|:-------------------------------------------------------------------------------------------------|
 | `positionalUnits` | `Array` | Ordered list of units from **largest to smallest**, defined by how many days each unit contains. |
 
 ### Example (Mayan Long Count)
@@ -46,12 +46,12 @@ Rule-based calendars define structured years made up of months, custom date form
 
 ### Configuration Properties
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `ruleBasedDetails.daysInStandardYear` | `number` | Total number of days in a non-leap year. |
-| `ruleBasedDetails.months` | `Array` | List of month definitions (`name`, `shortname`, `days`, `isIntercalary`). |
-| `ruleBasedDetails.format` | `Array` | Order of date components when parsing strings (`['year', 'month', 'day']`). |
-| `ruleBasedDetails.noYearZero` | `boolean` | Optional. `true` if year count transitions directly from 1 BC to 1 AD. |
+| Property                              | Type      | Description                                                                 |
+|:--------------------------------------|:----------|:----------------------------------------------------------------------------|
+| `ruleBasedDetails.daysInStandardYear` | `number`  | Total number of days in a non-leap year.                                    |
+| `ruleBasedDetails.months`             | `Array`   | List of month definitions (`name`, `shortname`, `days`, `isIntercalary`).   |
+| `ruleBasedDetails.format`             | `Array`   | Order of date components when parsing strings (`['year', 'month', 'day']`). |
+| `ruleBasedDetails.noYearZero`         | `boolean` | Optional. `true` if year count transitions directly from 1 BC to 1 AD.      |
 
 ### Example
 
@@ -103,16 +103,16 @@ Defines how extra days are added to a rule-based calendar on specific recurring 
 ### Rule Types (`ruleType`)
 
 * **`gregorian`**: Uses standard Gregorian leap rules ($\text{every 4 years}, \text{except 100}, \text{unless 400}$).
-* **`interval`**: Adds extra day(s) every $N$ years.
+* **`interval`**: Adds extra day (s) every $N$ years.
 * **`none`**: Disables leap years entirely.
 
 ### Configuration Options
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `intervalYears` | `number` | How often the leap year repeats (e.g., `4`). |
-| `extraDays` | `number` | How many days are added during the leap year (default: `1`). |
-| `applyToMonthIndex` | `number` | 0-based index of the month receiving the extra day(s). |
+| Property            | Type     | Description                                                  |
+|:--------------------|:---------|:-------------------------------------------------------------|
+| `intervalYears`     | `number` | How often the leap year repeats (e.g., `4`).                 |
+| `extraDays`         | `number` | How many days are added during the leap year (default: `1`). |
+| `applyToMonthIndex` | `number` | 0-based index of the month receiving the extra day(s).       |
 
 ### Example
 
