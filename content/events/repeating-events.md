@@ -1,5 +1,5 @@
 ---
-title: Event Dates
+title: Repeating Events
 tags:
   - event-properties/optional
 last-upated-plugin-version: 1.4.5
