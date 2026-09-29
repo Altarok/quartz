@@ -56,10 +56,12 @@ See [[changelog|Changelog]] for implemented features.
 - [?] Add right-click context menu. Unsure what to add to it.
 - [0] Allow events to open a canvas or base when clicked. - _CePeU_
 - [0] Allow events to open other Gantt charts when clicked. - _CePeU_
-- Allow differing day lengths across calendars.
+- [1] Allow differing day lengths across calendars.
+- [1] Add multiple different moon phases of different length to single moons. - _CePeU_
 
 ## Long-term tasks planned for version 2.0.0
 
-- [5] Rename Bases-ID of plugin
-- [1] Rename frontmatter properties
+- [6] End support for Gantt charts in Markdown codeblocks.
+- [6] Rename Bases-ID of plugin.
+- [1] Rename frontmatter properties. (like `gantt` -> `gt` and other minor changes)
 
