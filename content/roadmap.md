@@ -47,6 +47,7 @@ See [[changelog|Changelog]] for implemented features.
 - [1] Select groups and calendars on a per-chart basis in _code-block_ charts. - _CePeU_
     - Bases can already do that.
 - [?] Moon-only calendar. - _CePeU_
+- [1] Define moon (SVG) icons to use. - _CePeU_
 - Settings:
     - [1] Join tooltip-related settings.
     - [0] Use CLI to rename properties vault-wide when renaming Gantt properties.
