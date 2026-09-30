@@ -14,6 +14,7 @@ Repeating events are the core of modern organization. You can make your events r
 ## How It Works
 
 To make this work add a suffix to one of your date properties `gantt-start` or `gantt-end`.
+
 - If an event is a [[event-dates#Naming|timestamp]], the start date suffix will be parsed.
 - [!] If an event is a [[event-dates#Naming|timespan]] instead, the end date suffix beats the start date suffix in priority _if two suffices are defined_.
 
@@ -23,7 +24,7 @@ This is the easiest suffix to create, just add `' repeat yearly'` to your date.
 Use it for _birthdays_ and other dates repeating on the same day each year.
 
 - [p] Pro: This takes leap years into account.
-- [c] Con: It only works when the event's calendar configuration is [[calendar-dateformat|rule-based]] and its rule contains `year`.  
+- [c] Con: It only works when the event's calendar configuration is [[calendar-dateformat|rule-based]] and its rule contains `year`.
 
 ### Example
 
@@ -56,6 +57,6 @@ gantt-start: 2026-09-29 repeat after 7 days # once every week (if in Gregorian c
 
 ```yaml
 gantt-start: 2026-09-26 repeat after 7 days # Saturday
-gantt-end: 2026-09-28 # Sunday (this would be weekends)
+gantt-end: 2026-09-27 # Sunday (this would be weekends)
 ```
 
