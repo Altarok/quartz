@@ -9,9 +9,17 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.5.0](https://github.com/Altarok/gantt-this/releases/tag/1.5.0), 2026-09-30
+
+**Features**
+
+- Clicking a calendar badge now opens calendar note in new tab
+- Added optional property `today` to calendar YAML. Use to define current day for fantasy time management.
+
 ## [v1.4.5](https://github.com/Altarok/gantt-this/releases/tag/1.4.5), 2026-09-29
 
 **Features**
+
 - Enable date suffix `" repeat yearly"` for events of year-based calendars
 - Add current date and original date to footnote of tool-tip of repeating events
 

@@ -67,4 +67,4 @@ See [[changelog|Changelog]] for implemented features.
 - [6] End support for Gantt charts in Markdown codeblocks.
 - [6] Rename Bases-ID of plugin.
 - [1] Rename frontmatter properties. (like `gantt` -> `gt` and other minor changes)
-
+- [?] Rename plugin settings keys
