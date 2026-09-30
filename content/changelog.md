@@ -11,7 +11,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.5.0](https://github.com/Altarok/gantt-this/releases/tag/1.5.0), 2026-09-30
 
-**Features**
+**New Features**
 
 - Clicking a calendar badge now opens calendar note in new tab
 - Added optional property `today` to calendar YAML. Use to define current day for fantasy time management.
@@ -25,7 +25,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.4.4](https://github.com/Altarok/gantt-this/releases/tag/1.4.4), 2026-09-29
 
-- CSS update: Enables usage of RPG Awesome icons
+- CSS update: Enables use of RPG Awesome icons
 
 ## [v1.4.3](https://github.com/Altarok/gantt-this/releases/tag/1.4.3), 2026-09-28
 
