@@ -73,7 +73,7 @@ The `moons` property contains a list of moons. Each moon has the properties `off
 
 The `cycle` determines the period of the synodic month. The `offset` aligns the phase sequence to your timeline: an `offset` of `0` means a full moon occurs precisely on **Day 0**.
 
-## Example Configuration
+## Example
 
 Below is the moon part of a [[calendars/|Calendar Configuration]] example featuring a primary moon, a smaller, faster secondary moon, and a legendary blood-red moon:
 

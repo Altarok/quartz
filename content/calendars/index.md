@@ -2,79 +2,93 @@
 title: Calendar Configuration
 tags:
   - calendar-properties/advanced
-last-upated-plugin-version: 1.4.3
+last-upated-plugin-version: 1.5.0
 ---
 
 Calendars are the core of the plugin.
 Custom calendars are defined using YAML frontmatter inside dedicated calendar notes. The plugin supports multiple different types of calendars.
 
-Have a look at [[gregorian-calendar|this example]] before reading any further.
+The following screenshot shows 6 calendars.
+![Screenshot with 6 calendars](images/six-calendars-showcase.png)
+
+> [!tip]
+> Note that you can click a calendar badge to open its note in a new tab.
 
 ## Basic Properties
 
-| Property       | Type                                                | Description                                                                 | 
-|----------------|-----------------------------------------------------|-----------------------------------------------------------------------------|
-| `id`           | `text`                                              | **Mandatory.** Unique identifier for the calendar (e.g., `shire-calendar`). |
-| `name`         | `text`                                              | Full name of the calendar.                                                  |
-| `displayName`  | `text`                                              | Short name displayed at the chart axis.                                     |
-| `type`         | `text`                                              | Calendar algorithm type: `gregorian`, `rule-based`, or `positional`.        |
-| `delimiter`    | `text`                                              | Character separating date parts (e.g. `-`, `/`, or `.`).                    |
-| `sharedOffset` | `number` \| `object`                                | Offset in days to Day Zero of your default/base calendar.                   |
-| `bcSuffix`     | `text`                                              | Suffix for years prior to epoch (e.g., `BCE`).                              |
-| `adSuffix`     | `text`                                              | Suffix for post-epoch years (e.g., `CE`).                                   |
-| `moons`        | `{offset: number, cycle: number, color?: string}[]` | List of moons. See [[calendar-moons\|dedicated docu page]].                 |
+| Property       | Short Description                       | Examples                                       | 
+|----------------|-----------------------------------------|------------------------------------------------|
+| `id`           | _Mandatory_, unique identifier.         | `shire`                                        | 
+| `name`         | Full name of the calendar.              | `The Shire Reckoning`                          | 
+| `displayName`  | Short name displayed at the chart axis. | `Hobbits`                                      | 
+| `type`         | [[#Calendar Type]].                     | `rule-based` \| `positional`                   | 
+| `delimiter`    | Character separating date parts.        | `-`, `/`, `.`                                  | 
+| `sharedOffset` | Offset in days to your base calendar.   | +- (any integer)                               | 
+| `bcSuffix`     | Date Suffix for years prior to epoch.   | `BCE`, `BC`                                    | 
+| `adSuffix`     | Suffix for post-epoch years.            | `CE`, `AD`                                     | 
+| `moons`        | List of [[calendar-moons\|moons]].      | See  [[calendar-moons#Example\|moons example]] | 
+| `today`        | Any date in this calendar's format.     | `1234-Agosto-23`                               |        
 
-> [!tip]
-> You can click a calendar badge to open the calendar defining note in a new tab.
+<p>
 
-## Calendar Types
+## Calendar Type
 
-### Gregorian
-
-Standard modern calendar system. Does not require custom month or leap year definitions.
+A calendar's type is limited to [[#Rule-Based|`rule-based`]] or [[#Positional|`positional`]].
+They define which YAML properties are mandatory and which are optional.
 
 ### Rule-Based
 
-Allows custom month lengths, intercalary days, and specific leap year rules (e.g., Shire, Elven, or custom fantasy calendars).
+Calendars of this type are based on several rules.
+Allows custom month lengths, intercalary days, and specific leap year rules. An extensive example would be:
+
+```yaml
+  daysInStandardYear: number              # number of total days in a non-leap year   
+  noYearZero: boolean                     # (optional) boolean, true makes year go directly from 1 BCE to 1 CE
+  leapYearRule: # see below, (optional) leap year rule
+    ruleType: 'gregorian'                 # string: 'interval' | 'gregorian' 
+    intervalYears: number                 # (optional for type 'gregorian') number of years from 1 leap year to another
+    extraDays: number                     # (optional for type 'gregorian') number of extra days (default: 1)
+    applyToMonthIndex: number             # (optional for type 'gregorian') index of month
+  months: # see below, list of months
+    days: number                          # number of days in month
+    name: string                          # (optional) string, full name of month
+    shortname: string                     # (optional) string, short name of month 
+    isIntercalary: boolean                # (optional) boolean (default: false)
+  format: ['year', 'month', 'day']        # any combination of these 3 values in any order, may omit 'month'
+  outputFormat: ['day', 'month', 'year']  # (optional) same values as format in different order (default: same as format)
+```
+
+#### Months
+
+Months are generally optional. If given, they are defined like this:
+
+```yaml
+  months:
+    - {shortname: "Jag", name: "Jaguar", days: 31} # short notation
+    - shortname: "Feb"        # long notation goes over multiple lines
+      name: "February"
+      days: 22
+    - days: 45                # omitting names is totally fine 
+    - name: Midyear
+      days: 1
+      isIntercalary: true     # not part of a month (for example see Hobbit calendar)
+```
+
+A calendar _without months_ could look like this
+
+```yaml
+ruleBasedDetails:
+  format:
+    - "year"
+    - "day"
+  months: []
+```
 
 ### Positional
 
 Uses fixed numeric units instead of traditional months (e.g., Mesoamerican/Mayan count cycles).
 
-## Rule-Based Calendar Properties
-
-When `type` is set to `rule-based`, define the structure under `ruleBasedDetails`:
-
-- `daysInStandardYear`: Total days in a non-leap year.
-- `noYearZero`: Set to `true` if the calendar moves directly from year 1 BCE to 1 CE.
-- `format`: List defining input parsing order (`year`, `month`, `day`, `intercalary`).
-- `months`: Array of month definitions containing `name`, `shortname`, `days`, and optional `isIntercalary` flags.
-
-## Examples
-
-Custom Rule-Based Calendar
-
-```yaml
----
-id: shire-calendar
-name: Shire Calendar
-type: rule-based
-delimiter: "-"
-sharedOffset: 0
-ruleBasedDetails:
-  daysInStandardYear: 365
-  format:
-    - year
-    - month
-    - day
-  months:
-    - name: Afterlithe
-      days: 30
-    - name: Midyear Day
-      days: 1
-      isIntercalary: true
----
-```
+.. work in progress
 
 ---
 
