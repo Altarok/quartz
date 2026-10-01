@@ -11,7 +11,9 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.5.1](https://github.com/Altarok/gantt-this/releases/tag/1.5.1), 2026-10-01
 
-**Bugfix**: Calendar property `noYearZero` no longer ignored in Gregorian calendar.
+**Bugfix**
+
+- Calendar property `noYearZero` no longer ignored in Gregorian calendar.
 
 ## [v1.5.0](https://github.com/Altarok/gantt-this/releases/tag/1.5.0), 2026-09-30
 
