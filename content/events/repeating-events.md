@@ -19,11 +19,6 @@ To make this work add a suffix to one of your date properties `gantt-start` or `
 - [!] If an event is a [[event-dates#Naming|timespan]] instead, the end date suffix beats the start date suffix in priority _if two suffices are defined_.
 
 The suffix consists of 2 comma-separated parts: _How often to repeat_ & _when to end repetitions_.
-The most complex example would look like this.
-
-```yaml
-gantt-start: -776 repeat after 4 years, until 394 
-```
 
 ## 1. How often to repeat
 
@@ -77,5 +72,10 @@ gantt-start: 2026-09-29 repeat after 4 years # Olympic games
 By default, events start repeating themselves on the note's start date.
 Therefore, adding another start date is not possible yet
 
-To end a
+To end an event type `, until [any date]` after the first suffix.
+As example, these are the dates of historic Olympic Games.
+
+```yaml
+gantt-start: -776 repeat after 4 years, until 394 
+```
 
