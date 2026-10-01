@@ -68,3 +68,4 @@ See [[changelog|Changelog]] for implemented features.
 - [6] Rename Bases-ID of plugin.
 - [1] Rename frontmatter properties. (like `gantt` -> `gt` and other minor changes)
 - [?] Rename plugin settings keys
+- [0] Rename calendar properties `bcSuffix` and `adSuffix` (to `bceSuffix` and `ceSuffix`?) to be more secular, religiously neutral
