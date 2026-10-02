@@ -9,6 +9,18 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.5.2](https://github.com/Altarok/gantt-this/releases/tag/1.5.2), 2026-10-02
+
+**Feature**
+
+- Events can now be repeated on a day or year basis.
+- Repetition can now be ended.
+    - Example for _Historic Olympic Games_: `start: -0776-08-01 repeat every 4 years, until 0393`
+
+**Bugfix**
+
+- Corrected current date calculation for `gregorian` calendar.
+
 ## [v1.5.1](https://github.com/Altarok/gantt-this/releases/tag/1.5.1), 2026-10-01
 
 **Bugfix**
