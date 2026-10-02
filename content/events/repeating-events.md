@@ -20,7 +20,7 @@ To make this work add a suffix to one of your date properties `gantt-start` or `
 
 The suffix consists of 2 comma-separated parts: _How often to repeat_ & _when to end repetitions_.
 
-## 1. How often to repeat
+## 1. How Often To Repeat
 
 To repeat a fixed date in different years, add `' repeat yearly'` or `' repeat after X years'` to your date.
 To repeat on day based pattern, add `' repeat daily'` or `' repeat after X days'` to your date.
@@ -70,12 +70,15 @@ gantt-start: 2026-09-29 repeat after 4 years # Olympic games
 ## 2. When To End Repetitions
 
 By default, events start repeating themselves on the note's start date.
-Therefore, adding another start date is not possible yet
+Therefore, adding another start date is not possible (yet).
 
-To end an event type `, until [any date]` after the first suffix.
-As example, these are the dates of historic Olympic Games.
+To end an event, type `, until [any date]` after the first suffix.
+
+### Examples For ending Repetitions
+
+The _Historic Olympic Games_ were held from -776 BCE to 393 CE.
 
 ```yaml
-gantt-start: -776 repeat after 4 years, until 394 
+gantt-start: "-776 repeat after 4 years, until 394"
 ```
 
