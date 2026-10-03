@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.5.4](https://github.com/Altarok/gantt-this/releases/tag/1.5.4), 2026-10-03
+
+- Changed Regex because iOS can't lookbehind.
+
 ## [v1.5.3](https://github.com/Altarok/gantt-this/releases/tag/1.5.3), 2026-10-03
 
 - Shorten Gregorian dates:
