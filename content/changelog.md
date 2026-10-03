@@ -9,6 +9,13 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.5.3](https://github.com/Altarok/gantt-this/releases/tag/1.5.3), 2026-10-03
+
+- Shorten Gregorian dates:
+  - Omit days and months when zooming out
+  - Shorten years when over 100K
+- Add new setting: Makes toolbar sticky
+
 ## [v1.5.2](https://github.com/Altarok/gantt-this/releases/tag/1.5.2), 2026-10-02
 
 **Feature**
