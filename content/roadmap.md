@@ -15,14 +15,14 @@ See [[changelog|Changelog]] for implemented features.
 
 - [+] Recurring events. - _CePeU and others_ ([[changelog|v1.4.0]])
 - [+] Show Bases formulas in tooltip. - _HanaGrace_ ([[changelog|v1.4.3]])
-- [5] Make calendar badges clickable.
+- [+] Make calendar badges clickable.
 - [4] Place events into multiple groups. - _CePeU and others_
 - [4] Keep calendar axis visible while scrolling over the chart.
-- [4] Keep toolbar visible while scrolling over the chart.
+- [+] Keep toolbar visible while scrolling over the chart.
 - [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [?] Add hover events for eras. - _Coehoorn_
 - Zoom:
-    - [4] Hide the smallest date elements consecutively while zooming out.
+    - [+] Hide the smallest date elements consecutively while zooming out.
     - [3] Focus shown dates on more natural periods.
     - [2] Store default zoom and restore it when re-opening files.
     - [2] Chart-wide general zoom

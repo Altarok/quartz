@@ -9,6 +9,24 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
+## [v1.5.5](https://github.com/Altarok/gantt-this/releases/tag/1.5.5), 2026-10-07
+
+**Features**
+
+- **UX**:
+    - Shorten dates when zooming out, a lot; First, hide days, then months, finally shorten years
+    - Split overly long Settings sub-page into several pages
+- **Performance**:
+    - Do not render icons and text while panning
+    - Prepare results of repetitive calculations
+    - Split calendar SVG layer into static and dynamic rendering layers
+- **Maintenance**:
+    - Code cleanup, settings reorganization, dependency updates
+
+**Bugfix**
+
+- Fix unintended panning/drift when resizing container width
+
 ## [v1.5.4](https://github.com/Altarok/gantt-this/releases/tag/1.5.4), 2026-10-03
 
 - Changed Regex because iOS can't lookbehind.
@@ -16,8 +34,8 @@ See [[roadmap|Roadmap]] for upcoming features.
 ## [v1.5.3](https://github.com/Altarok/gantt-this/releases/tag/1.5.3), 2026-10-03
 
 - Shorten Gregorian dates:
-  - Omit days and months when zooming out
-  - Shorten years when over 100K
+    - Omit days and months when zooming out
+    - Shorten years when over 100K
 - Add new setting: Makes toolbar sticky
 
 ## [v1.5.2](https://github.com/Altarok/gantt-this/releases/tag/1.5.2), 2026-10-02
