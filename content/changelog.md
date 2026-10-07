@@ -5,9 +5,9 @@ last-upated-plugin-version: 1.4.5
 
 See [[roadmap|Roadmap]] for upcoming features.
 
----
-
 > Disclaimer: Mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
+
+---
 
 ## [v1.5.5](https://github.com/Altarok/gantt-this/releases/tag/1.5.5), 2026-10-07
 

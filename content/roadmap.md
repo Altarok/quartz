@@ -5,9 +5,10 @@ last-upated-plugin-version: 1.4.3
 
 See [[changelog|Changelog]] for implemented features.
 
----
 
 > Disclaimer: The mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
+
+---
 
 > The following list is not exhaustive. It contains only features confirmed for implementation. See [[#Unsorted ideas|below]] for a list of unsorted ideas.
 
@@ -61,6 +62,8 @@ See [[changelog|Changelog]] for implemented features.
 - [0] Allow events to open other Gantt charts when clicked. - _CePeU_
 - [1] Allow differing day lengths across calendars.
 - [1] Add multiple different moon phases of different length to single moons. - _CePeU_
+
+---
 
 ## Long-term tasks planned for version 2.0.0
 
