@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.5.6](https://github.com/Altarok/gantt-this/releases/tag/1.5.6), 2026-10-08
+
+**Bases Feature**: Make Bases read formulas as event properties (where frontmatter properties aren't given)
+
 ## [v1.5.5](https://github.com/Altarok/gantt-this/releases/tag/1.5.5), 2026-10-07
 
 **Features**
