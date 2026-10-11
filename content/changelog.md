@@ -9,6 +9,20 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.2](https://github.com/Altarok/gantt-this/releases/tag/1.6.2), tbd
+
+- **Toolbar Feature**: Chart based settings added to toolbar, overwrites global settings.
+
+## [v1.6.1](https://github.com/Altarok/gantt-this/releases/tag/1.6.1), tbd
+
+- **Toolbar Feature**: New info button shows current state of Gantt chart.
+
+## [v1.6.0](https://github.com/Altarok/gantt-this/releases/tag/1.6.0), 2026-10-11
+
+- **Toolbar Feature**: Hide and unhide toolbar with new button.
+
+- **Bugfix**: Text on events no longer broken after panning. (mobile only) 
+
 ## [v1.5.6](https://github.com/Altarok/gantt-this/releases/tag/1.5.6), 2026-10-08
 
 **Bases Feature**: Make Bases read formulas as event properties (where frontmatter properties aren't given)
@@ -33,7 +47,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.5.4](https://github.com/Altarok/gantt-this/releases/tag/1.5.4), 2026-10-03
 
-- Changed Regex because iOS can't lookbehind.
+- **Bugfix**: Changed Regex because iOS can't lookbehind.
 
 ## [v1.5.3](https://github.com/Altarok/gantt-this/releases/tag/1.5.3), 2026-10-03
 
