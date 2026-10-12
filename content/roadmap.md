@@ -22,6 +22,9 @@ See [[changelog|Changelog]] for implemented features.
 - [+] Keep toolbar visible while scrolling over the chart.
 - [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [?] Add hover events for eras. - _Coehoorn_
+- [3] Add weeks to calendar YAML. - _WolfWearingWolfPants_
+    - Optional start at year / month.
+    - Optional ignore in intercalary festival days.
 - Zoom:
     - [+] Hide the smallest date elements consecutively while zooming out.
     - [3] Focus shown dates on more natural periods.
