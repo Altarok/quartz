@@ -15,6 +15,8 @@ tags:
 
 ![Relation showcase with arrows](../images/gt-hg-relation-showcase-with-arrows.png)
 
+Screenshots by _Hana Grace_, made with version 1.5.6.
+
 ---
 
 Both properties accept a list of links to other event notes.
