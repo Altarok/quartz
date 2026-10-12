@@ -8,8 +8,14 @@ tags:
 
 ---
 
-Events can be linked sequentially to show cause, effect, or task order.
-The frontmatter properties `gantt-predecessors` and `gantt-successors` are meant to build these linear connections.
+![Relation showcase without arrows](../images/gt-hg-relation-showcase-without-arrows.png)
+
+> [!tip] Events can be linked sequentially to show cause, effect, or task order.
+> The frontmatter properties `gantt-predecessors` and `gantt-successors` are meant to build these linear connections.
+
+![Relation showcase with arrows](../images/gt-hg-relation-showcase-with-arrows.png)
+
+---
 
 Both properties accept a list of links to other event notes.
 
