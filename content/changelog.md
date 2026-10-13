@@ -11,11 +11,15 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.6.2](https://github.com/Altarok/gantt-this/releases/tag/1.6.2), tbd
 
-- **Toolbar Feature**: Chart based settings added to toolbar, overwrites global settings.
+- **Toolbar Feature**: Chart based settings in toolbar, overwrites global settings.
 
-## [v1.6.1](https://github.com/Altarok/gantt-this/releases/tag/1.6.1), tbd
+## [v1.6.1](https://github.com/Altarok/gantt-this/releases/tag/1.6.1), 2026-10-13
 
-- **Toolbar Feature**: New info button shows current state of Gantt chart.
+**General error handling**
+
+- Button added in v1.6 now opens popup for chart diagnostics.
+- Errors and chart metadata get collected and shown in popup.
+- If a specific event file is not responsible for a problem, the popup will show a link to it.
 
 ## [v1.6.0](https://github.com/Altarok/gantt-this/releases/tag/1.6.0), 2026-10-11
 
