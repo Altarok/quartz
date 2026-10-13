@@ -19,7 +19,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 - Button added in v1.6 now opens popup for chart diagnostics.
 - Errors and chart metadata get collected and shown in popup.
-- If a specific event file is not responsible for a problem, the popup will show a link to it.
+- If a specific event file is responsible for a problem, the popup will show a link to it.
 
 ## [v1.6.0](https://github.com/Altarok/gantt-this/releases/tag/1.6.0), 2026-10-11
 
