@@ -9,9 +9,13 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.2](https://github.com/Altarok/gantt-this/releases/tag/1.6.2), tbd
+## [v1.6.3](https://github.com/Altarok/gantt-this/releases/tag/1.6.3), tbd
 
 - **Toolbar Feature**: Chart based settings in toolbar, overwrites global settings.
+
+## [v1.6.2](https://github.com/Altarok/gantt-this/releases/tag/1.6.2), 2026-10-14
+
+- **ESLint fix**: Remove static CSS from code.
 
 ## [v1.6.1](https://github.com/Altarok/gantt-this/releases/tag/1.6.1), 2026-10-13
 
@@ -25,7 +29,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 - **Toolbar Feature**: Hide and unhide toolbar with new button.
 
-- **Bugfix**: Text on events no longer broken after panning. (mobile only) 
+- **Bugfix**: Text on events no longer broken after panning. (mobile only)
 
 ## [v1.5.6](https://github.com/Altarok/gantt-this/releases/tag/1.5.6), 2026-10-08
 
