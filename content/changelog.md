@@ -9,9 +9,13 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.3](https://github.com/Altarok/gantt-this/releases/tag/1.6.3), tbd
+## [v1.6.4](https://github.com/Altarok/gantt-this/releases/tag/1.6.4), tbd
 
 - **Toolbar Feature**: Chart based settings in toolbar, overwrites global settings.
+
+## [v1.6.3](https://github.com/Altarok/gantt-this/releases/tag/1.6.3), 2026-10-14
+
+- **Error handling**: Added lots of new human-readable warnings to chart popup.
 
 ## [v1.6.2](https://github.com/Altarok/gantt-this/releases/tag/1.6.2), 2026-10-14
 
