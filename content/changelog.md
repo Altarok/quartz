@@ -9,9 +9,9 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.4](https://github.com/Altarok/gantt-this/releases/tag/1.6.4), tbd
+## [v1.6.4](https://github.com/Altarok/gantt-this/releases/tag/1.6.4), 2026-10-16
 
-- **Toolbar Feature**: Chart based settings in toolbar, overwrites global settings.
+- **Feature**: Add scrolling by vertical pan.
 
 ## [v1.6.3](https://github.com/Altarok/gantt-this/releases/tag/1.6.3), 2026-10-14
 
