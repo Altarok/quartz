@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.5](https://github.com/Altarok/gantt-this/releases/tag/1.6.5), 2026-10-16
+
+- **Bugfix**: Fix drag events in popped out windows.
+
 ## [v1.6.4](https://github.com/Altarok/gantt-this/releases/tag/1.6.4), 2026-10-16
 
 - **Feature**: Add scrolling by vertical pan.
