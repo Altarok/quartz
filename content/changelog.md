@@ -9,7 +9,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.6](https://github.com/Altarok/gantt-this/releases/tag/1.6.6), 2026-10-16
+## [v1.6.6](https://github.com/Altarok/gantt-this/releases/tag/1.6.6), 2026-10-18
 
 - **Feature**:
     - Shorten `group visibility toggles` to single button, shows dropdown menu.
