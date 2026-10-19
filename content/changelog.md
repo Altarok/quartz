@@ -9,6 +9,16 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.7](https://github.com/Altarok/gantt-this/releases/tag/1.6.7), 2026-10-19
+
+- **Toolbar Features**:
+    - Icon of diagnostics button now orange when your data is partially invalid.
+    - Group visibility toggle dropdown now ..
+        1. .. longer to contain more groups.
+        2. .. sorted alpha-numerically.
+        3. .. contains unregistered groups.
+        4. .. marks those unregistered groups with an asterisk.
+
 ## [v1.6.6](https://github.com/Altarok/gantt-this/releases/tag/1.6.6), 2026-10-18
 
 - **Feature**:
