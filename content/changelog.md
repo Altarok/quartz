@@ -13,6 +13,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 - **Toolbar Features**:
     - Icon of diagnostics button now orange when your data is partially invalid.
+        - Popup now shows plugin version.
     - Group visibility toggle dropdown now ..
         1. .. longer to contain more groups.
         2. .. sorted alpha-numerically.
