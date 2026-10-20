@@ -9,13 +9,14 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), work in progress
+## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), 2026-10-20
 
 - **Features**:
-    - Obsidian version added to diagnostics popup
-
+    - Amount of automatic reloads reduced.
+    - Obsidian version added to diagnostics popup.
+ 
 - **Bugfix**:
-    - Dependency arrows rendering fixed in embed canvas / popped out tabs.
+    - Dependency arrows rendering fixed after reload.
 
 ## [v1.6.8](https://github.com/Altarok/gantt-this/releases/tag/1.6.8), 2026-10-20
 
