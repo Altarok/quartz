@@ -9,6 +9,15 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.8](https://github.com/Altarok/gantt-this/releases/tag/1.6.8), 2026-10-20
+
+- **Features**:
+    - `Reload data` button no longer re-draws view.
+    - Month index replaced with month name in warning text.
+
+- **Bugfix**:
+    - Dependency arrows rendering fixed. Broke during splitting of render layers.
+
 ## [v1.6.7](https://github.com/Altarok/gantt-this/releases/tag/1.6.7), 2026-10-19
 
 - **Toolbar Features**:
