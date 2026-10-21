@@ -9,12 +9,18 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), work in progress
+
+- **Features**:
+    - Extend toolbar options affecting only local chart.
+    - Extend tooltip date display to non-repeating events.
+
 ## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), 2026-10-20
 
 - **Features**:
     - Amount of automatic reloads reduced.
     - Obsidian version added to diagnostics popup.
- 
+
 - **Bugfix**:
     - Dependency arrows rendering fixed after reload.
 
