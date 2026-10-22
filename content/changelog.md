@@ -12,11 +12,13 @@ See [[roadmap|Roadmap]] for upcoming features.
 ## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), work in progress
 
 - **Features**:
-    - Extend toolbar options affecting only local chart.
-    - Extend tooltip date display to non-repeating events.
-    - Diagnostics popup
-        - Improve several texts, added YAMLParseErrors to warnings.
-        - Removed misleading text in suffix.
+    - **Tooltips**: Added event date to tooltips for non-repeating events, formatted according to the configured output option.
+    - **Local Chart Settings**: Extended the UI of chart-specific settings, introducing initial configuration options for testing.
+    - **Diagnostics & Error Handling**: Improved text clarity across the diagnostics popup and added structured parsing for YAMLParseError instances to assist with custom calendar configuration issues.
+    - **Internal Optimizations**: Refined resource management and lifecycle handling behind the scenes.
+
+- **Bug Fixes**:
+    - Corrected the position of the date sign to appear at the beginning of the date string.
 
 ## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), 2026-10-20
 
