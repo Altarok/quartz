@@ -9,7 +9,13 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), work in progress
+## [v1.6.11](https://github.com/Altarok/gantt-this/releases/tag/1.6.11), 2026-10-22
+
+- **Features**:
+    - Enable event start and end date properties to be encapsulated in square brackets, like `[[2026-10-22]]`.
+    - Update library dependencies.
+
+## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), 2026-10-22
 
 - **Features**:
     - **Tooltips**: Added event date to tooltips for non-repeating events, formatted according to the configured output option.
@@ -238,7 +244,7 @@ This enables you to use the more natural Gregorian calendar used outside of astr
 - Minor CSS fixes like:
     - Increase readability of era text
     - Fix color of arrowhead
-- Added documentation in https://altarok.github.io/gantt-this/
+- ~~Added documentation in https://altarok.github.io/gantt-this/~~
 
 ## [v1.2.1](https://github.com/Altarok/gantt-this/releases/tag/1.2.1), 2026-08-26
 
