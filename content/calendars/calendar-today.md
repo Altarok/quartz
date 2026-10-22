@@ -30,7 +30,7 @@ The `today` parameter defines the reference date for a calendar. It allows you t
 id: harptos
 name: "Calendar of Harptos"
 today: "1234-Hammer-15"
-format: ['year', 'month', 'day']
+format: ["year", "month", "day"]
 months:
   - name: "Hammer"
     days: 30
