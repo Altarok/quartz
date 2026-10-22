@@ -12,7 +12,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 ## [v1.6.11](https://github.com/Altarok/gantt-this/releases/tag/1.6.11), 2026-10-22
 
 - **Features**:
-    - Enable event start and end date properties to be encapsulated in square brackets, like `[[2026-10-22]]`.
+    - Enable event start and end date properties to be wrapped in square brackets, like `gantt-start: [[2026-10-22]]`. Use this to link to your daily notes.
     - Update library dependencies.
 
 ## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), 2026-10-22
