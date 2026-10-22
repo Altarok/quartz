@@ -14,6 +14,9 @@ See [[roadmap|Roadmap]] for upcoming features.
 - **Features**:
     - Extend toolbar options affecting only local chart.
     - Extend tooltip date display to non-repeating events.
+    - Diagnostics popup
+        - Improve several texts, added YAMLParseErrors to warnings.
+        - Removed misleading text in suffix.
 
 ## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), 2026-10-20
 
