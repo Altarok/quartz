@@ -2,7 +2,7 @@
 title: Calendar Configuration
 tags:
   - calendar-properties/advanced
-last-upated-plugin-version: 1.5.0
+last-upated-plugin-version: 1.6.9
 ---
 
 Calendars are the core of the plugin.
@@ -16,18 +16,18 @@ The following screenshot shows 6 calendars.
 
 ## Basic Properties
 
-| Property       | Short Description                       | Examples                                       | 
-|----------------|-----------------------------------------|------------------------------------------------|
-| `id`           | _Mandatory_, unique identifier.         | `shire`                                        | 
-| `name`         | Full name of the calendar.              | `The Shire Reckoning`                          | 
-| `displayName`  | Short name displayed at the chart axis. | `Hobbits`                                      | 
-| `type`         | [[#Calendar Type]].                     | `rule-based` \| `positional`                   | 
-| `delimiter`    | Character separating date parts.        | `-`, `/`, `.`                                  | 
-| `sharedOffset` | Offset in days to your base calendar.   | +- (any integer)                               | 
-| `bcSuffix`     | Date Suffix for years prior to epoch.   | `BCE`, `BC`                                    | 
-| `adSuffix`     | Suffix for post-epoch years.            | `CE`, `AD`                                     | 
-| `moons`        | List of [[calendar-moons\|moons]].      | See  [[calendar-moons#Example\|moons example]] | 
-| `today`        | Any date in this calendar's format.     | `1234-Agosto-23`                               |        
+| Property       | Short Description                       | Examples                                                  | 
+|----------------|-----------------------------------------|-----------------------------------------------------------|
+| `id`           | _Mandatory_, unique identifier.         | `shire`                                                   | 
+| `name`         | Full name of the calendar.              | `The Shire Reckoning`                                     | 
+| `displayName`  | Short name displayed at the chart axis. | `Hobbits`                                                 | 
+| `type`         | [[#Calendar Type]].                     | `rule-based` \| `positional`                              | 
+| `delimiter`    | Character separating date parts.        | `-`, `/`, `.`                                             | 
+| `sharedOffset` | Offset in days to your base calendar.   | +- (any integer)                                          | 
+| `bcSuffix`     | Date Suffix for years prior to epoch.   | `BCE`, `BC`                                               | 
+| `adSuffix`     | Suffix for post-epoch years.            | `CE`, `AD`                                                | 
+| `moons`        | List of [[calendar-moons\|moons]].      | See  [[calendar-moons#Example\|moons example]]            | 
+| `today`        | Any date in this calendar's format.     | `1234-Agosto-23`, see [[calendar-today#Example\|example]] |        
 
 <p>
 

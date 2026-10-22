@@ -2,7 +2,7 @@
 title: Event Dates
 tags:
   - event-properties/mandatory
-last-upated-plugin-version: 1.4.4
+last-upated-plugin-version: 1.6.9
 ---
 
 [< Back to event overview](events/)
@@ -53,6 +53,8 @@ gantt-start: today # This adds a marker to your calendar always showing the curr
 gantt-symbol: vertical-line
 ---
 ```
+
+For the `'today'` reference to work, see [[calendar-today#Example\|how to define _when_ today is]].
 
 ---
 
