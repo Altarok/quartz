@@ -88,7 +88,7 @@ Set `isIntercalary: true` on an entry inside the `months` array:
 
 ```yaml
 ruleBasedDetails:
-  daysInStandardYear: 365
+  daysInStandardYear: 365 # not including leap days 
   months:
     - name: Foreyule
       days: 30
