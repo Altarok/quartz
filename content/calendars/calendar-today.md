@@ -19,15 +19,15 @@ The `today` parameter defines the reference date for a calendar. It allows you t
 
 **Format Dependency**:
 
-- The date must strictly match order defined in the calendar's `format` parameter.
+- The date must strictly match the order defined in the calendar's `format` parameter.
 
 **No Automatic Highlighting**:
 
-- `today` only establishes a logical reference point. It does not render a visual marker on the chart. To highlight today visually, you must define an event note (such as a `vertical-line` or a `star`).
+- `today` only establishes a logical reference point. It does not render a visual marker on the chart. To highlight today visually, you must define an event note (such as `vertical-line` or `star` ).
 
 **Gregorian Fallback**:
 
-- If the calendar ID is set to gregorian and today is omitted, the plugin automatically falls back to the real-world current date. For custom calendars, no fallback exists.
+- If the calendar ID matches `'gregorian'` and today is omitted, the plugin automatically falls back to the real-world current date. For custom calendars, no fallback exists.
 
 **Relative Expressions**:
 
