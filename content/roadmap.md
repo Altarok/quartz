@@ -19,8 +19,9 @@ See [[changelog|Changelog]] for implemented features.
 - [+] Make calendar badges clickable.
 - [4] Place events into multiple groups. - _CePeU and others_
 - [4] Keep calendar axis visible while scrolling over the chart.
+- [4] Make groups and calendars renameable. - _tararaboomdere_
 - [+] Keep toolbar visible while scrolling over the chart.
-- [4] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
+- [+] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [?] Add hover events for eras. - _Coehoorn_
 - [3] Add weeks to calendar YAML. - _WolfWearingWolfPants_
     - Optional start at year / month.
