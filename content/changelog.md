@@ -9,6 +9,15 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.12](https://github.com/Altarok/gantt-this/releases/tag/1.6.12), 2026-10-24
+
+- **Features**:
+    - **Settings**: Add 'Rename' button to calendars and groups
+    - **Better Reload**: 'Reload data' button now resets calendars
+    - **Tooltip**:
+        - Now places itself to be better visible.
+        - Contains more metadata.
+
 ## [v1.6.11](https://github.com/Altarok/gantt-this/releases/tag/1.6.11), 2026-10-22
 
 - **Features**:
