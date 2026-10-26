@@ -9,6 +9,12 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.13](https://github.com/Altarok/gantt-this/releases/tag/1.6.13), wip
+
+- **Features**:
+    - **Better Reload**: Reset problem cache and of its button.
+      And add more warnings. Then I can hopefully focus on the local chart only settings
+
 ## [v1.6.12](https://github.com/Altarok/gantt-this/releases/tag/1.6.12), 2026-10-24
 
 - **Features**:
