@@ -9,11 +9,24 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.6.13](https://github.com/Altarok/gantt-this/releases/tag/1.6.13), wip
+## [v1.6.13](https://github.com/Altarok/gantt-this/releases/tag/1.6.13), 2026-10-27
 
 - **Features**:
-    - **Better Reload**: Reset problem cache and of its button.
-      And add more warnings. Then I can hopefully focus on the local chart only settings
+    - **Toolbar Menus**:
+        - Refactored menu creation to rely on Obsidian's native Menu class.
+        - Applied Menu class to existing dropdowns.
+        - Added a generic reset button to the dropdown menus.
+    - **Diagnostics & Reloads**:
+        - Added a new warning type to diagnostics.
+        - Reset error and problem logs upon manual reload, updating visual indicators for the reset diagnostics button.
+
+- **Bugfixes**:
+    - **Tooltips**: Fixed issue where crucial settings were not reloaded on tooltip render.
+    - **Event Arrows**: Ensured predecessor data is loaded properly even when highlighting and connecting features are turned off.
+
+- **Refactoring of Redraw Logic**:
+    - Refined redraw triggers by adding an isManual flag to bypass redraw cooldowns.
+    - A lot of code maintenance
 
 ## [v1.6.12](https://github.com/Altarok/gantt-this/releases/tag/1.6.12), 2026-10-24
 
