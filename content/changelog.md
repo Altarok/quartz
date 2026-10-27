@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.14](https://github.com/Altarok/gantt-this/releases/tag/1.6.14), 2026-10-27
+
+- **Bugfix**: Sticky Toolbar behavior fixed
+
 ## [v1.6.13](https://github.com/Altarok/gantt-this/releases/tag/1.6.13), 2026-10-27
 
 - **Features**:
