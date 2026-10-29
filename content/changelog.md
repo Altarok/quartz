@@ -9,6 +9,14 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.15](https://github.com/Altarok/gantt-this/releases/tag/1.6.15), 2026-10-29
+
+- **Feature**:
+    - Extend options of positional calendars configs. May now be 1-based, as opposed to 0-based.
+    - Add new warning for diagnostics popup.
+
+- **Bugfix**: Moon offset calculation no longer broken.
+
 ## [v1.6.14](https://github.com/Altarok/gantt-this/releases/tag/1.6.14), 2026-10-27
 
 - **Bugfix**: Sticky Toolbar behavior fixed
