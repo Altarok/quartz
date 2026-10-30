@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.6.16](https://github.com/Altarok/gantt-this/releases/tag/1.6.16), 2026-10-30
+
+**Toolbar Feature**: Make visibility toggle of zoom and pan buttons work for local chart settings dropdown menu.
+
 ## [v1.6.15](https://github.com/Altarok/gantt-this/releases/tag/1.6.15), 2026-10-29
 
 - **Feature**:
