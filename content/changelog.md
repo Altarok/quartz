@@ -9,6 +9,17 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.1](https://github.com/Altarok/gantt-this/releases/tag/1.7.1), 2026-11-03
+
+**Calendar Features**:
+
+- Added optional `weekdays` property. Will get shown in front of axis date.
+- Defining a `bcSuffix` will now remove the minus sign in front of negative dates.
+- Extended moon options:
+    - Added optional property `colorBg` for background color. Defaults to `black`.
+    - Added optional property `phases`, defines the number of phases drawn in 1 cycle. Defaults to 4.
+    - Small moon SVG icon improvements in performance.
+
 ## [v1.7.0](https://github.com/Altarok/gantt-this/releases/tag/1.7.0), 2026-10-30
 
 **Feature**: Extend calendar YAML config with optional colors for axis, dates and ticks.
