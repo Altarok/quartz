@@ -27,7 +27,8 @@ The following screenshot shows 6 calendars.
 | `bcSuffix`     | Date Suffix for years prior to epoch.   | `BCE`, `BC`                                               | 
 | `adSuffix`     | Suffix for post-epoch years.            | `CE`, `AD`                                                | 
 | `moons`        | List of [[calendar-moons\|moons]].      | See  [[calendar-moons#Example\|moons example]]            | 
-| `today`        | Any date in this calendar's format.     | `1234-Agosto-23`, see [[calendar-today#Example\|example]] |        
+| `today`        | Any date in this calendar's format.     | `1234-Agosto-23`, see [[calendar-today#Example\|example]] |
+| `weekdays`     | A list of weekdays                      | See [[calendar-weekdays\|weekdays]]                       |
 
 <p>
 
