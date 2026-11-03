@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.3](https://github.com/Altarok/gantt-this/releases/tag/1.7.3), 2026-11-03
+
+**Calendar Hotfix**: Hide weekday when zooming out.
+
 ## [v1.7.2](https://github.com/Altarok/gantt-this/releases/tag/1.7.2), 2026-11-03
 
 **Calendar Feature**: Change weekday property `short` to optional.
