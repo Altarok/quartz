@@ -2,7 +2,7 @@
 title: Calendar Configuration
 tags:
   - calendar-properties/advanced
-last-upated-plugin-version: 1.6.9
+last-upated-plugin-version: 1.7.1
 ---
 
 Calendars are the core of the plugin.
