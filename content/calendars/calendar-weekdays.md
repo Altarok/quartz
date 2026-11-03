@@ -76,7 +76,7 @@ Below is the `weekdays` configuration in a [[calendars/|Calendar Configuration]]
 ```yaml
 weekdays:
   offset: 0 # 0 -> no offset. 1st day of calendar = 1st day of array
-  # x -> offset start of week by x days. 3rd (1st+x) day of calendar = 1st day of array       
+  # x -> offset start of week by x days. (1+x)th day of calendar = 1st day of array       
   days:
     - name: Moonday
       short: Moo
