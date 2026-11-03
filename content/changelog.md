@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.2](https://github.com/Altarok/gantt-this/releases/tag/1.7.2), 2026-11-03
+
+**Calendar Feature**: Change weekday property `short` to optional.
+
 ## [v1.7.1](https://github.com/Altarok/gantt-this/releases/tag/1.7.1), 2026-11-03
 
 **Calendar Features**:
