@@ -5,7 +5,6 @@ last-upated-plugin-version: 1.4.3
 
 See [[changelog|Changelog]] for implemented features.
 
-
 > Disclaimer: The mentioned frontmatter properties represent their default keys; you may have renamed them in your vault.
 
 ---
