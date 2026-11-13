@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.4](https://github.com/Altarok/gantt-this/releases/tag/1.7.4), 2026-11-13
+
+**Feature**: Calendar axes now sticky.
+
 ## [v1.7.3](https://github.com/Altarok/gantt-this/releases/tag/1.7.3), 2026-11-03
 
 **Calendar Hotfix**: Hide weekday when zooming out.
