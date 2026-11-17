@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.6](https://github.com/Altarok/gantt-this/releases/tag/1.7.6), 2026-11-17
+
+**Feature**: Update event area height after folding toolbar or toggling group visibility.
+
 ## [v1.7.5](https://github.com/Altarok/gantt-this/releases/tag/1.7.5), 2026-11-16
 
 **Bugfix**: Remove native Bases scrollbar only in Gantt Bases.
