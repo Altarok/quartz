@@ -9,6 +9,16 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+
+## [v1.7.7](https://github.com/Altarok/gantt-this/releases/tag/1.7.7), 2026-11-18
+
+**Features**:
+- Add 50% opacity to unfold toolbar button.
+- Minor CSS improvements.
+- Update dependencies.
+
+**Bugfix**: Fix moon rendering distance for irregular moon phases.
+
 ## [v1.7.6](https://github.com/Altarok/gantt-this/releases/tag/1.7.6), 2026-11-17
 
 **Feature**: Update event area height after folding toolbar or toggling group visibility.
