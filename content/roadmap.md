@@ -23,8 +23,8 @@ See [[changelog|Changelog]] for implemented features.
 - [+] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [?] Add hover events for eras. - _Coehoorn_
 - [+] Add weeks to calendar YAML. - _WolfWearingWolfPants_ ([[changelog|v1.7.1]])
-    - [ ] Optional reset at year / month.
-    - [ ] Optional ignore in intercalary festival days.
+    - [3] Optional reset at year / month.
+    - [3] Optional ignore in intercalary festival days.
 - Zoom:
     - [+] Hide the smallest date elements consecutively while zooming out. ([[changelog|v1.5.5]])
     - [3] Focus shown dates on more natural periods.
