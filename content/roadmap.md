@@ -15,18 +15,18 @@ See [[changelog|Changelog]] for implemented features.
 
 - [+] Recurring events. - _CePeU and others_ ([[changelog|v1.4.0]])
 - [+] Show Bases formulas in tooltip. - _HanaGrace_ ([[changelog|v1.4.3]])
-- [+] Make calendar badges clickable.
+- [+] Make calendar badges clickable. ([[changelog|v1.5.0]])
 - [4] Place events into multiple groups. - _CePeU and others_
-- [4] Keep calendar axis visible while scrolling over the chart.
-- [+] Make groups and calendars renameable. - _tararaboomdere_
-- [+] Keep toolbar visible while scrolling over the chart.
+- [+] Keep calendar axis visible while scrolling over the chart. ([[changelog|v1.7.4]])
+- [+] Make groups and calendars renameable. - _tararaboomdere_ ([[changelog|v1.6.12]])
+- [+] Keep toolbar visible while scrolling over the chart. ([[changelog|v1.5.3]])
 - [+] Apply the calendar's optional `outputFormat` property to tooltip dates. - _CePeU_
 - [?] Add hover events for eras. - _Coehoorn_
-- [+] Add weeks to calendar YAML. - _WolfWearingWolfPants_
+- [+] Add weeks to calendar YAML. - _WolfWearingWolfPants_ ([[changelog|v1.7.1]])
     - [ ] Optional reset at year / month.
     - [ ] Optional ignore in intercalary festival days.
 - Zoom:
-    - [+] Hide the smallest date elements consecutively while zooming out.
+    - [+] Hide the smallest date elements consecutively while zooming out. ([[changelog|v1.5.5]])
     - [3] Focus shown dates on more natural periods.
     - [2] Store default zoom and restore it when re-opening files.
     - [2] Chart-wide general zoom
@@ -38,6 +38,8 @@ See [[changelog|Changelog]] for implemented features.
 - [1] Highlight weekends. Gregorian only.
 - [1] Manage rerender cooldown depending on the content of the changed file. - _CePeU_
 - [3] Add a setting for the time difference between calendar axis ticks. - _Charatzu_
+- [+] Moon-only calendar. - _CePeU_ ([[changelog|v1.7.0]])
+- [+] Add different moon phases of different length to single moons. - _CePeU_ ([[changelog|v1.7.1]])
 
 ---
 
@@ -52,7 +54,6 @@ See [[changelog|Changelog]] for implemented features.
     - [0] Add format without years.
 - [1] Select groups and calendars on a per-chart basis in _code-block_ charts. - _CePeU_
     - Bases can already do that.
-- [?] Moon-only calendar. - _CePeU_
 - [1] Define moon (SVG) icons to use. - _CePeU_
 - Settings:
     - [1] Join tooltip-related settings.
@@ -64,7 +65,6 @@ See [[changelog|Changelog]] for implemented features.
 - [0] Allow events to open a canvas or base when clicked. - _CePeU_
 - [0] Allow events to open other Gantt charts when clicked. - _CePeU_
 - [1] Allow differing day lengths across calendars.
-- [1] Add multiple different moon phases of different length to single moons. - _CePeU_
 
 ---
 
