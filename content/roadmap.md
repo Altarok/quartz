@@ -24,7 +24,7 @@ See [[changelog|Changelog]] for implemented features.
 - [?] Add hover events for eras. - _Coehoorn_
 - [+] Add weeks to calendar YAML. - _WolfWearingWolfPants_ ([[changelog|v1.7.1]])
     - [3] Optional reset at year / month.
-    - [3] Optional ignore in intercalary festival days.
+    - [4] Optional ignore in intercalary festival days.
 - Zoom:
     - [+] Hide the smallest date elements consecutively while zooming out. ([[changelog|v1.5.5]])
     - [3] Focus shown dates on more natural periods.
