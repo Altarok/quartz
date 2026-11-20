@@ -1,30 +1,31 @@
 ---
-title: Calendar Definition
+title: Calendar Identifier
 tags:
   - frontmatter/mandatory
   - yaml/mandatory
+last-upated-plugin-version: 1.7.8
 ---
 
 [< Back to calendar overview](calendars/)
 
 ---
 
-Serves as the root YAML key to define a complete calendar system within a note.
-The property `'gantt-calendar-definition'` marks a note as a calendar definition profile for the plugin to parse.
+Each calendar needs a *unique* identifier. Events use these identifiers to tell the plugin which calendar they refer to.
 
-When present in frontmatter:
+The identifier is defined by you in the calendar's `.md` file, you have to repeat the identifier in the file!
 
-- Registers a calendar profile with a unique `id` for events to reference via [[gantt-calendar]].
+1. It must be set as value of the frontmatter property `'gantt-calendar-definition'`.
+2. It must be set as value of the YAML property `'id'`.
 
-You can see multiple examples [[example-calendars/index|here]].
-
-> [!warning]+ The frontmatter property value must match the value of the YAML property `'id'`.
-> Why the repetition?
+> [!warning]+ Why the repetition?
 > - The frontmatter property is useful for the plugin to quickly filter calendar files.
 > - The YAML property is useful for the plugin to quickly parse your calendar.
+
+Click to see some [calendar examples](example-calendars/).
 
 ---
 
 > [!info]- Property traits
-> Property type is `text`, its usage is mandatory in calendar definition notes.
-> Unlike event properties, this root key is fixed and cannot be renamed in settings.
+> The type of the frontmatter property `'gantt-calendar-definition'` is `text`.
+> Its usage is mandatory in calendar definition notes.
+> Unlike event properties, this property can not be renamed in the plugin's settings.
