@@ -9,10 +9,17 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.7.8](https://github.com/Altarok/gantt-this/releases/tag/1.7.8), 2026-11-20
+
+**Features for positional Calendars**:
+
+- Omit leading segments (`0.0.3.4.0` -> `3.4.0`).
+- Color code segments independently.
 
 ## [v1.7.7](https://github.com/Altarok/gantt-this/releases/tag/1.7.7), 2026-11-18
 
 **Features**:
+
 - Add 50% opacity to unfold toolbar button.
 - Minor CSS improvements.
 - Update dependencies.
