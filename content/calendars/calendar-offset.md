@@ -2,7 +2,7 @@
 title: Calendar Offset
 tags:
   - yaml
-last-upated-plugin-version: 1.4.3
+last-upated-plugin-version: 1.7.8
 ---
 
 [< Back to calendar overview](calendars/)
@@ -16,7 +16,7 @@ This page discusses how calendars work together. 3 YAML properties are used for 
 - ´endDay´ (optional) -> control when and if the calendar ends, _controls ==visual rendering== bounds_.
 
 > [!tip]
-> If you do not plan to use more than one calendar, just keep `sharedOffset` at `0` (zero) and omit the other two.
+> If you do *not* plan to use more than one calendar, just keep `sharedOffset` at `0` (zero) and omit the other two.
 
 ## Visual Example:
 
