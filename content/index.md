@@ -1,5 +1,6 @@
 ---
 title: Index
+last-upated-plugin-version: 1.7.8
 ---
 
 # Gantt This Documentation
@@ -9,6 +10,7 @@ Welcome to the documentation for **Gantt This**. Select a topic from the sidebar
 - [[introduction|Introduction]]
 - [[getting-started|Getting Started]]
 - [[calendars/|Calendar Configuration]]
+    - [[positional-calendars|Positional Calendar Configuration]]
 - [[events/|Event Configuration]]
 - [[plugin-settings|Plugin Settings]]
 - [[example-calendars/index|Example Calendars]]

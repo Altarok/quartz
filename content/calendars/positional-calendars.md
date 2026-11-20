@@ -30,6 +30,8 @@ A positional calendar contains 2 configuration sections that distinguish it from
 
 > [!tip] To read about common configuration sections, see [here](calendars/).
 
+---
+
 ### Positional Units
 
 The core of a positional calendar is the `'positionalUnits'` list. Each entry defines a digit position from **largest to smallest**.
@@ -69,6 +71,8 @@ positionalUnits:
 ### Positional Details
 
 The details section is optional, it allows you to *change how your dates are rendered*.
+
+![Colored and cut positional dates](../images/colored-and-cut-positional-dates.png)
 
 ```yaml
 positionalDetails:
