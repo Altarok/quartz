@@ -41,25 +41,19 @@ The [[mayan-calendar|Mayan calendar]] would look like this:
 type: positional
 delimiter: "."
 positionalUnits:
-  - name: Baktun
-    days: 144000
+  - name: Baktun # Display name of a unit
+    days: 144000 # Exact number of days contained in the unit
+    color: red   # Optional hex/CSS color for this specific unit on the axis.
   - name: Katun
     days: 7200
   - name: Tun
     days: 360
-    color: red # optional
   - name: Uinal
     days: 20
   - name: Kin
     days: 1
-    color: "#00ffff" # optional
+    color: "#00ffff"
 ```
-
-| Property | Type     | Required | Description                                                |
-|:---------|:---------|:---------|:-----------------------------------------------------------|
-| `name`   | `text`   | Yes      | Display name of the unit.                                  |
-| `days`   | `number` | Yes      | Exact number of days contained in one unit.                |
-| `color`  | `text`   | No       | Optional hex/CSS color for this specific unit on the axis. |
 
 > [!tip]+ Unit Ordering
 > Always order `'positionalUnits'` from the **largest** day count at the top down to the **smallest** (typically `1` day) at the bottom.
