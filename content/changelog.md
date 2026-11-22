@@ -9,6 +9,18 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.8.0](https://github.com/Altarok/gantt-this/releases/tag/1.7.8), 2026-11-22
+
+**Features**
+
+- **Positional date input shortcuts**: Support shorthand syntax in event dates, including omitted leading units, trailing delimiter fill (e.g., `2.`), and `x*n` repetitions (including valid combinations).
+- **Configurable codeblock chart width**: Added `width` support for codeblock charts.
+- **Optional mouse-wheel scrolling**: Added new setting to toggle mouse-wheel scrolling behavior (default: `true`).
+- **Faster rendering and zoom**: Calendar axis ticks as well as timespan events (bars and eras) now render on faster.
+- **Other**: New human-readable warnings added, updated dependencies.
+
+**Bugfix**: Fixed hiding of leading units in one-based positional calendars.
+
 ## [v1.7.8](https://github.com/Altarok/gantt-this/releases/tag/1.7.8), 2026-11-20
 
 **Features for positional Calendars**:
