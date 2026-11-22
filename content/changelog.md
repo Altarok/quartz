@@ -13,10 +13,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 **Features**
 
+- [*] **Faster rendering and zoom**: Calendar axis ticks as well as timespan events (bars and eras) now render much faster.
 - **Positional date input shortcuts**: Support shorthand syntax in event dates, including omitted leading units, trailing delimiter fill (e.g., `2.`), and `x*n` repetitions (including valid combinations).
 - **Configurable codeblock chart width**: Added `width` support for codeblock charts.
 - **Optional mouse-wheel scrolling**: Added new setting to toggle mouse-wheel scrolling behavior (default: `true`).
-- **Faster rendering and zoom**: Calendar axis ticks as well as timespan events (bars and eras) now render much faster.
 - **Other**: New human-readable warnings added, updated dependencies.
 
 **Bugfix**: Fixed hiding of leading units in one-based positional calendars.
