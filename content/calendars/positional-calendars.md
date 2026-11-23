@@ -3,7 +3,7 @@ title: Positional Calendar Configuration
 tags:
   - calendar-type
   - yaml/optional
-last-upated-plugin-version: 1.7.8
+last-upated-plugin-version: 1.8.0
 ---
 
 [< Back to calendar overview](calendars/)
@@ -27,6 +27,7 @@ A positional calendar contains 2 configuration sections that distinguish it from
 
 - [[#Positional Units|units]] (mandatory)
 - [[#Positional Details|details]] (optional)
+- [[#Positional Date Shortcuts|Shortcuts for positional dates]]
 
 > [!tip] To read about common configuration sections, see [here](calendars/).
 
@@ -86,6 +87,39 @@ All booleans default to `false` if omitted.
 > Event dates referencing a positional calendar must follow the exact unit sequence separated by your configured `'delimiter'` (e.g., `13.0.11.4.0` when `delimiter: "."`).
 
 Click to see some [calendar examples](example-calendars/).
+
+---
+
+### Positional Date Shortcuts
+
+Imagine using a positional date with 15 segments. Who would want to do that? Don't ask, you can.
+
+The regularity of positional dates allows you to use some shortcuts in your date input. These may shorten your work by a considerate amount.
+
+- [!] **Omitted leading units:**
+
+You can omit the topmost units and fill them automatically (`1` for one-based calendars, `0` for zero-based calendars), such as `9.1.1` or a single value like `5`.
+
+```yaml
+gantt-start: 3.4.5 # equals "0.0.0.3.4.5" in a 0-based 6-segment calendar
+```
+
+- [!] **Trailing delimiter:**
+
+Ending a date with your delimiter (such as `2.`) counts from the top unit and fills the remaining lower units with `1` (one-based) or `0` (zero-based).
+
+```yaml
+gantt-start: 3.4.5. # equals "3.4.5.0.0.0" in a 0-based 6-segment calendar
+```
+
+- [!] **Repeats (`*`):**
+
+Use `<count>*<value>` (with `<count>` as a whole number from `1` up to the unit count) to repeat a value, such as `2.4.3*5.7.6` expanding to `2.4.5.5.5.7.6`.
+This can can be combined with omitted leading units or a trailing delimiter.
+
+```yaml
+gantt-start: 3*2.3*4 # equals "2.2.2.4.4.4"
+```
 
 ---
 
