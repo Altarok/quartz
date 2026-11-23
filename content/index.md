@@ -1,6 +1,6 @@
 ---
 title: Index
-last-upated-plugin-version: 1.7.8
+last-upated-plugin-version: 1.8.0
 ---
 
 # Gantt This Documentation
@@ -9,16 +9,21 @@ Welcome to the documentation for **Gantt This**. Select a topic from the sidebar
 
 - [[introduction|Introduction]]
 - [[getting-started|Getting Started]]
-- [[calendars/|Calendar Configuration]]
+- Calendars
+    - [[calendars/|Calendar Configuration]]
     - [[positional-calendars|Positional Calendar Configuration]]
     - [[example-calendars/index|Example Calendars]]
-- [[events/|Event Configuration]]
-- [[plugin-settings|Plugin Settings]]
-- [[bases|Bases]]
-- [[codeblocks|Code Blocks]]
-- [[roadmap|Roadmap]]
-- [[changelog|Changelog]]
-- [[faq|FAQ]]
+- Events
+    - [[events/|Event Configuration]]
+- Settings
+    - [[plugin-settings|Plugin Settings]]
+- Chart creation
+    - [[bases|Bases]]
+    - [[codeblocks|Code Blocks]]
+- Other
+    - [[roadmap|Roadmap]]
+    - [[changelog|Changelog]]
+    - [[faq|FAQ]]
 
 > [!info] Other URLs
 > - Join our [Discord community](https://discord.com/channels/925322340995313686/1537348136954105946) for support.
