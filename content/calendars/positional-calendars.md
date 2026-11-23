@@ -114,7 +114,7 @@ gantt-start: 3.4.5. # equals "3.4.5.0.0.0" in a 0-based 6-segment calendar
 
 - [!] **Repeats (`*`):**
 
-Use `<count>*<value>` (with `<count>` as a whole number from `1` up to the unit count) to repeat a value, such as `2.4.3*5.7.6` expanding to `2.4.5.5.5.7.6`.
+Use `<count>*<value>` (with `<count>` as a whole number from `1` up to the unit count) to repeat a value.
 This can can be combined with omitted leading units or a trailing delimiter.
 
 ```yaml
