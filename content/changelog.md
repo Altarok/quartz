@@ -1,6 +1,6 @@
 ---
 title: Changelog
-last-upated-plugin-version: 1.4.5
+last-upated-plugin-version: 1.9.0
 ---
 
 See [[roadmap|Roadmap]] for upcoming features.
