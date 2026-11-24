@@ -19,10 +19,8 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 **Other**
 
-- Prepared task implementation groundwork.
 - Minor performance optimizations.
 - Added an SVG icon cache.
-
 
 ## [v1.8.0](https://github.com/Altarok/gantt-this/releases/tag/1.8.0), 2026-11-22
 
