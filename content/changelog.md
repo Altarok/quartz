@@ -9,7 +9,22 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
-## [v1.8.0](https://github.com/Altarok/gantt-this/releases/tag/1.7.8), 2026-11-22
+## [v1.9.0](https://github.com/Altarok/gantt-this/releases/tag/1.9.0), 2026-11-24
+
+**Features**
+
+- [*] Added time-of-day support for calendars, with optional time-of-day definitions.
+- [*] Added right-click menu.
+    - Only one option for now: export chart as PNG
+
+**Other**
+
+- Prepared task implementation groundwork.
+- Minor performance optimizations.
+- Added an SVG icon cache.
+
+
+## [v1.8.0](https://github.com/Altarok/gantt-this/releases/tag/1.8.0), 2026-11-22
 
 **Features**
 
