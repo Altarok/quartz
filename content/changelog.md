@@ -43,7 +43,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.7.7](https://github.com/Altarok/gantt-this/releases/tag/1.7.7), 2026-11-18
 
-**Features**:
+**Features**
 
 - Add 50% opacity to unfold toolbar button.
 - Minor CSS improvements.
@@ -73,7 +73,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.7.1](https://github.com/Altarok/gantt-this/releases/tag/1.7.1), 2026-11-03
 
-**Calendar Features**:
+**Calendar Features**
 
 - Added optional `weekdays` property. Will get shown in front of axis date.
 - Defining a `bcSuffix` will now remove the minus sign in front of negative dates.
@@ -92,7 +92,7 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.6.15](https://github.com/Altarok/gantt-this/releases/tag/1.6.15), 2026-10-29
 
-- **Feature**:
+- **Feature**
     - Extend options of positional calendars configs. May now be 1-based, as opposed to 0-based.
     - Add new warning for diagnostics popup.
 
@@ -104,70 +104,70 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.6.13](https://github.com/Altarok/gantt-this/releases/tag/1.6.13), 2026-10-27
 
-- **Features**:
-    - **Toolbar Menus**:
+- **Features**
+    - **Toolbar Menus**
         - Refactored menu creation to rely on Obsidian's native Menu class.
         - Applied Menu class to existing dropdowns.
         - Added a generic reset button to the dropdown menus.
-    - **Diagnostics & Reloads**:
+    - **Diagnostics & Reloads**
         - Added a new warning type to diagnostics.
         - Reset error and problem logs upon manual reload, updating visual indicators for the reset diagnostics button.
 
-- **Bugfixes**:
+- **Bugfixes**
     - **Tooltips**: Fixed issue where crucial settings were not reloaded on tooltip render.
     - **Event Arrows**: Ensured predecessor data is loaded properly even when highlighting and connecting features are turned off.
 
-- **Refactoring of Redraw Logic**:
+- **Refactoring of Redraw Logic**
     - Refined redraw triggers by adding an isManual flag to bypass redraw cooldowns.
     - A lot of code maintenance
 
 ## [v1.6.12](https://github.com/Altarok/gantt-this/releases/tag/1.6.12), 2026-10-24
 
-- **Features**:
+- **Features**
     - **Settings**: Add 'Rename' button to calendars and groups
     - **Better Reload**: 'Reload data' button now resets calendars
-    - **Tooltip**:
+    - **Tooltip**
         - Now places itself to be better visible.
         - Contains more metadata.
 
 ## [v1.6.11](https://github.com/Altarok/gantt-this/releases/tag/1.6.11), 2026-10-22
 
-- **Features**:
+- **Features**
     - Enable event start and end date properties to be wrapped in square brackets, like `gantt-start: [[2026-10-22]]`. Use this to link to your daily notes.
     - Update library dependencies.
 
 ## [v1.6.10](https://github.com/Altarok/gantt-this/releases/tag/1.6.10), 2026-10-22
 
-- **Features**:
+- **Features**
     - **Tooltips**: Added event date to tooltips for non-repeating events, formatted according to the configured output option.
     - **Local Chart Settings**: Extended the UI of chart-specific settings, introducing initial configuration options for testing.
     - **Diagnostics & Error Handling**: Improved text clarity across the diagnostics popup and added structured parsing for YAMLParseError instances to assist with custom calendar configuration issues.
     - **Internal Optimizations**: Refined resource management and lifecycle handling behind the scenes.
 
-- **Bug Fixes**:
+- **Bugfix**
     - Corrected the position of the date sign to appear at the beginning of the date string.
 
 ## [v1.6.9](https://github.com/Altarok/gantt-this/releases/tag/1.6.9), 2026-10-20
 
-- **Features**:
+- **Features**
     - Amount of automatic reloads reduced.
     - Obsidian version added to diagnostics popup.
 
-- **Bugfix**:
+- **Bugfix**
     - Dependency arrows rendering fixed after reload.
 
 ## [v1.6.8](https://github.com/Altarok/gantt-this/releases/tag/1.6.8), 2026-10-20
 
-- **Features**:
+- **Features**
     - `Reload data` button no longer re-draws view.
     - Month index replaced with month name in warning text.
 
-- **Bugfix**:
+- **Bugfix**
     - Dependency arrows rendering fixed. Broke during splitting of render layers.
 
 ## [v1.6.7](https://github.com/Altarok/gantt-this/releases/tag/1.6.7), 2026-10-19
 
-- **Toolbar Features**:
+- **Toolbar Features**
     - Icon of diagnostics button now orange when your data is partially invalid.
         - Popup now shows plugin version.
     - Group visibility toggle dropdown now ..
@@ -178,10 +178,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ## [v1.6.6](https://github.com/Altarok/gantt-this/releases/tag/1.6.6), 2026-10-18
 
-- **Feature**:
+- **Feature**
     - Shorten `group visibility toggles` to single button, shows dropdown menu.
 
-- **Other**:
+- **Other**
     - Extended list of possible errors for diagnostics popup.
     - Merge event handling -> bring vertical panning to mobile version.
 
@@ -223,14 +223,14 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 **Features**
 
-- **UX**:
+- **UX**
     - Shorten dates when zooming out, a lot; First, hide days, then months, finally shorten years
     - Split overly long Settings sub-page into several pages
-- **Performance**:
+- **Performance**
     - Do not render icons and text while panning
     - Prepare results of repetitive calculations
     - Split calendar SVG layer into static and dynamic rendering layers
-- **Maintenance**:
+- **Maintenance**
     - Code cleanup, settings reorganization, dependency updates
 
 **Bugfix**
