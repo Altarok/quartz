@@ -9,6 +9,10 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.9.1](https://github.com/Altarok/gantt-this/releases/tag/1.9.1), 2026-11-25
+
+**Bugfix**: Improved detection of date modifiers.
+
 ## [v1.9.0](https://github.com/Altarok/gantt-this/releases/tag/1.9.0), 2026-11-24
 
 **Features**
