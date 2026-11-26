@@ -13,8 +13,9 @@ last-upated-plugin-version: 1.9.1
 ## What is Time of Day?
 
 Time of day lets you position events within a single day rather than snapping every start or end point to a whole-day boundary.
-
 Internally, time of day is expressed as a fraction of one day. Events get moved by that fraction between two ticks on the calendar axis.
+
+This is completely optional. In fact, for a fantasy timeline stretching over thousands of years, it makes little sense to use.
 
 ---
 
@@ -23,6 +24,7 @@ Internally, time of day is expressed as a fraction of one day. Events get moved 
 Time of day values are attached to events or calendar settings depending on how your timeline rules and frontmatter properties are structured.
 
 1. [[#Time of Day configuration]]
+2. [[#Supported Values]]
 2. [[#Fractional Day Behavior|Fractional Day Behavior]]
 3. [[#Examples|Examples]]
 
@@ -33,13 +35,16 @@ Time of day values are attached to events or calendar settings depending on how 
 ## Time of Day configuration
 
 To be able to define any time of day you will have to update your calendar configuration.
-The parameter you need is named `timeOfDay` and accepts a list of objects containing 3 values:
+The top-level parameter you need is named `timeOfDay`, it accepts a list of objects containing 3 values each:
 
-- `unit`: an optional string and name
-- `names`
-- `count`
+- `unit`: An optional string and name of the unit. This is for you, the plugin ignores it.
+- `count`: A mandatory number (positive integer).
+- `names`: An optional list of strings of size `count`. May be used in the tooltip later.
 
-Insert this at the end of your Gregorian calendar
+### Example configuration
+
+The example displays what the configuration would look like for the Gregorian calendar.
+You don't have to use the complete example, in fact I would suggest omitting seconds since they won't make a difference in rendering.
 
 ```yaml
 timeOfDay:
@@ -47,60 +52,45 @@ timeOfDay:
     count: 24 # since this is the first unit, the plugin assumes 1 day = whatever you defined
   - unit: minute # see above
     count: 60 # since this is not the first one, the plugin splits the previous unit into this many parts
-
+  - unit: second
+    count: 60
 ```
 
-### Supported Values
+## Supported Values
 
-Time of day values parse clock-style strings into fractional day offsets (`0.0` to `1.0` across a 24-hour day).
+Time of day values parse clock-style strings into fractional day offsets (`0.0` to `1.0` across any day).
+To define a time of day just place it behind your start or end date, separated by a space.
 
 ```yaml
-start-time: "08:30"
-end-time: "17:15"
+gantt-name: "Yet another meeting"
+gantt-start: "2026-11-26 09:30"
+gantt-end: "2026-11-26 10:30"
 ```
 
-> [!tip]+ Whole-Day Alignment
-> All internal timeline, offset, and duration calculations in the plugin combine whole days (`startDays`, `endDays`) with fractional day offsets (`startTimeOfDay.value`, `endTimeOfDay.value`). Keep start and end times consistent so sub-day intervals stay accurate.
+If you want to add the same time of day to both start and end, you may use the `gantt-time` property.
+
+```yaml
+gantt-start: "2026-11-18"
+gantt-end: "2026-11-26"
+gantt-time: "12:00"
+```
 
 ---
 
-### Fractional Day Behavior
+## Rendering
 
-When time of day is omitted, the fractional offset defaults to `0`, keeping the event aligned with the start of the day.
+A new setting lets you decide whether to shift the events on the timeline by their respective time of day. If deactivated, the time of day get ignored when choosing rendering events.
 
-```yaml
-defaultTimeOfDay: "00:00"
-```
+![event-shifted-by-time-of-day](../images/event-shifted-by-time-of-day.png)
 
-1. **Clock parsing:** Converts time strings into a numeric day fraction (`value`) used in `startDayWithTimeOfDay` and `endDayWithTimeOfDay`.
-2. **Missing values:** Default cleanly to the start of the day (`0`) when not specified on an event.
-3. **Timeline rendering:** Shifts visual placement along the axis without altering whole-day counters (`startDays` and `endDays`).
-
-> [!warning]+ Duration and Ordering
-> Make sure end times do not precede start times on single-day events unless your span intentionally crosses into a following day.
+In any case, events of the same day get sorted vertically by their respective start time from top to bottom.
 
 Click to see some [calendar examples](example-calendars/).
 
 ---
 
-### Examples
-
-A typical workday entry pairs date fields with start and end times so you can distinguish morning and afternoon blocks on the same day.
-
-```yaml
-gantt-start: 10
-start-time: "09:00"
-gantt-end: 10
-end-time: "12:30"
-```
-
-1. **Morning block:** Starts at `09:00` (`0.375` of a day) and ends at `12:30` (`0.5208...` of a day) on day `10`.
-2. **Full-day fallback:** Omitting start and end times treats the bounds as `0.0` offset on their respective days.
-
----
-
 > [!info]- Property traits
-> 1. Time of day fields are **optional**; omitting them defaults to a `0` day offset.
+> 1. Time of day fields are **optional**; omitting them defaults to no offset (0am).
 > 2. Whole-day fields (`startDays`, `endDays`) remain separate from parsed time-of-day fractions.
 > 3. Base calendar and event properties still apply as usual.
 
