@@ -39,7 +39,7 @@ The top-level parameter you need is named `timeOfDay`, it accepts a list of obje
 
 - `unit`: An optional string and name of the unit. This is for you, the plugin ignores it.
 - `count`: A mandatory number (positive integer).
-- `names`: An optional list of strings of size `count`. May be used in the tooltip later.
+- `names`: An optional list of strings which must have a size which equals your given `count` input. It gives each unit (e.g. hour) a distinct name and may be used in the tooltip in a later update. 
 
 ### Example configuration
 
