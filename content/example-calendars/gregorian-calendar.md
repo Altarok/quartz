@@ -46,8 +46,13 @@ ruleBasedDetails:
     - {shortname: "Dec", name: "December", days: 31}
 moons:                                                 # optional list of moons
   - {offset: 18.2, cycle: 29.53059, color: "orange"}   # offset is the index of a day with a new moon, offset+-cycle are other new moons
-bcSuffix: 'BC'                                         # optional date suffix for dates before day 1 
-adSuffix: 'AD'                                         # optional date suffix for dates after (and including) day 1 
+bcSuffix: 'BCE'                                         # optional date suffix for dates before day 1 
+adSuffix: 'CE'                                         # optional date suffix for dates after (and including) day 1 
+timeOfDay:
+  - unit: hour # this is for you, the plugin ignores it
+    count: 24 # since this is the first unit, the plugin assumes 1 day = 24 hours
+  - unit: minute # see above
+    count: 60 # since this is not the first unit, the plugin splits the previous unit into this many parts
 ```
 ````
 
