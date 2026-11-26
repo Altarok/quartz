@@ -32,13 +32,14 @@ Time of day values are attached to events or calendar settings depending on how 
 
 ## Time of Day configuration
 
-To be able to define any time of day you will have to update your calendar configuration. The parameter you need is named `timeOfDay` and accepts a list of objects containing ..
-- `unit`: an optional string and name 
+To be able to define any time of day you will have to update your calendar configuration.
+The parameter you need is named `timeOfDay` and accepts a list of objects containing 3 values:
+
+- `unit`: an optional string and name
 - `names`
 - `count`
 
-
-Insert this at the end of your Gregorian calendar 
+Insert this at the end of your Gregorian calendar
 
 ```yaml
 timeOfDay:
@@ -49,9 +50,7 @@ timeOfDay:
 
 ```
 
-
-
-### Supported Values 
+### Supported Values
 
 Time of day values parse clock-style strings into fractional day offsets (`0.0` to `1.0` across a 24-hour day).
 
