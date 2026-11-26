@@ -3,7 +3,7 @@ title: Time of Day Configuration
 tags:
   - time-of-day
   - yaml/optional
-last-upated-plugin-version: 1.8.0
+last-upated-plugin-version: 1.9.1
 ---
 
 [< Back to calendar overview](calendars/)
@@ -14,7 +14,7 @@ last-upated-plugin-version: 1.8.0
 
 Time of day lets you position events within a single day rather than snapping every start or end point to a whole-day boundary.
 
-Internally, time of day is expressed as a fractional day offset added to `startDays` and `endDays` so sub-day start and end positions render accurately on the timeline.
+Internally, time of day is expressed as a fraction of one day. Events get moved by that fraction between two ticks on the calendar axis.
 
 ---
 
@@ -22,15 +22,36 @@ Internally, time of day is expressed as a fractional day offset added to `startD
 
 Time of day values are attached to events or calendar settings depending on how your timeline rules and frontmatter properties are structured.
 
-1. [[#Supported Formats|Supported Formats]]
+1. [[#Time of Day configuration]]
 2. [[#Fractional Day Behavior|Fractional Day Behavior]]
 3. [[#Examples|Examples]]
 
-> [!tip] To read about common configuration sections, see [here](calendars/).
+> [!info] To read about common configuration sections, see [here](calendars/).
 
 ---
 
-### Supported Formats
+## Time of Day configuration
+
+To be able to define any time of day you will have to update your calendar configuration. The parameter you need is named `timeOfDay` and accepts a list of objects containing ..
+- `unit`: an optional string and name 
+- `names`
+- `count`
+
+
+Insert this at the end of your Gregorian calendar 
+
+```yaml
+timeOfDay:
+  - unit: hour # this is for you, the plugin ignores it
+    count: 24 # since this is the first unit, the plugin assumes 1 day = whatever you defined
+  - unit: minute # see above
+    count: 60 # since this is not the first one, the plugin splits the previous unit into this many parts
+
+```
+
+
+
+### Supported Values 
 
 Time of day values parse clock-style strings into fractional day offsets (`0.0` to `1.0` across a 24-hour day).
 
