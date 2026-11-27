@@ -50,6 +50,7 @@ You don't have to use the complete example, in fact I would suggest omitting sec
 timeOfDay:
   - unit: hour # this is for you, the plugin ignores it
     count: 24 # since this is the first unit, the plugin assumes 1 day = whatever you defined
+    names: ["ghost-hour", "", .. 22 other potentially empty strings]
   - unit: minute # see above
     count: 60 # since this is not the first one, the plugin splits the previous unit into this many parts
   - unit: second
