@@ -9,6 +9,22 @@ See [[roadmap|Roadmap]] for upcoming features.
 
 ---
 
+## [v1.10.0](https://github.com/Altarok/gantt-this/releases/tag/1.10.0), 2026-11-27
+
+**Features**
+
+- Rendering of events based on time of day can now be deactivated with a new toggle in the plugin's settings.
+- Edit button for calendars and groups now lets you change color without having to change the ID.
+
+**Other**
+
+- Improve time of day calculation, add fallback value.
+- Improved detection of date modifiers.
+
+**Bugfix**
+
+- Open file in new tab fixed for clicking repeating events.
+
 ## [v1.9.1](https://github.com/Altarok/gantt-this/releases/tag/1.9.1), 2026-11-25
 
 **Bugfix**: Improved detection of date modifiers.
